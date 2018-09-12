@@ -1,0 +1,132 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "author": "Dan Hedgecock",
+  "name": "Radical",
+  "colorSpaceName": "sRGB",
+  "semanticClass": "theme.dark.radical",
+  "colors": {
+    "badge.background": "#fe6083",
+    "badge.foreground": "#befeee",
+    "activityBar.background": "#212b36",
+    "activityBar.dropBackground": "#f86c8a99",
+    "activityBar.foreground": "#befeee",
+    "activityBarBadge.background": "#fe6083",
+    "activityBarBadge.foreground": "#befeee",
+    "diffEditor.insertedTextBackground": "#43fdd533",
+    "diffEditor.removedTextBackground": "#fe608233",
+    "editor.background": "#212b36",
+    "editor.foreground": "#f0f0f0",
+    "editorCursor.foreground": "#fe6083",
+    "editorGroup.border": "#2c4344",
+    "editorGroupHeader.tabsBackground": "#212b36",
+    "editorGroupHeader.tabsBorder": "#1c242c",
+    "editorRuler.foreground": "#f86c8a99",
+    "editorGutter.addedBackground": "#a3ff57",
+    "editorGutter.modifiedBackground": "#ffd000",
+    "editorGutter.deletedBackground": "#ff427b",
+    "editorOverviewRuler.errorForeground": "#ff427b",
+    "editorOverviewRuler.warningForeground": "#FFC300",
+    "editorOverviewRuler.infoForeground": "#93E0E3",
+    "editorOverviewRuler.modifiedForeground": "#ffd000",
+    "editorOverviewRuler.addedForeground": "#a3ff57",
+    "editorOverviewRuler.deletedForeground": "#ff427b",
+    "editorWidget.background": "#2a254aD9",
+    "gitDecoration.addedResourceForeground": "#a3ff57",
+    "gitDecoration.modifiedResourceForeground": "#ffd000",
+    "gitDecoration.deletedResourceForeground": "#ff427b",
+    "gitDecoration.untrackedResourceForeground": "#c8ff00",
+    "gitDecoration.ignoredResourceForeground": "#405c5f",
+    "gitDecoration.conflictingResourceForeground": "#ff428a",
+    "gitDecoration.submoduleResourceForeground": "#cc6796",
+    "input.background": "#1c2b3b",
+    "input.border": "#befeee80",
+    "panel.background": "#212b36",
+    "panel.border": "#1c242c",
+    "panelTitle.activeBorder": "#fe6083",
+    "panelTitle.activeForeground": "#fe6083",
+    "panelTitle.inactiveForeground": "#85a5a0",
+    "sideBar.background": "#212b36",
+    "sideBar.foreground": "#919ca8",
+    "sideBar.border": "#1c242c",
+    "sideBarTitle.foreground": "#85a5a0",
+    "sideBarSectionHeader.background": "#212b36",
+    "sideBarSectionHeader.foreground": "#85a5a0",
+    "statusBar.background": "#262b4b",
+    "statusBar.foreground": "#85a5a0",
+    "statusBar.border": "#602976",
+    "statusBar.debuggingBackground": "#262b4b",
+    "statusBar.debuggingForeground": "#befeee",
+    "tab.activeBorder": "#fe6083",
+    "tab.activeBackground": "#212b36",
+    "tab.activeForeground": "#fe6083",
+    "tab.inactiveBackground": "#212b36",
+    "tab.inactiveForeground": "#85a5a0",
+    "titleBar.activeBackground": "#262b4b",
+    "titleBar.activeForeground": "#fe6083",
+    "titleBar.border": "#602976"
+  },
+  "tokenColors": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#ab9bab",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "constant",
+      "settings": {
+        "foreground": "#f0f0f0"
+      }
+    },
+    {
+      "scope": "entity",
+      "settings": {
+        "foreground": "#e8e8e8"
+      }
+    },
+    {
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#e0e0e0",
+        "fontStyle": "italic bold underline"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#d9d9d9"
+      }
+    },
+    {
+      "scope": "markup",
+      "settings": {
+        "foreground": "#d1d1d1"
+      }
+    },
+    {
+      "scope": "storage",
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#c9c9c9"
+      }
+    },
+    {
+      "scope": "support",
+      "settings": {
+        "foreground": "#bfbfbf"
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#b5b5b5"
+      }
+    }
+  ]
+}

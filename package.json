@@ -1,0 +1,42 @@
+{
+  "name": "radical-vscode",
+  "displayName": "Radical",
+  "description": "Pretty rad theme",
+  "version": "0.0.0",
+  "publisher": "dhedgecock",
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "bugs": {
+    "url": "https://github.com/DHedgecock/radical/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DHedgecock/radical"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "lint": "eslint build.js theme"
+  },
+  "galleryBanner": {
+    "color": "#1c242c",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Radical",
+        "uiTheme": "vs-dark",
+        "path": "./dist/Radical.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-eloquence": "^9.3.1",
+    "prettier": "^1.14.2"
+  }
+}
