@@ -28,6 +28,7 @@ const BORDER = '#1c242c'
 const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_TRANSLUCENT = '#2a254aD9'
 const VSCODE_PURPLE = '#602976'
+const VSCODE_PURPLE_HOVER = '#913eb4'
 
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0'
@@ -207,16 +208,15 @@ const statusBar = {
   'statusBar.debuggingBackground': MITO_PURPLE,
   'statusBar.debuggingForeground': SECONDARY,
   'statusBar.debuggingBorder': null,
-  //   // NO FOLDER MODE
-  //   'statusBar.noFolderBackground': WELL_BG,
-  //   'statusBar.noFolderForeground': TEXT_PRIMARY,
-  //   'statusBar.noFolderBorder': VSCODE_PURPLE,
-  //   // 😢 Unfortunately, you can only style the background of status bar items, it
-  //   // would nice to instead style the foreground, but until then style background
-  //   'statusBarItem.activeBackground': DECORATION_BG,
-  //   'statusBarItem.hoverBackground': DECORATION_BG,
-  //   'statusBarItem.prominentBackground': DECORATION_BG,
-  //   'statusBarItem.prominentHoverBackground': DECORATION_BG,
+  // NO FOLDER MODE
+  'statusBar.noFolderBackground': MITO_PURPLE,
+  'statusBar.noFolderForeground': FOREGROUND_TEAL,
+  'statusBar.noFolderBorder': VSCODE_PURPLE,
+  // ℹ️ You can only style the background of status bar items
+  'statusBarItem.prominentBackground': VSCODE_PURPLE,
+  'statusBarItem.prominentHoverBackground': VSCODE_PURPLE_HOVER,
+  'statusBarItem.hoverBackground': VSCODE_PURPLE,
+  'statusBarItem.activeBackground': VSCODE_PURPLE,
 }
 
 //
@@ -228,8 +228,9 @@ const titleBar = {
   'titleBar.activeBackground': MITO_PURPLE,
   'titleBar.activeForeground': PRIMARY,
   'titleBar.border': VSCODE_PURPLE,
-  //   'titleBar.inactiveBackground': TITLE_BG,
-  //   'titleBar.inactiveForeground': TITLE_FG,
+  // Title bar is slightly darkened on blur by default and looks good
+  'titleBar.inactiveBackground': null,
+  'titleBar.inactiveForeground': null,
 }
 
 //
