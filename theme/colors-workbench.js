@@ -78,20 +78,6 @@ const input = {
   'input.border': '#befeee80',
 }
 
-//
-// Activity Bar
-//
-
-const activityBar = {
-  'activityBar.background': BACKGROUND,
-  'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
-  'activityBar.border': null,
-  'activityBar.foreground': SECONDARY,
-  // Badges
-  'activityBarBadge.background': badge['badge.background'],
-  'activityBarBadge.foreground': badge['badge.foreground'],
-}
-
 // ========================================================
 // Editor, Editor Groups and Editor Tabs
 // ========================================================
@@ -163,6 +149,20 @@ const editorWidget = {
 }
 
 //
+// Activity Bar
+//
+
+const activityBar = {
+  'activityBar.background': BACKGROUND,
+  'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
+  'activityBar.border': null,
+  'activityBar.foreground': SECONDARY,
+  // Badges
+  'activityBarBadge.background': badge['badge.background'],
+  'activityBarBadge.foreground': badge['badge.foreground'],
+}
+
+//
 // Panel
 //
 
@@ -171,7 +171,7 @@ const editorWidget = {
 const panel = {
   'panel.background': BACKGROUND,
   'panel.border': BORDER,
-  // 'panel.dropBackground': BG_DRAG_DROP,
+  'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
   'panelTitle.activeForeground': PRIMARY,
@@ -187,7 +187,7 @@ const sideBar = {
   'sideBar.background': BACKGROUND,
   'sideBar.foreground': FOREGROUND_GRAY,
   'sideBar.border': BORDER,
-  // 'sideBar.dropBackground': BG_DRAG_DROP,
+  'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': FOREGROUND_TEAL,
   // Side bar sections for features
