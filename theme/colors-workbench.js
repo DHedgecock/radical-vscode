@@ -107,6 +107,17 @@ const button = {
 }
 
 //
+// Dropdowns
+//
+
+const dropdown = {
+  'dropdown.background': null,
+  'dropdown.listBackground': null,
+  'dropdown.border': null,
+  'dropdown.foreground': null,
+}
+
+//
 // Badges
 //
 
@@ -325,15 +336,16 @@ const welcomePage = {
 }
 
 module.exports = {
+  ...activityBar,
   ...badge,
   ...base,
   ...button,
   ...contrast,
-  ...activityBar,
   ...diffEditor,
+  ...dropdown,
   ...editor,
-  ...editorGroup,
   ...editorDecorations,
+  ...editorGroup,
   ...editorGutter,
   ...editorOverviewRuler,
   ...editorWidget,
