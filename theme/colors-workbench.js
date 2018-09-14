@@ -18,6 +18,7 @@
 //
 
 const PRIMARY = '#fe6083'
+const PRIMARY_HOVER = '#e25777'
 const SECONDARY = '#befeee'
 
 const BACKGROUND = '#212b36'
@@ -76,9 +77,21 @@ const base = {
 }
 
 //
+// Buttons
+//
+
+// Same as badges, but with hover
+const button = {
+  'button.background': PRIMARY,
+  'button.foreground': SECONDARY,
+  'button.hoverBackground': PRIMARY_HOVER,
+}
+
+//
 // Badges
 //
 
+// Same as buttons
 const badge = {
   'badge.background': PRIMARY,
   'badge.foreground': SECONDARY,
@@ -289,6 +302,7 @@ const diffEditor = {
 module.exports = {
   ...badge,
   ...base,
+  ...button,
   ...contrast,
   ...activityBar,
   ...diffEditor,
