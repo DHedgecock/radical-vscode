@@ -11,6 +11,7 @@
  * file and only this file would be updated when changing theme color values.
  *
  * Theme Reference: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+ * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
 //
@@ -20,6 +21,7 @@
 const PRIMARY = '#fe6083'
 const PRIMARY_HOVER = '#e25777'
 const SECONDARY = '#befeee'
+const SECONDARY_HOVER = '#a4dcd0'
 
 const BACKGROUND = '#212b36'
 // Drag and drop background for theme, used primarily in list views
@@ -29,6 +31,7 @@ const SHADOW = '#f86c8a1a'
 const BORDER = '#1c242c'
 
 const MITO_PURPLE = '#262b4b'
+const MITO_PURPLE_HOVER = '#222745'
 const MITO_PURPLE_TRANSLUCENT = '#262b4be6'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
@@ -74,6 +77,22 @@ const base = {
   'selection.background': null, // unknown
   descriptionForeground: null, // unknown
   errorForeground: null, // unknown
+}
+
+//
+// Text
+//
+
+const text = {
+  'textBlockQuote.background': MITO_PURPLE,
+  'textBlockQuote.border': FOREGROUND_TEAL,
+  'textCodeBlock.background': null, // unknown
+  // Includes link hover state
+  'textLink.foreground': SECONDARY,
+  'textLink.activeForeground': SECONDARY_HOVER,
+  // Monospace font texts
+  'textPreformat.foreground': PRIMARY,
+  'textSeparator.foreground': null, // unknown
 }
 
 //
@@ -299,6 +318,12 @@ const diffEditor = {
   // overwhelming to look at, so we disable them
 }
 
+const welcomePage = {
+  'welcomePage.buttonBackground': MITO_PURPLE,
+  'welcomePage.buttonHoverBackground': MITO_PURPLE_HOVER,
+  'walkThrough.embeddedEditorBackground': '#1e2732',
+}
+
 module.exports = {
   ...badge,
   ...base,
@@ -319,5 +344,7 @@ module.exports = {
   ...sideBar,
   ...statusBar,
   ...tab,
+  ...text,
   ...titleBar,
+  ...welcomePage,
 }

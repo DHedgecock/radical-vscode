@@ -12,3 +12,5 @@ make them show themselves.
 - selection.background
 - descriptionForeground
 - errorForeground
+- textCodeBlock.background
+- textSeparator.foreground
