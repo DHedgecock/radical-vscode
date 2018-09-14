@@ -1,8 +1,8 @@
 # VSCode theme implementation notes
 
-## Menu bar
+## Non Mac elements
 
-It appears the menu bar only shows in Windows/Linux?
+It appears the menu bar and dropdowns only shows in Windows/Linux?
 
 ## Unknowns
 
