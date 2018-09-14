@@ -360,6 +360,16 @@ const menuBar = {
 }
 
 //
+// Extensions
+//
+
+const extension = {
+  'extensionButton.prominentForeground': SECONDARY,
+  'extensionButton.prominentBackground': PRIMARY,
+  'extensionButton.prominentHoverBackground': PRIMARY_HOVER,
+}
+
+//
 // Git
 //
 
@@ -402,6 +412,7 @@ module.exports = {
   ...editorGutter,
   ...editorOverviewRuler,
   ...editorWidget,
+  ...extension,
   ...gitDecoration,
   ...input,
   ...listsTrees,
