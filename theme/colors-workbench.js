@@ -23,10 +23,12 @@ const SECONDARY = '#befeee'
 const BACKGROUND = '#212b36'
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = '#f86c8a99'
+// Really subtle opacity version of primary for shadows
+const SHADOW = '#f86c8a1a'
 const BORDER = '#1c242c'
 
 const MITO_PURPLE = '#262b4b'
-const MITO_PURPLE_TRANSLUCENT = '#2a254aD9'
+const MITO_PURPLE_TRANSLUCENT = '#262b4be6'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 
@@ -58,6 +60,19 @@ const DANGER = '#ff427b'
 const contrast = {
   contrastActiveBorder: null,
   contrastBorder: null,
+}
+
+//
+// Base colors
+//
+
+const base = {
+  focusBorder: '#0000', // Default to not showing focus borders
+  foreground: FOREGROUND_TEAL,
+  'widget.shadow': SHADOW,
+  'selection.background': null, // unknown
+  descriptionForeground: null, // unknown
+  errorForeground: null, // unknown
 }
 
 //
@@ -234,6 +249,21 @@ const titleBar = {
 }
 
 //
+// Menu bar
+//
+
+const menuBar = {
+  'menubar.selectionForeground': null,
+  'menubar.selectionBackground': null,
+  'menubar.selectionBorder': null,
+  'menu.foreground': null,
+  'menu.background': null,
+  'menu.selectionForeground': null,
+  'menu.selectionBackground': null,
+  'menu.selectionBorder': null,
+}
+
+//
 // Git
 //
 
@@ -258,6 +288,7 @@ const diffEditor = {
 
 module.exports = {
   ...badge,
+  ...base,
   ...contrast,
   ...activityBar,
   ...diffEditor,
@@ -269,6 +300,7 @@ module.exports = {
   ...editorWidget,
   ...gitDecoration,
   ...input,
+  ...menuBar,
   ...panel,
   ...sideBar,
   ...statusBar,

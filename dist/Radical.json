@@ -7,6 +7,9 @@
   "colors": {
     "badge.background": "#fe6083",
     "badge.foreground": "#befeee",
+    "focusBorder": "#0000",
+    "foreground": "#85a5a0",
+    "widget.shadow": "#f86c8a1a",
     "activityBar.background": "#212b36",
     "activityBar.dropBackground": "#f86c8a99",
     "activityBar.foreground": "#befeee",
@@ -30,7 +33,7 @@
     "editorOverviewRuler.modifiedForeground": "#ffd000",
     "editorOverviewRuler.addedForeground": "#a3ff57",
     "editorOverviewRuler.deletedForeground": "#ff427b",
-    "editorWidget.background": "#2a254aD9",
+    "editorWidget.background": "#262b4be6",
     "gitDecoration.addedResourceForeground": "#a3ff57",
     "gitDecoration.modifiedResourceForeground": "#ffd000",
     "gitDecoration.deletedResourceForeground": "#ff427b",
