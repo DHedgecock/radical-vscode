@@ -10,6 +10,11 @@
 
 - Includes file list view, individual notifications, autosuggest list, command
   suggest lists...
+- Consider the different user flows that lists need to support when theming...
+  Lists like the file explorer are usually interacted with mouse movements and
+  may not need much theming, but lists like the project dropdown select are
+  usually interacted with using they keyboard and need appropriate feedback for
+  that.
 
 ## Notifications
 

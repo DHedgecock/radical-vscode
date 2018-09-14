@@ -163,8 +163,11 @@ const listsTrees = {
   // Selected item when the list container is in focus
   'list.activeSelectionBackground': '#f86c8a1A', // 10% alpha primary
   'list.activeSelectionForeground': PRIMARY,
-  // Selected item when the list container is NOT in focus
-  'list.inactiveSelectionBackground': '#f86c8a1A', // 10% alpha primary
+  // Selected item when the list container is NOT in focus. (Currently assuming
+  // this really only applies to file explorer view, where having the last file
+  // that was selected have a background is distracting, especially if you don't
+  // have VSCode focus the file you're viewing when you change files)
+  'list.inactiveSelectionBackground': BACKGROUND,
   'list.inactiveSelectionForeground': PRIMARY,
   // Focused item when the list container is NOT in focus
   'list.inactiveFocusBackground': null, // unknown
