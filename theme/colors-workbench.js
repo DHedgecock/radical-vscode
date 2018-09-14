@@ -155,8 +155,10 @@ const listsTrees = {
   // Mouse hover
   'list.hoverBackground': '#f86c8a0D', // 5% alpha primary
   'list.hoverForeground': FOREGROUND_TEAL,
-  // Keyboard focus
-  'list.focusBackground': '#f86c8a0d', // 5% alpha primary
+  // Keyboard focus - using slightly higher alpha to make selection more obvious,
+  // this helps UX for things like project and command dropdown selection with
+  // the keyboard
+  'list.focusBackground': '#f86c8a2E', // 18% alpha primary
   'list.focusForeground': PRIMARY,
   // Selected item when the list container is in focus
   'list.activeSelectionBackground': '#f86c8a1A', // 10% alpha primary
@@ -180,8 +182,17 @@ const listsTrees = {
 //
 
 const input = {
-  'input.background': '#1c2b3b',
-  'input.border': '#befeee80',
+  'input.background': MITO_PURPLE,
+  'input.border': FOREGROUND_TEAL,
+  'input.foreground': FOREGROUND_TEAL,
+  'input.placeholderForeground': FOREGROUND_TEAL,
+  'inputOption.activeBorder': '#f86c8a99', // 60% opacity
+  'inputValidation.errorBackground': ERROR,
+  'inputValidation.errorBorder': ERROR,
+  'inputValidation.infoBackground': INFO,
+  'inputValidation.infoBorder': INFO,
+  'inputValidation.warningBackground': WARNING,
+  'inputValidation.warningBorder': WARNING,
 }
 
 // ========================================================
