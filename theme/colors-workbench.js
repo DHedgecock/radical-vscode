@@ -51,7 +51,7 @@ const GIT_SUBMODULE = '#cc6796'
 // Status colors
 const INFO = '#93E0E3'
 const WARNING = '#ffd000'
-const DANGER = '#ff1767'
+const ERROR = '#ff1767'
 
 // VSCode Radical theme 🎉
 // ---------------------------------------------------------------------------
@@ -170,7 +170,7 @@ const listsTrees = {
   'list.dropBackground': BACKGROUND_DRAG_DROP,
   // The text that matches a search term inside of lists
   'list.highlightForeground': SECONDARY,
-  'list.errorForeground': DANGER,
+  'list.errorForeground': ERROR,
   'list.warningForeground': WARNING,
   'list.invalidItemForeground': null,
 }
@@ -200,7 +200,7 @@ const editor = {
   'editorCursor.background': null,
   'editorCursor.foreground': PRIMARY,
   // --- Status decorations
-  'editorError.foreground': DANGER,
+  'editorError.foreground': ERROR,
   'editorError.border': null,
   'editorWarning.foreground': WARNING,
   'editorWarning.border': null,
@@ -245,7 +245,7 @@ const editorGutter = {
 // overview of all editor decorations
 const editorOverviewRuler = {
   // Status decorations (includes linter)
-  'editorOverviewRuler.errorForeground': DANGER,
+  'editorOverviewRuler.errorForeground': ERROR,
   'editorOverviewRuler.warningForeground': WARNING,
   'editorOverviewRuler.infoForeground': INFO,
   // Git decorations
