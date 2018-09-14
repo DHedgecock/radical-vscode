@@ -41,7 +41,7 @@ const FOREGROUND_TEAL = '#85a5a0'
 
 // Git colors
 const GIT_ADDED = '#a3ff57'
-const GIT_MODIFIED = '#ffd000'
+const GIT_MODIFIED = '#ffb000'
 const GIT_DELETED = '#ff427b'
 const GIT_UNTRACKED = '#c8ff00'
 const GIT_IGNORED = '#405c5f'
@@ -50,8 +50,8 @@ const GIT_SUBMODULE = '#cc6796'
 
 // Status colors
 const INFO = '#93E0E3'
-const WARNING = '#FFC300'
-const DANGER = '#ff427b'
+const WARNING = '#ffd000'
+const DANGER = '#ff1767'
 
 // VSCode Radical theme 🎉
 // ---------------------------------------------------------------------------
@@ -148,6 +148,34 @@ const progressBar = {
 }
 
 //
+// Lists and trees
+//
+
+const listsTrees = {
+  // Mouse hover
+  'list.hoverBackground': '#f86c8a0D', // 5% alpha primary
+  'list.hoverForeground': FOREGROUND_TEAL,
+  // Keyboard focus
+  'list.focusBackground': '#f86c8a0d', // 5% alpha primary
+  'list.focusForeground': PRIMARY,
+  // Selected item when the list container is in focus
+  'list.activeSelectionBackground': '#f86c8a1A', // 10% alpha primary
+  'list.activeSelectionForeground': PRIMARY,
+  // Selected item when the list container is NOT in focus
+  'list.inactiveSelectionBackground': '#f86c8a1A', // 10% alpha primary
+  'list.inactiveSelectionForeground': PRIMARY,
+  // Focused item when the list container is NOT in focus
+  'list.inactiveFocusBackground': null, // unknown
+  // Drag and drop background, shows when you hover a drag item over a droppable area
+  'list.dropBackground': BACKGROUND_DRAG_DROP,
+  // The text that matches a search term inside of lists
+  'list.highlightForeground': SECONDARY,
+  'list.errorForeground': DANGER,
+  'list.warningForeground': WARNING,
+  'list.invalidItemForeground': null,
+}
+
+//
 // Inputs
 //
 
@@ -171,6 +199,11 @@ const editor = {
   // what you would guess they are)
   'editorCursor.background': null,
   'editorCursor.foreground': PRIMARY,
+  // --- Status decorations
+  'editorError.foreground': DANGER,
+  'editorError.border': null,
+  'editorWarning.foreground': WARNING,
+  'editorWarning.border': null,
 }
 
 // Editor groups contain editor instances, and each instance is represented by
@@ -371,6 +404,7 @@ module.exports = {
   ...editorWidget,
   ...gitDecoration,
   ...input,
+  ...listsTrees,
   ...menuBar,
   ...panel,
   ...progressBar,

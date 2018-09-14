@@ -1,5 +1,31 @@
 # VSCode theme implementation notes
 
+## Patterns
+
+- Use primary color to show hover/active focus and backgrounds. Use different
+  levels of opacity to provide contrast.
+- Use secondary color to show matching input values
+
+## Lists and trees
+
+- Includes file list view, individual notifications, autosuggest list, command
+  suggest lists...
+
+## Notifications
+
+_The slide up notifications in bottom left_
+
+- The list of notifications seems to fall under the theming group of 'lists',
+  theme values for list hover and selection are applied to indvidual
+  notifications.
+- The hover background for notifications is set by the 'list.hoverBackground'!
+
+## Project manager extension
+
+- The dropdown of available projects seems to have this issue: The text color
+  inside the dropdown should be list.focusForeground when using keyboard to
+  navigate the list, but it doesn't change.
+
 ## Non Mac elements
 
 It appears the menu bar and dropdowns only shows in Windows/Linux?
@@ -14,3 +40,4 @@ make them show themselves.
 - errorForeground
 - textCodeBlock.background
 - textSeparator.foreground
+- list.inactiveFocusBackground
