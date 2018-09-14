@@ -118,6 +118,18 @@ const dropdown = {
 }
 
 //
+// Scroll bar controls
+//
+
+const scrollBarControl = {
+  'scrollbar.shadow': SHADOW,
+  // Scroll bar is primary with decreasing opacity
+  'scrollbarSlider.background': '#f86c8a1a', // 10% alpha
+  'scrollbarSlider.hoverBackground': '#f86c8a40', // 25% alpha
+  'scrollbarSlider.activeBackground': '#f86c8a66', // 40% alpha
+}
+
+//
 // Badges
 //
 
@@ -125,6 +137,14 @@ const dropdown = {
 const badge = {
   'badge.background': PRIMARY,
   'badge.foreground': SECONDARY,
+}
+
+//
+// Progress bar
+//
+
+const progressBar = {
+  'progressBar.background': VSCODE_PURPLE,
 }
 
 //
@@ -353,6 +373,8 @@ module.exports = {
   ...input,
   ...menuBar,
   ...panel,
+  ...progressBar,
+  ...scrollBarControl,
   ...sideBar,
   ...statusBar,
   ...tab,
