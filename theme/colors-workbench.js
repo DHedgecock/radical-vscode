@@ -247,35 +247,85 @@ const editor = {
   // The editor default foreground shows up in widgets, is the color of the
   // separators in merge conflicts
   'editor.foreground': FOREGROUND_TEAL,
+  // --- Line number colors
+  'editorLineNumber.foreground': null,
+  'editorLineNumber.activeForeground': null,
+  // --- Editor cursor
   // Cursor: background styles the text underneath the cursor, which we leave as
   // is so regular token colors are applied. Foreground styles the cursor line
   // and cursor background which is really confusing (aka these are flipped to
   // what you would guess they are)
   'editorCursor.background': null,
   'editorCursor.foreground': PRIMARY,
+  // --- Selection colors
+  'editor.selectionBackground': null,
+  'editor.selectionForeground': null,
+  'editor.inactiveSelectionBackground': null,
+  'editor.selectionHighlightBackground': null,
+  'editor.selectionHighlightBorder': null,
+  // --- Word highlight colors
+  'editor.wordHighlightBackground': null,
+  'editor.wordHighlightBorder': null,
+  'editor.wordHighlightStrongBackground': null,
+  'editor.wordHighlightStrongBorder': null,
+  // --- Find colors
+  'editor.findMatchBackground': null,
+  'editor.findMatchHighlightBackground': null,
+  'editor.findRangeHighlightBackground': null,
+  'editor.findMatchBorder': null,
+  'editor.findMatchHighlightBorder': null,
+  'editor.findRangeHighlightBorder': null,
+  // -- Hover symbol colors
+  'editor.hoverHighlightBackground': null,
+  // --- Current line colors
+  'editor.lineHighlightBackground': null,
+  'editor.lineHighlightBorder': null,
+  // --- Editor links colors
+  'editorLink.activeForeground': null,
+  // --- Range highlight colors
+  'editor.rangeHighlightBackground': null,
+  'editor.rangeHighlightBorder': null,
+  // --- Whitespace color
+  'editorWhitespace.foreground': null,
+  // --- Indent guides
+  'editorIndentGuide.background': null,
+  'editorIndentGuide.activeBackground': null,
+  // --- Ruler color
+  'editorRuler.foreground': BACKGROUND_DRAG_DROP,
+  // --- Code lens
+  'editorCodeLens.foreground': null,
+  // --- Bracket match
+  'editorBracketMatch.background': null,
+  'editorBracketMatch.border': null,
+  // --- Unused source code
+  'editorUnnecessaryCode.border': null,
+  'editorUnnecessaryCode.opacity': null,
+  // --- Gutter colors
+  'editorGutter.background': null, // Defaults to editor bg
+  'editorGutter.addedBackground': GIT_ADDED,
+  'editorGutter.modifiedBackground': GIT_MODIFIED,
+  'editorGutter.deletedBackground': GIT_DELETED,
   // --- Status decorations
   'editorError.foreground': ERROR,
   'editorError.border': null,
   'editorWarning.foreground': WARNING,
   'editorWarning.border': null,
-}
-
-// Editor decorations
-const editorDecorations = {
-  'editorRuler.foreground': BACKGROUND_DRAG_DROP,
-}
-
-// Editor gutter - contains the glyph margins and the line numbers
-const editorGutter = {
-  'editorGutter.background': null, // Defaults to editor bg
-  'editorGutter.addedBackground': GIT_ADDED,
-  'editorGutter.modifiedBackground': GIT_MODIFIED,
-  'editorGutter.deletedBackground': GIT_DELETED,
+  'editorInfo.foreground': null,
+  'editorInfo.border': null,
+  'editorHint.foreground': null,
+  'editorHint.border': null,
 }
 
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
 // overview of all editor decorations
 const editorOverviewRuler = {
+  'editorOverviewRuler.border': null,
+  'editorOverviewRuler.findMatchForeground': null,
+  'editorOverviewRuler.rangeHighlightForeground': null,
+  'editorOverviewRuler.selectionHighlightForeground': null,
+  'editorOverviewRuler.wordHighlightForeground': null,
+  'editorOverviewRuler.wordHighlightStrongForeground': null,
+  'editorOverviewRuler.bracketMatchForeground': null,
   // Status decorations (includes linter)
   'editorOverviewRuler.errorForeground': ERROR,
   'editorOverviewRuler.warningForeground': WARNING,
@@ -439,9 +489,7 @@ module.exports = {
   ...diffEditor,
   ...dropdown,
   ...editor,
-  ...editorDecorations,
   ...editorGroup,
-  ...editorGutter,
   ...editorOverviewRuler,
   ...editorWidget,
   ...extension,
