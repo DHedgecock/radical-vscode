@@ -72,6 +72,10 @@ const ErrorButtonLink = styled(ButtonLink)`
   }
 `
 
+/**
+ * Component comments shouldn't explain what the UI is, that's what designs are
+ * for.
+ */
 class InviteUsersView extends Component {
   static propTypes = {
     history: shape({

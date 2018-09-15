@@ -1,12 +1,25 @@
 module.exports = {
-  comment: '#ab9bab',
-  constant: '#f0f0f0',
-  entity: '#e8e8e8',
-  invalid: '#e0e0e0',
-  keyword: '#d9d9d9',
-  markup: '#d1d1d1',
-  storage: '#d4d4d4',
-  string: '#c9c9c9',
-  support: '#bfbfbf',
-  variable: '#b5b5b5',
+  comment: '#64749A',
+  constant: '#fa61b8',
+  entity: '#aadedc',
+  keyword: '#d5358f',
+  markup: '#85a5a0', // NB: this default matches editor foreground default
+  storage: '#ff85a1',
+  string: '#a9fef7',
+  support: '#8da4a5',
+  variable: '#c7e3ee',
+  // --- Status syntax tokens
+  invalid: '#ff427b',
 }
+
+/**
+ * NOTES:
+ *
+ * Base color set includes mostly muted blue-grays for a semi-monocrhomatic
+ * scheme with pops of color for important things. The idea being instead of
+ * having lots of bright colors, the theme is low intensity and has judicious
+ * use of bright colors.
+ * Some important colors used indirectly are:
+ * - #6bc2c8(for support shade)
+ * - #d0f86f(saved for storage)
+ */

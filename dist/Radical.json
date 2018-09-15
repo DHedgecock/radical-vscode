@@ -66,7 +66,7 @@
     "list.focusForeground": "#fe6083",
     "list.activeSelectionBackground": "#f86c8a1A",
     "list.activeSelectionForeground": "#fe6083",
-    "list.inactiveSelectionBackground": "#f86c8a1A",
+    "list.inactiveSelectionBackground": "#212b36",
     "list.inactiveSelectionForeground": "#fe6083",
     "list.dropBackground": "#f86c8a99",
     "list.highlightForeground": "#befeee",
@@ -123,63 +123,63 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#ab9bab",
+        "foreground": "#64749A",
         "fontStyle": "italic"
       }
     },
     {
       "scope": "constant",
       "settings": {
-        "foreground": "#f0f0f0"
+        "foreground": "#fa61b8"
       }
     },
     {
       "scope": "entity",
       "settings": {
-        "foreground": "#e8e8e8"
+        "foreground": "#aadedc"
       }
     },
     {
       "scope": "invalid",
       "settings": {
-        "foreground": "#e0e0e0",
+        "foreground": "#ff427b",
         "fontStyle": "italic bold underline"
       }
     },
     {
       "scope": "keyword",
       "settings": {
-        "foreground": "#d9d9d9"
+        "foreground": "#d5358f"
       }
     },
     {
       "scope": "markup",
       "settings": {
-        "foreground": "#d1d1d1"
+        "foreground": "#85a5a0"
       }
     },
     {
       "scope": "storage",
       "settings": {
-        "foreground": "#d4d4d4"
+        "foreground": "#ff85a1"
       }
     },
     {
       "scope": "string",
       "settings": {
-        "foreground": "#c9c9c9"
+        "foreground": "#a9fef7"
       }
     },
     {
       "scope": "support",
       "settings": {
-        "foreground": "#bfbfbf"
+        "foreground": "#8da4a5"
       }
     },
     {
       "scope": "variable",
       "settings": {
-        "foreground": "#b5b5b5"
+        "foreground": "#c7e3ee"
       }
     }
   ]
