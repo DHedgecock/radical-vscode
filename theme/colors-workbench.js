@@ -202,6 +202,46 @@ const input = {
 // Editor, Editor Groups and Editor Tabs
 // ========================================================
 
+// Editor groups contain editor instances, and each editor instance is
+// represented by a tab
+const editorGroup = {
+  // Border applies to multiple editor groups
+  'editorGroup.border': BORDER,
+  'editorGroup.dropBackground': BACKGROUND_DRAG_DROP,
+  // When all tabs are closed the editorGroup is empty, you would see this on
+  // opening VSCode without a previous project, eg cmd+shift+n
+  'editorGroup.emptyBackground': null,
+  'editorGroup.focusedEmptyBorder': '#0000',
+  // If you're not using tabs, show regular background, can't think of a better
+  // color for that display
+  'editorGroupHeader.noTabsBackground': null,
+  'editorGroupHeader.tabsBackground': BACKGROUND,
+  'editorGroupHeader.tabsBorder': BORDER,
+}
+
+// Editor tabs
+const tab = {
+  // Border between tabs
+  'tab.border': null,
+  'tab.activeBorder': PRIMARY,
+  'tab.activeBorderTop': null,
+  'tab.activeBackground': BACKGROUND,
+  'tab.activeForeground': PRIMARY,
+  'tab.inactiveBackground': BACKGROUND,
+  'tab.inactiveForeground': FOREGROUND_TEAL,
+  // --- Hover
+  'tab.hoverBackground': '#f86c8a2E', // 20% alpha
+  'tab.hoverBorder': null, // This doesn't seem to do anything ¯\_(ツ)_/¯
+  // --- Unfocused editor group tabs
+  // default styles slightly darken tab colors and look good 👍
+  'tab.unfocusedActiveBorder': null,
+  'tab.unfocusedActiveBorderTop': null,
+  'tab.unfocusedActiveForeground': null,
+  'tab.unfocusedHoverBackground': null,
+  'tab.unfocusedHoverBorder': null,
+  'tab.unfocusedInactiveForeground': null,
+}
+
 const editor = {
   'editor.background': BACKGROUND,
   // The editor default foreground shows up in widgets, is the color of the
@@ -218,28 +258,6 @@ const editor = {
   'editorError.border': null,
   'editorWarning.foreground': WARNING,
   'editorWarning.border': null,
-}
-
-// Editor groups contain editor instances, and each instance is represented by
-// a tab
-const editorGroup = {
-  // Border applies to multiple editor groups
-  'editorGroup.border': BORDER,
-  // 'editorGroup.dropBackground'
-  // 'editorGroup.emptyBackground'
-  // 'editorGroup.focusedEmptyBorder'
-  // 'editorGroupHeader.noTabsBackground',
-  'editorGroupHeader.tabsBackground': BACKGROUND,
-  'editorGroupHeader.tabsBorder': BORDER,
-}
-
-// Editor tabs
-const tab = {
-  'tab.activeBorder': PRIMARY,
-  'tab.activeBackground': BACKGROUND,
-  'tab.activeForeground': PRIMARY,
-  'tab.inactiveBackground': BACKGROUND,
-  'tab.inactiveForeground': FOREGROUND_TEAL,
 }
 
 // Editor decorations
