@@ -2,7 +2,7 @@
   "name": "radical-vscode",
   "displayName": "Radical",
   "description": "Pretty rad theme",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "publisher": "dhedgecock",
   "license": "ISC",
   "engines": {
