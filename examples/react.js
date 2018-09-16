@@ -134,6 +134,9 @@ class InviteUsersView extends Component {
 
     const maximumMembershipReached = members.length >= selectedOrg.seatLimit
 
+    selectedOrg = false
+
+    maximumMembershipReached = maximumMembershipReached + 1
     return (
       <ContentContainer>
         <Header>Add People</Header>

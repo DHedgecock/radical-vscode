@@ -1,4 +1,4 @@
-const token = require('./generate-token')
+const { token } = require('./utils')
 const colors = require('./colors-tokens')
 
 // The generic syntax tokens are themed here according to the Textmate naming

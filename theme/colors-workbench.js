@@ -14,6 +14,8 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
+const { alpha } = require('./utils')
+
 //
 // Theme colors
 //
@@ -25,21 +27,26 @@ const SECONDARY_HOVER = '#a4dcd0'
 
 const BACKGROUND = '#212b36'
 // Drag and drop background for theme, used primarily in list views
-const BACKGROUND_DRAG_DROP = '#f86c8a99'
+const BACKGROUND_DRAG_DROP = alpha('#f86c8a', 0.6)
 // Really subtle opacity version of primary for shadows
-const SHADOW = '#f86c8a1a'
+const SHADOW = alpha('#f86c8a', 0.1)
 const BORDER = '#1c242c'
 
 const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_HOVER = '#222745'
-const MITO_PURPLE_TRANSLUCENT = '#262b4be6'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 
+const HUE_TEAL = '#78efc5'
+const HUE_PINK = '#fd43cd'
+
 const FOREGROUND_GRAY = '#919ca8'
-const FOREGROUND_TEAL = '#85a5a0'
+const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
 
 // Git colors
+const DIFF_ADDED = '#43fdd5'
+const DIFF_REMOVED = '#fe6082'
+
 const GIT_ADDED = '#a3ff57'
 const GIT_MODIFIED = '#ffb000'
 const GIT_DELETED = '#ff427b'
@@ -124,9 +131,9 @@ const dropdown = {
 const scrollBarControl = {
   'scrollbar.shadow': SHADOW,
   // Scroll bar is primary with decreasing opacity
-  'scrollbarSlider.background': '#f86c8a1a', // 10% alpha
-  'scrollbarSlider.hoverBackground': '#f86c8a40', // 25% alpha
-  'scrollbarSlider.activeBackground': '#f86c8a66', // 40% alpha
+  'scrollbarSlider.background': alpha('#f86c8a', 0.1),
+  'scrollbarSlider.hoverBackground': alpha('#f86c8a', 0.25),
+  'scrollbarSlider.activeBackground': alpha('#f86c8a', 0.4),
 }
 
 //
@@ -153,15 +160,15 @@ const progressBar = {
 
 const listsTrees = {
   // Mouse hover
-  'list.hoverBackground': '#f86c8a0D', // 5% alpha primary
+  'list.hoverBackground': alpha('#f86c8a', 0.05),
   'list.hoverForeground': FOREGROUND_TEAL,
   // Keyboard focus - using slightly higher alpha to make selection more obvious,
   // this helps UX for things like project and command dropdown selection with
   // the keyboard
-  'list.focusBackground': '#f86c8a2E', // 18% alpha primary
+  'list.focusBackground': alpha('#f86c8a', 0.2),
   'list.focusForeground': PRIMARY,
   // Selected item when the list container is in focus
-  'list.activeSelectionBackground': '#f86c8a1A', // 10% alpha primary
+  'list.activeSelectionBackground': alpha('#f86c8a', 0.1),
   'list.activeSelectionForeground': PRIMARY,
   // Selected item when the list container is NOT in focus. (Currently assuming
   // this really only applies to file explorer view, where having the last file
@@ -189,7 +196,7 @@ const input = {
   'input.border': FOREGROUND_TEAL,
   'input.foreground': FOREGROUND_TEAL,
   'input.placeholderForeground': FOREGROUND_TEAL,
-  'inputOption.activeBorder': '#f86c8a99', // 60% opacity
+  'inputOption.activeBorder': alpha('#f86c8a', 0.6),
   'inputValidation.errorBackground': ERROR,
   'inputValidation.errorBorder': ERROR,
   'inputValidation.infoBackground': INFO,
@@ -230,7 +237,7 @@ const tab = {
   'tab.inactiveBackground': BACKGROUND,
   'tab.inactiveForeground': FOREGROUND_TEAL,
   // --- Hover
-  'tab.hoverBackground': '#f86c8a2E', // 20% alpha
+  'tab.hoverBackground': alpha('#f86c8a', 0.2),
   'tab.hoverBorder': null, // This doesn't seem to do anything ¯\_(ツ)_/¯
   // --- Unfocused editor group tabs
   // default styles slightly darken tab colors and look good 👍
@@ -248,8 +255,8 @@ const editor = {
   // separators in merge conflicts
   'editor.foreground': FOREGROUND_TEAL,
   // --- Line number colors
-  'editorLineNumber.foreground': null,
-  'editorLineNumber.activeForeground': null,
+  'editorLineNumber.foreground': FOREGROUND_GRAY,
+  'editorLineNumber.activeForeground': PRIMARY,
   // --- Editor cursor
   // Cursor: background styles the text underneath the cursor, which we leave as
   // is so regular token colors are applied. Foreground styles the cursor line
@@ -258,16 +265,23 @@ const editor = {
   'editorCursor.background': null,
   'editorCursor.foreground': PRIMARY,
   // --- Selection colors
-  'editor.selectionBackground': null,
-  'editor.selectionForeground': null,
-  'editor.inactiveSelectionBackground': null,
-  'editor.selectionHighlightBackground': null,
-  'editor.selectionHighlightBorder': null,
+  'editor.selectionBackground': alpha('#f86c8a', 0.2),
+  'editor.selectionForeground': null, // For high contrast themes
+  'editor.inactiveSelectionBackground': null, // Default opacity adjust is 👍
+  // Themes highlight of text matching the current selection, include a border
+  // to make matches more obvious b/c they're frequently important!
+  'editor.selectionHighlightBackground': alpha('#f86c8a', 0.2),
+  'editor.selectionHighlightBorder': alpha('#fe6083', 0.4),
   // --- Word highlight colors
-  'editor.wordHighlightBackground': null,
-  'editor.wordHighlightBorder': null,
-  'editor.wordHighlightStrongBackground': null,
-  'editor.wordHighlightStrongBorder': null,
+  // Word highlights are triggered by clicking a symbol (keyboard actions seem
+  // to remove word highlights ¯\_(ツ)_/¯ ). The wordHighlight is read access of
+  // a symbol (teal for less attention b/c it's more common).
+  // wordHighlightStrong is write access of a symbol (pink to grab attention for
+  // write actions!)
+  'editor.wordHighlightBackground': alpha(HUE_TEAL, 0.2),
+  'editor.wordHighlightBorder': alpha(HUE_TEAL, 0.4),
+  'editor.wordHighlightStrongBackground': alpha(HUE_PINK, 0.3),
+  'editor.wordHighlightStrongBorder': alpha(HUE_PINK, 0.4),
   // --- Find colors
   'editor.findMatchBackground': null,
   'editor.findMatchHighlightBackground': null,
@@ -338,7 +352,7 @@ const editorOverviewRuler = {
 
 // Editor widgets
 const editorWidget = {
-  'editorWidget.background': MITO_PURPLE_TRANSLUCENT,
+  'editorWidget.background': alpha('#262b4b', 0.9),
 }
 
 //
@@ -466,9 +480,9 @@ const gitDecoration = {
 }
 
 const diffEditor = {
-  'diffEditor.insertedTextBackground': '#43fdd533',
+  'diffEditor.insertedTextBackground': alpha(DIFF_ADDED, 0.2),
   'diffEditor.insertedTextBorder': null,
-  'diffEditor.removedTextBackground': '#fe608233',
+  'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.2),
   'diffEditor.removedTextBorder': null,
   // ℹ️ Diff borders get added around everything line by line and it's super
   // overwhelming to look at, so we disable them
