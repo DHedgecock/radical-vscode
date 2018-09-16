@@ -39,6 +39,7 @@ const VSCODE_PURPLE_HOVER = '#913eb4'
 
 const HUE_TEAL = '#78efc5'
 const HUE_PINK = '#fd43cd'
+const HUE_PURPLE = '#d043cf'
 
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
@@ -282,38 +283,41 @@ const editor = {
   'editor.wordHighlightBorder': alpha(HUE_TEAL, 0.4),
   'editor.wordHighlightStrongBackground': alpha(HUE_PINK, 0.3),
   'editor.wordHighlightStrongBorder': alpha(HUE_PINK, 0.4),
-  // --- Find colors
-  'editor.findMatchBackground': null,
-  'editor.findMatchHighlightBackground': null,
-  'editor.findRangeHighlightBackground': null,
-  'editor.findMatchBorder': null,
-  'editor.findMatchHighlightBorder': null,
-  'editor.findRangeHighlightBorder': null,
+  // --- Find colors (see notes)
+  'editor.findMatchBackground': alpha(HUE_TEAL, 0.2),
+  'editor.findMatchBorder': alpha(HUE_TEAL, 0.4),
+  'editor.findMatchHighlightBackground': alpha(PRIMARY, 0.2),
+  'editor.findMatchHighlightBorder': alpha(PRIMARY, 0.4),
+  'editor.findRangeHighlightBackground': alpha(HUE_TEAL, 0.2),
+  'editor.findRangeHighlightBorder': null, // Every line in range gets a border which is tooo much
   // -- Hover symbol colors
-  'editor.hoverHighlightBackground': null,
+  // Highlights a symbol when hovering over it for intellisense
+  'editor.hoverHighlightBackground': alpha(PRIMARY, 0.4),
   // --- Current line colors
-  'editor.lineHighlightBackground': null,
-  'editor.lineHighlightBorder': null,
+  'editor.lineHighlightBackground': alpha(HUE_PURPLE, 0.15),
+  'editor.lineHighlightBorder': '#0000',
   // --- Editor links colors
-  'editorLink.activeForeground': null,
+  'editorLink.activeForeground': SECONDARY,
   // --- Range highlight colors
-  'editor.rangeHighlightBackground': null,
-  'editor.rangeHighlightBorder': null,
+  // Range highlight theming is activated when you click a search result in the
+  // panel/side bar serach views
+  'editor.rangeHighlightBackground': alpha(SECONDARY, 0.2),
+  'editor.rangeHighlightBorder': '#0000',
   // --- Whitespace color
-  'editorWhitespace.foreground': null,
+  'editorWhitespace.foreground': null, // Default gray color is muted enough 👍
   // --- Indent guides
-  'editorIndentGuide.background': null,
-  'editorIndentGuide.activeBackground': null,
+  'editorIndentGuide.background': null, // Default gray color is muted enough 👍
+  'editorIndentGuide.activeBackground': BACKGROUND_DRAG_DROP, // Mirror rulers
   // --- Ruler color
   'editorRuler.foreground': BACKGROUND_DRAG_DROP,
   // --- Code lens
-  'editorCodeLens.foreground': null,
+  'editorCodeLens.foreground': alpha(HUE_PURPLE, 0.5),
   // --- Bracket match
   'editorBracketMatch.background': null,
-  'editorBracketMatch.border': null,
+  'editorBracketMatch.border': HUE_PURPLE,
   // --- Unused source code
-  'editorUnnecessaryCode.border': null,
-  'editorUnnecessaryCode.opacity': null,
+  'editorUnnecessaryCode.border': null, // unknown
+  'editorUnnecessaryCode.opacity': null, // unknown
   // --- Gutter colors
   'editorGutter.background': null, // Defaults to editor bg
   'editorGutter.addedBackground': GIT_ADDED,
@@ -324,9 +328,9 @@ const editor = {
   'editorError.border': null,
   'editorWarning.foreground': WARNING,
   'editorWarning.border': null,
-  'editorInfo.foreground': null,
+  'editorInfo.foreground': INFO,
   'editorInfo.border': null,
-  'editorHint.foreground': null,
+  'editorHint.foreground': null, // unknown
   'editorHint.border': null,
 }
 

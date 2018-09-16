@@ -72,6 +72,10 @@ const ErrorButtonLink = styled(ButtonLink)`
   }
 `
 
+function unusedSourceCode {
+  console.log('not used')
+}
+
 /**
  * Component comments shouldn't explain what the UI is, that's what designs are
  * for.

@@ -25,6 +25,15 @@ _The slide up notifications in bottom left_
   notifications.
 - The hover background for notifications is set by the 'list.hoverBackground'!
 
+## Search behaviors
+
+When using search, the first instance of a search match is highlighted, this is
+the `findMatch` values. Additional instances of a search match are the
+`findMatchHighlight` value.
+
+When searching within a selection by selecting the lines icon or `alt+cmd+l` the
+`findRangeHighlight` theming is applied to the entire selected range.
+
 ## Project manager extension
 
 - The dropdown of available projects seems to have this issue: The text color
