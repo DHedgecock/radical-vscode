@@ -55,3 +55,5 @@ make them show themselves.
 - textCodeBlock.background
 - textSeparator.foreground
 - list.inactiveFocusBackground
+- editorHint.foreground
+- editorUnnecessaryCode.border

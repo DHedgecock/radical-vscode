@@ -8,6 +8,8 @@ editorGutter.modifiedBackground: $git-modified
 editorGutter.addedBackground: $git-added
 editorGutter.deletedBackground: $git-removed
 =======
+||||||| merged common ancestors
+=======
 # Git
 # -----------------------------------------------------------------------------
 # Gutter between line numbers and editor contents

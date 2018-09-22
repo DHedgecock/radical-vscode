@@ -41,6 +41,10 @@ const HUE_TEAL = '#78efc5'
 const HUE_PINK = '#fd43cd'
 const HUE_PURPLE = '#d043cf'
 
+// const EIGHTIES_BLUE = '#7cfefd'
+// const EIGHTIES_PINK = '#fc86fe'
+// const EIGHTIES_PURPLE = '#874df8'
+
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
 
@@ -357,7 +361,32 @@ const editorOverviewRuler = {
 // Editor widgets
 const editorWidget = {
   'editorWidget.background': alpha('#262b4b', 0.9),
+  'editorWidget.border': FOREGROUND_TEAL,
+  'editorWidget.resizeBorder': PRIMARY_HOVER,
+  // Suggest widget falls back to editor widget values which look good.
+  'editorSuggestWidget.background': null,
+  'editorSuggestWidget.border': null,
+  'editorSuggestWidget.foreground': null,
+  'editorSuggestWidget.highlightForeground': null,
+  'editorSuggestWidget.selectedBackground': null,
+  'editorHoverWidget.background': null,
+  'editorHoverWidget.border': null,
+  // Peek view that shows when stopping at an exception in debug
+  'debugExceptionWidget.background': null,
+  'debugExceptionWidget.border': null,
+  // Widget that shows when navigating between errors/warnings
+  'editorMarkerNavigation.background': alpha('#262b4b', 0.9),
+  // These actually style the borders of the marker navigation
+  'editorMarkerNavigationError.background': ERROR,
+  'editorMarkerNavigationWarning.background': WARNING,
+  'editorMarkerNavigationInfo.background': INFO,
 }
+
+//
+// Peek View
+//
+
+const peekView = {}
 
 //
 // Activity Bar
@@ -483,14 +512,40 @@ const gitDecoration = {
   'gitDecoration.submoduleResourceForeground': GIT_SUBMODULE,
 }
 
+//
+// Diff editor
+//
+
 const diffEditor = {
+  // ℹ️ Diff borders get added around everything line by line and it's super
+  // overwhelming to look at, so we disable them
   'diffEditor.insertedTextBackground': alpha(DIFF_ADDED, 0.2),
   'diffEditor.insertedTextBorder': null,
   'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.2),
   'diffEditor.removedTextBorder': null,
-  // ℹ️ Diff borders get added around everything line by line and it's super
-  // overwhelming to look at, so we disable them
+  'diffEditor.border': BORDER,
 }
+
+//
+// Merge conflicts
+//
+
+const mergeConflicts = {
+  'merge.currentHeaderBackground': null,
+  'merge.currentContentBackground': null,
+  'merge.incomingHeaderBackground': null,
+  'merge.incomingContentBackground': null,
+  'merge.border': null,
+  'merge.commonContentBackground': null,
+  'merge.commonHeaderBackground': null,
+  'editorOverviewRuler.currentContentForeground': null,
+  'editorOverviewRuler.incomingContentForeground': null,
+  'editorOverviewRuler.commonContentForeground': null,
+}
+
+//
+// Welcome page
+//
 
 const welcomePage = {
   'welcomePage.buttonBackground': MITO_PURPLE,
@@ -514,8 +569,10 @@ module.exports = {
   ...gitDecoration,
   ...input,
   ...listsTrees,
+  ...mergeConflicts,
   ...menuBar,
   ...panel,
+  ...peekView,
   ...progressBar,
   ...scrollBarControl,
   ...sideBar,
