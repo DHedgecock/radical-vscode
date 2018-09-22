@@ -9,11 +9,11 @@
     "vscode": "^1.25.0"
   },
   "bugs": {
-    "url": "https://github.com/DHedgecock/radical/issues"
+    "url": "https://github.com/dhedgecock/radical-vscode/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DHedgecock/radical"
+    "url": "https://github.com/dhedgecock/radical-vscode"
   },
   "scripts": {
     "build": "node build.js",
