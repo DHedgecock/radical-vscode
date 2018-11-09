@@ -19,7 +19,7 @@
     "build": "node build.js",
     "lint": "eslint build.js theme"
   },
-  "icon": "./assets/icon.png",
+  "icon": "assets/icon.png",
   "galleryBanner": {
     "color": "#212b36",
     "theme": "dark"
