@@ -140,7 +140,7 @@
     "tab.activeForeground": "#fe6083",
     "tab.inactiveBackground": "#212b36",
     "tab.inactiveForeground": "#85a5a0",
-    "tab.hoverBackground": "#f86c8a33",
+    "tab.hoverBorder": "#fe6083",
     "textBlockQuote.background": "#262b4b",
     "textBlockQuote.border": "#85a5a0",
     "textLink.foreground": "#befeee",

@@ -242,8 +242,8 @@ const tab = {
   'tab.inactiveBackground': BACKGROUND,
   'tab.inactiveForeground': FOREGROUND_TEAL,
   // --- Hover
-  'tab.hoverBackground': alpha('#f86c8a', 0.2),
-  'tab.hoverBorder': null, // This doesn't seem to do anything ¯\_(ツ)_/¯
+  'tab.hoverBackground': null,
+  'tab.hoverBorder': PRIMARY,
   // --- Unfocused editor group tabs
   // default styles slightly darken tab colors and look good 👍
   'tab.unfocusedActiveBorder': null,
