@@ -519,9 +519,9 @@ const gitDecoration = {
 const diffEditor = {
   // ℹ️ Diff borders get added around everything line by line and it's super
   // overwhelming to look at, so we disable them
-  'diffEditor.insertedTextBackground': alpha(DIFF_ADDED, 0.2),
+  'diffEditor.insertedTextBackground': alpha(DIFF_ADDED, 0.075),
   'diffEditor.insertedTextBorder': null,
-  'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.2),
+  'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.075),
   'diffEditor.removedTextBorder': null,
   'diffEditor.border': BORDER,
 }

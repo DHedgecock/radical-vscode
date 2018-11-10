@@ -1,5 +1,5 @@
 module.exports = {
-  comment: '#64749A',
+  comment: '#8da4a5',
   constant: '#fa61b8',
   entity: '#aadedc',
   keyword: '#d5358f',
