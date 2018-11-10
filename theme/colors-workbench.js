@@ -33,6 +33,7 @@ const SHADOW = alpha('#f86c8a', 0.1)
 const BORDER = '#1c242c'
 
 const MITO_PURPLE = '#262b4b'
+const MITO_PURPLE_BORDER = '#2c3258'
 const MITO_PURPLE_HOVER = '#222745'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
@@ -51,6 +52,9 @@ const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
 // Git colors
 const DIFF_ADDED = '#43fdd5'
 const DIFF_REMOVED = '#fe6082'
+const MERGE_CURRENT = '#fc86fe'
+const MERGE_INCOMING = '#008fe9'
+const MERGE_COMMON = '#ffd000'
 
 const GIT_ADDED = '#a3ff57'
 const GIT_MODIFIED = '#ffb000'
@@ -531,16 +535,16 @@ const diffEditor = {
 //
 
 const mergeConflicts = {
-  'merge.currentHeaderBackground': null,
-  'merge.currentContentBackground': null,
-  'merge.incomingHeaderBackground': null,
-  'merge.incomingContentBackground': null,
-  'merge.border': null,
-  'merge.commonContentBackground': null,
-  'merge.commonHeaderBackground': null,
-  'editorOverviewRuler.currentContentForeground': null,
-  'editorOverviewRuler.incomingContentForeground': null,
-  'editorOverviewRuler.commonContentForeground': null,
+  'merge.currentHeaderBackground': alpha(MERGE_CURRENT, 0.2),
+  'merge.currentContentBackground': alpha(MERGE_CURRENT, 0.075),
+  'merge.incomingHeaderBackground': alpha(MERGE_INCOMING, 0.2),
+  'merge.incomingContentBackground': alpha(MERGE_INCOMING, 0.075),
+  'merge.border': MITO_PURPLE_BORDER,
+  'merge.commonContentBackground': alpha(MERGE_COMMON, 0.075),
+  'merge.commonHeaderBackground': alpha(MERGE_COMMON, 0.2),
+  'editorOverviewRuler.currentContentForeground': alpha(MERGE_CURRENT, 0.3),
+  'editorOverviewRuler.incomingContentForeground': alpha(MERGE_INCOMING, 0.3),
+  'editorOverviewRuler.commonContentForeground': alpha(MERGE_COMMON, 0.3),
 }
 
 //

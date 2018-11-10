@@ -7,7 +7,8 @@ git.color.modified: $git-modified
 editorGutter.modifiedBackground: $git-modified
 editorGutter.addedBackground: $git-added
 editorGutter.deletedBackground: $git-removed
-=======
+||||||| merged common ancestors
+hello
 ||||||| merged common ancestors
 =======
 # Git
@@ -23,5 +24,4 @@ git.deletedForeground: $gitRemoved
 git.conflictForeground: $gitConflicted
 git.untrackedForeground: $gitAdded
 >>>>>>> some/branch
-
 
