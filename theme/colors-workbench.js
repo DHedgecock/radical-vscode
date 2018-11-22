@@ -14,6 +14,7 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
+const { mix } = require('chroma-js')
 const { alpha } = require('./utils')
 
 //
@@ -90,7 +91,9 @@ const base = {
   focusBorder: '#0000', // Default to not showing focus borders
   foreground: FOREGROUND_TEAL,
   'widget.shadow': SHADOW,
-  'selection.background': null, // unknown
+  // Background for text selection inside of inputs and textareas
+  // (Type into the find input and then select some text)
+  'selection.background': alpha(HUE_TEAL, 0.1),
   // Incoming/Current merge conflict labels use this
   descriptionForeground: INFO,
   // Repro: Search for something with no matches using the find widget
@@ -267,9 +270,11 @@ const editor = {
   // The editor default foreground shows up in widgets, is the color of the
   // separators in merge conflicts
   'editor.foreground': FOREGROUND_TEAL,
+
   // --- Line number colors
   'editorLineNumber.foreground': FOREGROUND_GRAY,
   'editorLineNumber.activeForeground': PRIMARY,
+
   // --- Editor cursor
   // Cursor: background styles the text underneath the cursor, which we leave as
   // is so regular token colors are applied. Foreground styles the cursor line
@@ -277,14 +282,16 @@ const editor = {
   // what you would guess they are)
   'editorCursor.background': null,
   'editorCursor.foreground': PRIMARY,
+
   // --- Selection colors
-  'editor.selectionBackground': alpha('#f86c8a', 0.2),
+  'editor.selectionBackground': mix(PRIMARY, BACKGROUND, 0.8).hex(),
   'editor.selectionForeground': null, // For high contrast themes
   'editor.inactiveSelectionBackground': null, // Default opacity adjust is 👍
   // Themes highlight of text matching the current selection, include a border
   // to make matches more obvious b/c they're frequently important!
   'editor.selectionHighlightBackground': alpha('#f86c8a', 0.2),
-  'editor.selectionHighlightBorder': alpha('#fe6083', 0.4),
+  'editor.selectionHighlightBorder': mix('#efe900', BACKGROUND, 0.4).hex(),
+
   // --- Word highlight colors
   // Word highlights are triggered by clicking a symbol (keyboard actions seem
   // to remove word highlights ¯\_(ツ)_/¯ ). The wordHighlight is read access of
@@ -292,49 +299,63 @@ const editor = {
   // wordHighlightStrong is write access of a symbol (pink to grab attention for
   // write actions!)
   'editor.wordHighlightBackground': alpha(HUE_TEAL, 0.2),
-  'editor.wordHighlightBorder': alpha(HUE_TEAL, 0.4),
+  'editor.wordHighlightBorder': mix('#874df8', BACKGROUND, 0.1).hex(),
   'editor.wordHighlightStrongBackground': alpha(HUE_PINK, 0.3),
-  'editor.wordHighlightStrongBorder': alpha(HUE_PINK, 0.4),
+  'editor.wordHighlightStrongBorder': mix('#874df8', BACKGROUND, 0.1).hex(),
+
   // --- Find colors (see notes)
-  'editor.findMatchBackground': alpha(HUE_TEAL, 0.2),
-  'editor.findMatchBorder': alpha(HUE_TEAL, 0.4),
+  'editor.findMatchBackground': mix(HUE_TEAL, BACKGROUND, 0.8).hex(),
+  'editor.findMatchBorder': mix(HUE_TEAL, BACKGROUND, 0.8).hex(),
   'editor.findMatchHighlightBackground': alpha(PRIMARY, 0.2),
-  'editor.findMatchHighlightBorder': alpha(PRIMARY, 0.4),
+  'editor.findMatchHighlightBorder': mix(HUE_PURPLE, BACKGROUND, 0.1).hex(),
+  // (select text and type alt+cmd+L to toggle)
   'editor.findRangeHighlightBackground': alpha(HUE_TEAL, 0.2),
   'editor.findRangeHighlightBorder': null, // Every line in range gets a border which is tooo much
+
   // -- Hover symbol colors
   // Highlights a symbol when hovering over it for intellisense
   'editor.hoverHighlightBackground': alpha(PRIMARY, 0.4),
+
   // --- Current line colors
-  'editor.lineHighlightBackground': alpha(HUE_PURPLE, 0.15),
+  'editor.lineHighlightBackground': mix('#ff55fd', BACKGROUND, 0.9).hex(), // alpha('#ff55fd', 0.1),
   'editor.lineHighlightBorder': '#0000',
+
   // --- Editor links colors
   'editorLink.activeForeground': SECONDARY,
+
   // --- Range highlight colors
   // Range highlight theming is activated when you click a search result in the
   // panel/side bar serach views
   'editor.rangeHighlightBackground': alpha(SECONDARY, 0.2),
   'editor.rangeHighlightBorder': '#0000',
+
   // --- Whitespace color
   'editorWhitespace.foreground': null, // Default gray color is muted enough 👍
+
   // --- Indent guides
   'editorIndentGuide.background': null, // Default gray color is muted enough 👍
   'editorIndentGuide.activeBackground': BACKGROUND_DRAG_DROP, // Mirror rulers
+
   // --- Ruler color
   'editorRuler.foreground': BACKGROUND_DRAG_DROP,
+
   // --- Code lens
   'editorCodeLens.foreground': alpha(HUE_PURPLE, 0.5),
+
   // --- Bracket match
   'editorBracketMatch.background': null,
   'editorBracketMatch.border': HUE_PURPLE,
+
   // --- Unused source code
   'editorUnnecessaryCode.border': null, // unknown
   'editorUnnecessaryCode.opacity': null, // unknown
+
   // --- Gutter colors
   'editorGutter.background': null, // Defaults to editor bg
   'editorGutter.addedBackground': GIT_ADDED,
   'editorGutter.modifiedBackground': GIT_MODIFIED,
   'editorGutter.deletedBackground': GIT_DELETED,
+
   // --- Status decorations
   'editorError.foreground': ERROR,
   'editorError.border': null,
@@ -527,9 +548,9 @@ const gitDecoration = {
 const diffEditor = {
   // ℹ️ Diff borders get added around everything line by line and it's super
   // overwhelming to look at, so we disable them
-  'diffEditor.insertedTextBackground': alpha(DIFF_ADDED, 0.075),
+  'diffEditor.insertedTextBackground': mix(DIFF_ADDED, BACKGROUND, 0.9).hex(), // (alpha0.75)
   'diffEditor.insertedTextBorder': null,
-  'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.075),
+  'diffEditor.removedTextBackground': mix(DIFF_REMOVED, BACKGROUND, 0.9).hex(), // (alpha0.75)
   'diffEditor.removedTextBorder': null,
   'diffEditor.border': BORDER,
 }

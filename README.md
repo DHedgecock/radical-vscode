@@ -29,6 +29,10 @@
   />
 </div>
 
+## Highlighting
+
+## Git
+
 ## Coming soon...
 
 - Finishing the workbench theme colors
