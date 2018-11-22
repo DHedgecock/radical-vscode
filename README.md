@@ -13,7 +13,7 @@
 
 ## Theme features
 
-- Looks pretty rad ¯\\\_(ツ)\_/¯
+- Looks pretty rad ヘ( ^o^)ノ＼(^\_^ )
 - Git diff background colors optimized for readability
 
 <br />
