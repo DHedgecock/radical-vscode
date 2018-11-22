@@ -3,7 +3,9 @@
   <img src="./assets/Radical.png" width="800" alt="VSCode Radical Theme">
 </div>
 
-<h1>Hello</h1>
+<div align="center">
+  <img src="./assets/red-hr.png" alt="VSCode Radical Theme">
+</div>
 
 TODO...
 
