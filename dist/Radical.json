@@ -15,6 +15,8 @@
     "focusBorder": "#0000",
     "foreground": "#85a5a0",
     "widget.shadow": "#f86c8a1A",
+    "descriptionForeground": "#93E0E3",
+    "errorForeground": "#ff1767",
     "button.background": "#fe6083",
     "button.foreground": "#befeee",
     "button.hoverBackground": "#e25777",

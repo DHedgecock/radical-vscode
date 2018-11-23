@@ -91,8 +91,10 @@ const base = {
   foreground: FOREGROUND_TEAL,
   'widget.shadow': SHADOW,
   'selection.background': null, // unknown
-  descriptionForeground: null, // unknown
-  errorForeground: null, // unknown
+  // Incoming/Current merge conflict labels use this
+  descriptionForeground: INFO,
+  // Repro: Search for something with no matches using the find widget
+  errorForeground: ERROR,
 }
 
 //
