@@ -1,10 +1,13 @@
 <br />
 <div align="center">
-  <img src="./assets/Radical.png" width="800" alt="VSCode Radical Theme">
+  <img src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/Radical.png"
+    width="800"
+    alt="VSCode Radical Theme"
+  />
 </div>
 
 <div align="center">
-  <img src="./assets/red-hr.png" alt="VSCode Radical Theme">
+  <img src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/red-hr.png" />
 </div>
 
 <p align="center">
@@ -20,7 +23,10 @@
 <br />
 
 <div align="center">
-  <img src="./assets/Example.png" width="700" alt="Example screenshot">
+  <img src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/Example.png"
+    width="700"
+    alt="Example screenshot"
+  />
 </div>
 
 ## Coming soon...
