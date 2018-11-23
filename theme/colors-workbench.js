@@ -102,7 +102,9 @@ const base = {
 const text = {
   'textBlockQuote.background': MITO_PURPLE,
   'textBlockQuote.border': FOREGROUND_TEAL,
-  'textCodeBlock.background': null, // unknown
+  // Only showing inside of hover widget for code snippets (eg hover over chroma.hex())
+  // It would be awesome if this showed inside READMEs code blocks...
+  'textCodeBlock.background': VSCODE_PURPLE,
   // Includes link hover state
   'textLink.foreground': SECONDARY,
   'textLink.activeForeground': SECONDARY_HOVER,
@@ -548,6 +550,15 @@ const mergeConflicts = {
 }
 
 //
+// Debug
+//
+
+const debug = {
+  'debugToolBar.background': MITO_PURPLE,
+  'debugToolBar.border': '#00000000',
+}
+
+//
 // Welcome page
 //
 
@@ -584,5 +595,6 @@ module.exports = {
   ...tab,
   ...text,
   ...titleBar,
+  ...debug,
   ...welcomePage,
 }
