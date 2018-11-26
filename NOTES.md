@@ -1,122 +1,45 @@
-## Highlighting
+# Theming Notes
 
-- selection
-- find
-- symbol access // least priority, but very useful
-- current line // lowest priority
+_These notes are from learning about VSCode features in order to theme them_
 
-- editor.lineHighlightBackground: #ff55fd@10%
+## Highlights
 
-// Selection
+- **Current line highlight:** Current line highlight uses a low opacity so that
+  it doesn't interfere with content. It is displayed for the line the cursor is
+  in and creates the "base" highlight.
+- **Current range highlight:** Highlights ranges of current matches, including
+  the currently selected match for find and currently selected symbol in Go to
+  symbol. Color is similar to line highlight, just slightly brighter because it
+  is more active. No border is included.
+- **Current selection highlight:** The current selection highlight uses a
+  lighter purple to allow for better contrast of selected text while not being
+  overwhelming for multiline selections. When selecting text, additional matches
+  are highlighted with a subtler background and border of the same shade. The
+  border is not an opacity to provide a base for layering other highlights on
+  top of (such as the symbol access).
+- **Find highlights:** Most bold to make it easy to see fin matches Has to
+  overlay the current selection border...
+- **Symbol access highlights:** VSCode highlights read and write access to
+  symbols. This is themed with lighter colors using opacity because they often
+  appear at the same time as the current selection highlight
+- **Snippets highlights:** Coming soon!
 
-- editor.selectionBackground: #f600bb@15%
-- editor.selectionHighlightBackground: #f600bb@7.5%
-- editor.selectionHighlightBorder: #f600bb@20%
+## Bracket matching
 
-// Symbol access
-
-- editor.wordHighlightBackground: #874df8
-- editor.wordHighlightBorder: #874df8
-- editor.wordHighlightStrongBackground #f600bb
-- editor.wordHighlightStrongBorder #f600bb
-
-// Find matches, selected and other
-
-- editor.findMatchBackground
-- editor.findMatchBorder
-- editor.findMatchHighlightBackground
-- editor.findMatchHighlightBorder
-
-// This is the background of the current match for find widget, or the
-background // for a selected match from the find dialog
-
-- editor.rangeHighlightBackground
-- editor.rangeHighlightBorder
-
-// Range limiting the search
-
-- editor.findRangeHighlightBackground
-- editor.findRangeHighlightBorder
-
-// Misc
-
-// symbol hover is triggered a LOT
-
-- editor.hoverHighlightBackground: #ff55fd@20%
-- selection.background:#78efc5@10%
-
-// List
-
-# Search
+Need a set of colors that can be mixed with background to provide a toned down
+bracket match experience that works with the theme.
 
 - #f600bb
 - #ff00fc
 - #fd43cd
 - #d043cf
 - #ba01ff
-- #ff55fd // line highlight @10%
-
+- #ff55fd
 - #874df8
-
-# Editor
 
 - #efe900
 - #ffc400
 - #ff8200
 - #ff5300
 
-# Inverse
-
-- #78efc5 @10% (use for highlighting in purple based backgrounds)
-
-Git->
-
-- Git added/removed Green+Red highlight
-- Merge conflicts Purple+Blue
-
-Editor (5 colors) ->
-
-!! The highlight backgrounds frequently overlay each other, so the opacity is
-bucketed by importance of the highlight
-
-The current line highlight shows for the current line, but is suppressed when a
-selection is made...
-
-The symbol access backgrounds are included along with the both the current line
-and selection backgrounds.
-
-!The current selection/current selection matches and symbol access highlight
-colors are often overlain b/c they match the same things
-
-!The symbol access and find/search backgrounds are overlain on each other
-
-Find widget && dialog - same used for both, but the `findMatch` which is the
-current match is automatically highlighted with find widget, but not with find
-dialog until clicked They can also BOTH be active at the same time!
-
-- Current line
-- Current selection
-- Matches of current selection
-- Symbol access highlight
-- Inputs `selection.background` (text selection inside inputs or text areas)
-  :wat:
-
-Search ->
-
-- Search match (current selection) highlight
-- Search match current selection line background
-- Search match (others) highlight
-- Search find-range highlight (constraint for search)
-- Range highlight (color when selecting a search result)
-
-Meta ->
-
-- Symbol hover (on hover of symbol)
-
-Peek view ->
-
-- Match highlight
-
-Snippets ->
-
-## TODO
+- #78efc5
