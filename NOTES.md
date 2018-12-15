@@ -2,6 +2,11 @@
 
 _These notes are from learning about VSCode features in order to theme them_
 
+## File picker dropdown
+
+The background color of the file picker dropdown is "sideBar.background" for
+some reason! 😖
+
 ## Highlights
 
 - **Current line highlight:** Current line highlight uses a low opacity so that
@@ -22,6 +27,8 @@ _These notes are from learning about VSCode features in order to theme them_
 - **Symbol access highlights:** VSCode highlights read and write access to
   symbols. This is themed with lighter colors using opacity because they often
   appear at the same time as the current selection highlight
+- **Debugging highlights:** Breakpoints are highlighted and the current call
+  stack can be navigated with a different highlight
 - **Snippets highlights:** Coming soon!
 
 ## Bracket matching

@@ -165,6 +165,10 @@
     "titleBar.border": "#602976",
     "debugToolBar.background": "#2c3258DE",
     "debugToolBar.border": "#0000",
+    "editor.stackFrameHighlightBackground": "#ff53001F",
+    "editor.focusedStackFrameHighlightBackground": "#efe9001A",
+    "debugExceptionWidget.background": "#ff428a73",
+    "debugExceptionWidget.border": "#ff1767",
     "welcomePage.buttonBackground": "#262b4b",
     "welcomePage.buttonHoverBackground": "#222745",
     "walkThrough.embeddedEditorBackground": "#1e2732"

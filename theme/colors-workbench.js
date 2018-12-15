@@ -435,9 +435,6 @@ const editorWidget = {
   'editorSuggestWidget.selectedBackground': null,
   'editorHoverWidget.background': null,
   'editorHoverWidget.border': null,
-  // Peek view that shows when stopping at an exception in debug
-  'debugExceptionWidget.background': null,
-  'debugExceptionWidget.border': null,
   // Widget that shows when navigating between errors/warnings
   'editorMarkerNavigation.background': alpha('#262b4b', 0.9),
   // These actually style the borders of the marker navigation
@@ -611,8 +608,20 @@ const mergeConflicts = {
 //
 
 const debug = {
+  // --- Debug status toolbar
   'debugToolBar.background': alpha(MITO_PURPLE_BORDER, 0.87),
   'debugToolBar.border': TRANSPARENT,
+
+  // --- Breakpoint highlighting
+  // Highlight shows on breakpoint stop line
+  'editor.stackFrameHighlightBackground': alpha(HIGHLIGHT_READ_ACCESS, 0.12),
+  // Highlight shows when selecting frame in stack trace after stopping on breakpoint
+  'editor.focusedStackFrameHighlightBackground': alpha(HIGHLIGHT_WRITE_ACCESS, 0.1),
+
+  // --- Debug exception widget
+  // Shows when connected to a debug session and an exception is encounered
+  'debugExceptionWidget.background': alpha(GIT_CONFLICTING, 0.45), // #ff428a73
+  'debugExceptionWidget.border': ERROR, // #ff1767
 }
 
 //
@@ -623,6 +632,19 @@ const welcomePage = {
   'welcomePage.buttonBackground': MITO_PURPLE,
   'welcomePage.buttonHoverBackground': MITO_PURPLE_HOVER,
   'walkThrough.embeddedEditorBackground': '#1e2732',
+}
+
+//
+// Breadcrumbs
+//
+
+// By default breadcrumbs look good, they have the foreground gray with the
+// alpha mito purple and primary accent colors
+const breadcrumbs = {
+  'breadcrumb.foreground': null,
+  'breadcrumb.focusForeground': null,
+  'breadcrumb.activeSelectionForeground': null,
+  'breadcrumbPicker.background': null,
 }
 
 module.exports = {
@@ -654,4 +676,5 @@ module.exports = {
   ...titleBar,
   ...debug,
   ...welcomePage,
+  ...breadcrumbs,
 }
