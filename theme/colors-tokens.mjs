@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   comment: '#a8c0c2',
   constant: '#fa61b8',
   entity: '#a6e2e0',

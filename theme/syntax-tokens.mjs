@@ -1,5 +1,5 @@
-const { token } = require('./utils')
-const colors = require('./colors-tokens')
+import { token } from './utils'
+import colors from './colors-tokens'
 
 // The generic syntax tokens are themed here according to the Textmate naming
 // convention and the package color semantics.
@@ -9,7 +9,7 @@ const colors = require('./colors-tokens')
 // Generic syntax tokens
 //
 
-module.exports = [
+export default [
   // ℹ️ No color for generic <meta>, see naming conventions for details
   token('comment', colors.comment, 'italic'),
   // Booleans are constants (Uppercase "constants" are actually variables)

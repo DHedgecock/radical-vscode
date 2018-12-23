@@ -14,8 +14,8 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
-const { mix } = require('chroma-js')
-const { alpha } = require('./utils')
+// import { mix } from 'chroma-js'
+import { alpha } from './utils'
 
 //
 // Theme colors
@@ -644,10 +644,10 @@ const breadcrumbs = {
   'breadcrumb.foreground': null,
   'breadcrumb.focusForeground': null,
   'breadcrumb.activeSelectionForeground': null,
-  'breadcrumbPicker.background': null,
+  'breadcrumbPicker.background': null, // This should be the mito purple transparent widget bg
 }
 
-module.exports = {
+export default {
   ...activityBar,
   ...badge,
   ...base,

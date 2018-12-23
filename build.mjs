@@ -1,10 +1,10 @@
-const { writeFile } = require('fs')
+import fs from 'fs'
 
 // Load theme color variables
-const colors = require('./theme/colors-workbench')
+import colors from './theme/colors-workbench'
 
 // Load syntax tokens
-const tokens = require('./theme/syntax-tokens')
+import tokens from './theme/syntax-tokens'
 
 // Create the base theme definition
 // ---------------------------------------------------------------------------
@@ -35,7 +35,7 @@ theme = JSON.stringify(theme, null, 2)
 
 // Base file has been extended with additional theme styles and color variables have
 // been replaced with Panda theme values. Write to /dist for consumption.
-writeFile('dist/Radical.json', theme, err => {
+fs.writeFile('dist/Radical.json', theme, err => {
   /* eslint-disable no-console */
   if (err) console.warn(err)
   console.log('Build finished')

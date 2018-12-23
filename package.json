@@ -16,8 +16,8 @@
     "url": "https://github.com/dhedgecock/radical-vscode"
   },
   "scripts": {
-    "build": "node build.js",
-    "lint": "eslint build.js theme"
+    "build": "node -r esm build.mjs",
+    "lint": "eslint build.mjs theme/**.mjs"
   },
   "icon": "assets/icon.png",
   "galleryBanner": {
@@ -39,6 +39,7 @@
   "devDependencies": {
     "chroma-js": "^1.4.0",
     "eslint-config-eloquence": "^9.3.1",
+    "esm": "^3.0.84",
     "prettier": "^1.14.2"
   }
 }
