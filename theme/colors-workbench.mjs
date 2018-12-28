@@ -14,19 +14,23 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
-// import { mix } from 'chroma-js'
 import { alpha } from './utils'
+import { terminal } from './colors-tokens'
 
 //
 // Theme colors
 //
 
-const PRIMARY = '#fe6083'
-const PRIMARY_HOVER = '#e25777'
-const SECONDARY = '#befeee'
-const SECONDARY_HOVER = '#a4dcd0'
+// #ff5096
+// #77ffe7
+// #77fff1
 
-const BACKGROUND = '#212b36'
+const PRIMARY = '#ff5096'
+const SECONDARY = '#77ffe7'
+const PRIMARY_HOVER = '#ff6ba6'
+const SECONDARY_HOVER = '#b3fff1'
+
+const BACKGROUND = '#201b28'
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha('#f86c8a', 0.6)
 // Really subtle opacity version of primary for shadows
@@ -674,6 +678,7 @@ export default {
   ...tab,
   ...text,
   ...titleBar,
+  ...terminal,
   ...debug,
   ...welcomePage,
   ...breadcrumbs,

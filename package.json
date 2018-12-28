@@ -21,7 +21,7 @@
   },
   "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "#212b36",
+    "color": "#201b28",
     "theme": "dark"
   },
   "categories": [
@@ -37,9 +37,9 @@
     ]
   },
   "devDependencies": {
-    "chroma-js": "^1.4.0",
-    "eslint-config-eloquence": "^9.3.1",
+    "chroma-js": "^2.0.2",
+    "eslint-config-eloquence": "^9.6.0",
     "esm": "^3.0.84",
-    "prettier": "^1.14.2"
+    "prettier": "^1.15.3"
   }
 }

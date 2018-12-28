@@ -50,3 +50,9 @@ bracket match experience that works with the theme.
 - #ff5300
 
 - #78efc5
+
+## Original theme colors
+
+- #212b36
+- #fe6083
+- #befeee

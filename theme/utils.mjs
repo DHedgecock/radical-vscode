@@ -1,11 +1,9 @@
-export const alpha = (color, opacity) => {
-  const c = Math.round(opacity * 255)
-  const hex = (c + 0x10000)
-    .toString(16)
-    .substr(-2)
-    .toUpperCase()
-  return color + hex
-}
+import chroma from 'chroma-js'
+
+export const alpha = (color, opacity) =>
+  chroma(color)
+    .alpha(opacity)
+    .hex()
 
 // Utility method to generate a syntax token
 export const token = (name, color, fontStyle) => ({
