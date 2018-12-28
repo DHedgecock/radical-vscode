@@ -31,6 +31,7 @@ const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
 const BACKGROUND = '#201b28'
+const CHARCOAL_BACKGROUND = '#19222d'
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha('#f86c8a', 0.6)
 // Really subtle opacity version of primary for shadows
@@ -506,7 +507,7 @@ const sideBar = {
 
 // Bar at bottom of application with current statuses and info
 const statusBar = {
-  'statusBar.background': MITO_PURPLE,
+  'statusBar.background': CHARCOAL_BACKGROUND,
   'statusBar.foreground': FOREGROUND_TEAL,
   'statusBar.border': VSCODE_PURPLE,
   // DEBUGGING MODE
@@ -530,7 +531,7 @@ const statusBar = {
 
 // Bar at top of application with title of project
 const titleBar = {
-  'titleBar.activeBackground': MITO_PURPLE,
+  'titleBar.activeBackground': CHARCOAL_BACKGROUND,
   'titleBar.activeForeground': PRIMARY,
   'titleBar.border': VSCODE_PURPLE,
   // Title bar is slightly darkened on blur by default and looks good
