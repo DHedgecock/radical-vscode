@@ -1,7 +1,14 @@
 module.exports = {
   root: true,
-  extends: 'eloquence',
-  rules: {
-    'import/no-extraneous-dependencies': 'off',
+  extends: 'eloquence/node',
+  parserOptions: {
+    sourceType: 'module',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.mjs'],
+      },
+    },
   },
 }

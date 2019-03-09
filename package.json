@@ -17,11 +17,12 @@
   },
   "scripts": {
     "build": "node -r esm build.mjs",
-    "lint": "eslint build.mjs theme/**.mjs"
+    "lint": "eslint build.mjs theme/**.mjs",
+    "format": "prettier --write *.md build.mjs theme/**.mjs"
   },
   "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "#201b28",
+    "color": "#201b24",
     "theme": "dark"
   },
   "categories": [
