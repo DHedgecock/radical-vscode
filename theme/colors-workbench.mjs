@@ -15,28 +15,23 @@
  */
 
 import { alpha } from './utils'
-import { terminal } from './colors-tokens'
 
 //
 // Theme colors
 //
 
-// #ff5096
-// #77ffe7
-// #77fff1
-
-const PRIMARY = '#ff5096'
-const SECONDARY = '#77ffe7'
+const PRIMARY = '#ff428e'
+const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
-const BACKGROUND = '#201b28'
-const CHARCOAL_BACKGROUND = '#19222d'
+const BACKGROUND = '#201b24'
+const DARK_BACKGROUND = '#201b28'
 // Drag and drop background for theme, used primarily in list views
-const BACKGROUND_DRAG_DROP = alpha('#f86c8a', 0.6)
-// Really subtle opacity version of primary for shadows
-const SHADOW = alpha('#f86c8a', 0.1)
-const BORDER = '#1c242c'
+const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
+// Shadows are show by items that are scrolled and under widgets
+const SHADOW = alpha(PRIMARY, 0.5)
+const BORDER = '#26303b'
 
 const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_BORDER = '#2c3258'
@@ -45,12 +40,7 @@ const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 
 const HUE_TEAL = '#78efc5'
-const HUE_PINK = '#fd43cd'
 const HUE_PURPLE = '#d043cf'
-
-// const EIGHTIES_BLUE = '#7cfefd'
-// const EIGHTIES_PINK = '#fc86fe'
-// const EIGHTIES_PURPLE = '#874df8'
 
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
@@ -200,16 +190,16 @@ const listsTrees = {
   // this helps UX for things like project and command dropdown selection with
   // the keyboard
   'list.focusBackground': alpha('#f86c8a', 0.2),
-  'list.focusForeground': PRIMARY,
+  'list.focusForeground': SECONDARY,
   // Selected item when the list container is in focus
   'list.activeSelectionBackground': alpha('#f86c8a', 0.1),
-  'list.activeSelectionForeground': PRIMARY,
+  'list.activeSelectionForeground': SECONDARY,
   // Selected item when the list container is NOT in focus. (Currently assuming
   // this really only applies to file explorer view, where having the last file
   // that was selected have a background is distracting, especially if you don't
   // have VSCode focus the file you're viewing when you change files)
   'list.inactiveSelectionBackground': BACKGROUND,
-  'list.inactiveSelectionForeground': PRIMARY,
+  'list.inactiveSelectionForeground': SECONDARY,
   // Focused item when the list container is NOT in focus
   'list.inactiveFocusBackground': null, // unknown
   // Drag and drop background, shows when you hover a drag item over a droppable area
@@ -262,12 +252,12 @@ const editorGroup = {
 
 // Editor tabs
 const tab = {
-  // Border between tabs
-  'tab.border': null,
+  // Border is *between* tabs, set to background so there isn't a border
+  'tab.border': BACKGROUND,
   'tab.activeBorder': PRIMARY,
   'tab.activeBorderTop': null,
   'tab.activeBackground': BACKGROUND,
-  'tab.activeForeground': PRIMARY,
+  'tab.activeForeground': SECONDARY,
   'tab.inactiveBackground': BACKGROUND,
   'tab.inactiveForeground': FOREGROUND_TEAL,
   // --- Hover
@@ -507,7 +497,7 @@ const sideBar = {
 
 // Bar at bottom of application with current statuses and info
 const statusBar = {
-  'statusBar.background': CHARCOAL_BACKGROUND,
+  'statusBar.background': DARK_BACKGROUND,
   'statusBar.foreground': FOREGROUND_TEAL,
   'statusBar.border': VSCODE_PURPLE,
   // DEBUGGING MODE
@@ -531,7 +521,7 @@ const statusBar = {
 
 // Bar at top of application with title of project
 const titleBar = {
-  'titleBar.activeBackground': CHARCOAL_BACKGROUND,
+  'titleBar.activeBackground': DARK_BACKGROUND,
   'titleBar.activeForeground': PRIMARY,
   'titleBar.border': VSCODE_PURPLE,
   // Title bar is slightly darkened on blur by default and looks good
@@ -626,7 +616,7 @@ const debug = {
   // --- Debug exception widget
   // Shows when connected to a debug session and an exception is encounered
   'debugExceptionWidget.background': alpha(GIT_CONFLICTING, 0.45), // #ff428a73
-  'debugExceptionWidget.border': ERROR, // #ff1767
+  'debugExceptionWidget.border': ERROR,
 }
 
 //
@@ -679,8 +669,9 @@ export default {
   ...tab,
   ...text,
   ...titleBar,
-  ...terminal,
   ...debug,
   ...welcomePage,
   ...breadcrumbs,
 }
+
+export { BACKGROUND, BORDER, PRIMARY }

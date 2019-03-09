@@ -6,6 +6,9 @@ import colors from './theme/colors-workbench'
 // Load syntax tokens
 import tokens from './theme/syntax-tokens'
 
+// Load terminal variables
+import { terminal } from './theme/colors-tokens'
+
 // Create the base theme definition
 // ---------------------------------------------------------------------------
 
@@ -16,7 +19,10 @@ let theme = {
   colorSpaceName: 'sRGB',
   semanticClass: 'theme.dark.radical',
   // Editor theme styles
-  colors,
+  colors: {
+    ...colors,
+    ...terminal,
+  },
   tokenColors: [...tokens],
 }
 
