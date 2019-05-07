@@ -10,6 +10,13 @@ and this project adheres to
 
 - ...
 
+## [0.24.0] - 2019-05-07
+
+### Changed
+
+- Sidebar foreground colors updated for better readability - brighter foreground
+  and more blue in the gray headers 👍
+
 ## [0.23.0] - 2019-03-xx
 
 ### Added

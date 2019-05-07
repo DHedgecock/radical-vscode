@@ -45,6 +45,13 @@ const HUE_PURPLE = '#d043cf'
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
 
+// --- FOREGOUNDS
+const FOREGROUND_CLOUD = '#c6d2d1'
+
+// Ocean foregrounds are muted shades of Secondary
+const FOREGROUND_OCEAN_LIGHT = '#74a39d'
+const FOREGROUND_OCEAN_DARK = '#48676a'
+
 // Highlighting
 const HIGHLIGHT_CURRENT_LINE = '#d043cf'
 const HIGHLIGHT_RANGE = '#fd43cd'
@@ -66,7 +73,7 @@ const GIT_ADDED = '#a3ff57'
 const GIT_MODIFIED = '#ffb000'
 const GIT_DELETED = '#ff427b'
 const GIT_UNTRACKED = '#c8ff00'
-const GIT_IGNORED = '#405c5f'
+const GIT_IGNORED = FOREGROUND_OCEAN_DARK // #48676a
 const GIT_CONFLICTING = '#ff428a'
 const GIT_SUBMODULE = '#cc6796'
 
@@ -453,6 +460,7 @@ const activityBar = {
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
   'activityBar.border': null,
   'activityBar.foreground': SECONDARY,
+  'activityBar.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // Badges
   'activityBarBadge.background': badge['badge.background'],
   'activityBarBadge.foreground': badge['badge.foreground'],
@@ -481,14 +489,14 @@ const panel = {
 // Contains the Explore/Debug/Extension/etc. views
 const sideBar = {
   'sideBar.background': BACKGROUND,
-  'sideBar.foreground': FOREGROUND_GRAY,
+  'sideBar.foreground': FOREGROUND_CLOUD,
   'sideBar.border': BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
-  'sideBarTitle.foreground': FOREGROUND_TEAL,
+  'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
   // Side bar sections for features
   'sideBarSectionHeader.background': BACKGROUND, // same bg for subtler headers
-  'sideBarSectionHeader.foreground': FOREGROUND_TEAL,
+  'sideBarSectionHeader.foreground': FOREGROUND_OCEAN_LIGHT,
 }
 
 //
