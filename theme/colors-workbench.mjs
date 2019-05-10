@@ -27,6 +27,8 @@ const SECONDARY_HOVER = '#b3fff1'
 
 const BACKGROUND = '#201b24'
 const DARK_BACKGROUND = '#201b28'
+// Semi-transparent widget background
+const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 // Shadows are show by items that are scrolled and under widgets
@@ -266,7 +268,7 @@ const tab = {
   'tab.activeBackground': BACKGROUND,
   'tab.activeForeground': SECONDARY,
   'tab.inactiveBackground': BACKGROUND,
-  'tab.inactiveForeground': FOREGROUND_TEAL,
+  'tab.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // --- Hover
   'tab.hoverBackground': null,
   'tab.hoverBorder': PRIMARY,
@@ -426,7 +428,7 @@ const editorOverviewRuler = {
 
 // Editor widgets
 const editorWidget = {
-  'editorWidget.background': alpha('#262b4b', 0.9),
+  'editorWidget.background': BACKGROUND_WIDGET,
   'editorWidget.border': FOREGROUND_TEAL,
   'editorWidget.resizeBorder': PRIMARY_HOVER,
   // Suggest widget falls back to editor widget values which look good.
@@ -438,7 +440,7 @@ const editorWidget = {
   'editorHoverWidget.background': null,
   'editorHoverWidget.border': null,
   // Widget that shows when navigating between errors/warnings
-  'editorMarkerNavigation.background': alpha('#262b4b', 0.9),
+  'editorMarkerNavigation.background': BACKGROUND_WIDGET,
   // These actually style the borders of the marker navigation
   'editorMarkerNavigationError.background': ERROR,
   'editorMarkerNavigationWarning.background': WARNING,
@@ -644,10 +646,16 @@ const welcomePage = {
 // By default breadcrumbs look good, they have the foreground gray with the
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
-  'breadcrumb.foreground': null,
-  'breadcrumb.focusForeground': null,
-  'breadcrumb.activeSelectionForeground': null,
-  'breadcrumbPicker.background': null, // This should be the mito purple transparent widget bg
+  'breadcrumb.background': BACKGROUND,
+  'breadcrumb.foreground': FOREGROUND_OCEAN_DARK,
+  // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
+  // this will apply
+  'breadcrumb.focusForeground': SECONDARY,
+  // After a focused breadcrumb has been opened to show the picker, it is active
+  // and this will apply
+  'breadcrumb.activeSelectionForeground': SECONDARY,
+  // Dropdown triggered when you click a breadcrum
+  'breadcrumbPicker.background': BACKGROUND_WIDGET,
 }
 
 export default {

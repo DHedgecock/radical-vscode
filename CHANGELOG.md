@@ -10,7 +10,11 @@ and this project adheres to
 
 - ...
 
-## [0.25.0] - 2019-05-07
+## [0.26.0] Breadcrumbs - 2019-05-10
+
+Updates the Breadcrumbs elements so that they are a little more subtle by
+default, then have the blue highlight color when selected. The inactive tab
+color is also slightly blue-er and it's pretty rad.
 
 ### Changed
 
