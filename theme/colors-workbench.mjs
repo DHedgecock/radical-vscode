@@ -658,6 +658,20 @@ const breadcrumbs = {
   'breadcrumbPicker.background': BACKGROUND_WIDGET,
 }
 
+//
+// Gitlens
+//
+
+const gitLens = {
+  'gitlens.trailingLineBackgroundColor': null,
+  'gitlens.trailingLineForegroundColor': '#F425FC59', // 35%
+  'gitlens.lineHighlightBackgroundColor': '#F425FC26', // 20%
+  'gitlens.lineHighlightOverviewRulerColor': '#F425FC80', // 50%
+  'gitlens.gutterBackgroundColor': '#201b24',
+  'gitlens.gutterForegroundColor': '#c6d2d1',
+  'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
+}
+
 export default {
   ...activityBar,
   ...badge,
@@ -688,6 +702,7 @@ export default {
   ...debug,
   ...welcomePage,
   ...breadcrumbs,
+  ...gitLens,
 }
 
 export { BACKGROUND, BORDER, PRIMARY }

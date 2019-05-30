@@ -1,46 +1,46 @@
 {
-    "name": "radical-vscode",
-    "displayName": "Radical",
-    "description": "Pretty rad theme",
-    "version": "0.26.0",
-    "publisher": "dhedgecock",
-    "license": "ISC",
-    "engines": {
-        "vscode": "^1.25.0"
-    },
-    "bugs": {
-        "url": "https://github.com/dhedgecock/radical-vscode/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dhedgecock/radical-vscode"
-    },
-    "scripts": {
-        "build": "node -r esm build.mjs",
-        "lint": "eslint build.mjs theme/**.mjs",
-        "format": "prettier --write *.md build.mjs theme/**.mjs"
-    },
-    "icon": "assets/icon.png",
-    "galleryBanner": {
-        "color": "#201b24",
-        "theme": "dark"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Radical",
-                "uiTheme": "vs-dark",
-                "path": "./dist/Radical.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "chroma-js": "~2.0.3",
-        "eslint-config-eloquence": "~11.0.0",
-        "esm": "~3.2.14",
-        "prettier": "~1.16.4"
-    }
+  "name": "radical-vscode",
+  "displayName": "Radical",
+  "description": "A dark theme for radical hacking inspired by retro futuristic design",
+  "version": "0.26.0",
+  "publisher": "dhedgecock",
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.25.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dhedgecock/radical-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhedgecock/radical-vscode"
+  },
+  "scripts": {
+    "build": "node -r esm build.mjs",
+    "lint": "eslint build.mjs theme/**.mjs",
+    "format": "prettier --write *.md build.mjs theme/**.mjs"
+  },
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#201b24",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Radical",
+        "uiTheme": "vs-dark",
+        "path": "./dist/Radical.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "chroma-js": "~2.0.3",
+    "eslint-config-eloquence": "~11.0.0",
+    "esm": "~3.2.14",
+    "prettier": "~1.16.4"
+  }
 }

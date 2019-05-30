@@ -98,3 +98,8 @@ colors were chosen that could be overlain using opacities.
 - Finishing the workbench theme colors
 - Creating a palette for highlight states
 - Additional screenshots of theme
+
+## 😍 Thanks
+
+The icon background is from Nate Wren's hecka rad
+[Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
