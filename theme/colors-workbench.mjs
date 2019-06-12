@@ -386,8 +386,11 @@ const editor = {
   'editorBracketMatch.border': HUE_PURPLE,
 
   // --- Unused source code
-  'editorUnnecessaryCode.border': null, // unknown
-  'editorUnnecessaryCode.opacity': null, // unknown
+  // (Ref: Create a fn with parameters that aren't used)
+  // Dim opacity on unused code, but don't add a border as this is often done by
+  // linters and we don't want to double up
+  'editorUnnecessaryCode.border': null,
+  'editorUnnecessaryCode.opacity': '#0000006e',
 
   // --- Gutter colors
   'editorGutter.background': null, // Defaults to editor bg

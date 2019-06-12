@@ -52,6 +52,7 @@
     "editorRuler.foreground": "#ff428e99",
     "editorCodeLens.foreground": "#d043cf80",
     "editorBracketMatch.border": "#d043cf",
+    "editorUnnecessaryCode.opacity": "#0000006e",
     "editorGutter.addedBackground": "#a3ff57",
     "editorGutter.modifiedBackground": "#ffb000",
     "editorGutter.deletedBackground": "#ff427b",
