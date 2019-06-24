@@ -164,9 +164,9 @@ const dropdown = {
 const scrollBarControl = {
   'scrollbar.shadow': SHADOW,
   // Scroll bar is primary with decreasing opacity
-  'scrollbarSlider.background': alpha('#f86c8a', 0.1),
-  'scrollbarSlider.hoverBackground': alpha('#f86c8a', 0.25),
-  'scrollbarSlider.activeBackground': alpha('#f86c8a', 0.4),
+  'scrollbarSlider.background': alpha(PRIMARY, 0.1),
+  'scrollbarSlider.hoverBackground': alpha(PRIMARY, 0.25),
+  'scrollbarSlider.activeBackground': alpha(PRIMARY, 0.4),
 }
 
 //
@@ -193,15 +193,15 @@ const progressBar = {
 
 const listsTrees = {
   // Mouse hover
-  'list.hoverBackground': alpha('#f86c8a', 0.05),
+  'list.hoverBackground': alpha(PRIMARY, 0.05),
   'list.hoverForeground': FOREGROUND_TEAL,
   // Keyboard focus - using slightly higher alpha to make selection more obvious,
   // this helps UX for things like project and command dropdown selection with
   // the keyboard
-  'list.focusBackground': alpha('#f86c8a', 0.2),
+  'list.focusBackground': alpha(PRIMARY, 0.2),
   'list.focusForeground': SECONDARY,
   // Selected item when the list container is in focus
-  'list.activeSelectionBackground': alpha('#f86c8a', 0.1),
+  'list.activeSelectionBackground': alpha(PRIMARY, 0.1),
   'list.activeSelectionForeground': SECONDARY,
   // Selected item when the list container is NOT in focus. (Currently assuming
   // this really only applies to file explorer view, where having the last file
@@ -229,7 +229,7 @@ const input = {
   'input.border': FOREGROUND_TEAL,
   'input.foreground': FOREGROUND_TEAL,
   'input.placeholderForeground': FOREGROUND_TEAL,
-  'inputOption.activeBorder': alpha('#f86c8a', 0.6),
+  'inputOption.activeBorder': alpha(PRIMARY, 0.6),
   'inputValidation.errorBackground': ERROR,
   'inputValidation.errorBorder': ERROR,
   'inputValidation.infoBackground': INFO,
