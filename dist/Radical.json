@@ -80,6 +80,8 @@
     "extensionButton.prominentForeground": "#a8ffef",
     "extensionButton.prominentBackground": "#ff428e",
     "extensionButton.prominentHoverBackground": "#ff6ba6",
+    "pickerGroup.border": "#ff428e40",
+    "pickerGroup.foreground": "#a8ffef",
     "gitDecoration.addedResourceForeground": "#a3ff57",
     "gitDecoration.modifiedResourceForeground": "#ffb000",
     "gitDecoration.deletedResourceForeground": "#ff427b",

@@ -568,6 +568,15 @@ const extension = {
 }
 
 //
+// Quick Picker
+//
+
+const quickPicker = {
+  'pickerGroup.border': alpha(PRIMARY, 0.25),
+  'pickerGroup.foreground': SECONDARY,
+}
+
+//
 // Git
 //
 
@@ -688,6 +697,7 @@ export default {
   ...editorOverviewRuler,
   ...editorWidget,
   ...extension,
+  ...quickPicker,
   ...gitDecoration,
   ...input,
   ...listsTrees,
