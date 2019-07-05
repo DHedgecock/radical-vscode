@@ -25,8 +25,8 @@ const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
-const BACKGROUND = '#201b24'
-const DARK_BACKGROUND = '#201b28'
+const BACKGROUND = '#1d1b24'
+const DARK_BACKGROUND = '#1b1722'
 // Semi-transparent widget background
 const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
 // Drag and drop background for theme, used primarily in list views
@@ -38,8 +38,12 @@ const BORDER = '#26303b'
 const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_BORDER = '#2c3258'
 const MITO_PURPLE_HOVER = '#222745'
+const MAUVE = '#5b3869'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
+const RADVENDER = '#864df8'
+
+const CORAL = '#fe6083'
 
 const HUE_TEAL = '#78efc5'
 const HUE_PURPLE = '#d043cf'
@@ -454,7 +458,28 @@ const editorWidget = {
 // Peek View
 //
 
-const peekView = {}
+const peekView = {
+  'peekView.border': CORAL,
+  'peekViewEditor.background': DARK_BACKGROUND,
+  'peekViewEditorGutter.background': DARK_BACKGROUND,
+  'peekViewEditor.matchHighlightBackground': alpha(CORAL, 0.15),
+  'peekViewEditor.matchHighlightBorder': '#0000',
+  'peekViewResult.background': DARK_BACKGROUND,
+  'peekViewResult.fileForeground': FOREGROUND_TEAL,
+  'peekViewResult.lineForeground': FOREGROUND_OCEAN_LIGHT,
+
+  // The background of all matches in the peek sidebar
+  'peekViewResult.matchHighlightBackground': alpha(HIGHLIGHT_RANGE, 0.2),
+
+  // The background and foreground color for the entire line of the current
+  // match selection in the peek sidebar
+  'peekViewResult.selectionBackground': alpha(HIGHLIGHT_RANGE, 0.1),
+  'peekViewResult.selectionForeground': SECONDARY,
+
+  'peekViewTitle.background': DARK_BACKGROUND,
+  'peekViewTitleLabel.foreground': SECONDARY,
+  'peekViewTitleDescription.foreground': FOREGROUND_TEAL,
+}
 
 //
 // Activity Bar
@@ -511,12 +536,12 @@ const sideBar = {
 // Bar at bottom of application with current statuses and info
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
-  'statusBar.foreground': FOREGROUND_TEAL,
+  'statusBar.foreground': MITO_PURPLE_BORDER,
   'statusBar.border': VSCODE_PURPLE,
   // DEBUGGING MODE
-  'statusBar.debuggingBackground': MITO_PURPLE,
+  'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
-  'statusBar.debuggingBorder': null,
+  'statusBar.debuggingBorder': PRIMARY,
   // NO FOLDER MODE
   'statusBar.noFolderBackground': MITO_PURPLE,
   'statusBar.noFolderForeground': FOREGROUND_TEAL,
@@ -524,7 +549,7 @@ const statusBar = {
   // ℹ️ You can only style the background of status bar items
   'statusBarItem.prominentBackground': VSCODE_PURPLE,
   'statusBarItem.prominentHoverBackground': VSCODE_PURPLE_HOVER,
-  'statusBarItem.hoverBackground': VSCODE_PURPLE,
+  'statusBarItem.hoverBackground': alpha(RADVENDER, 0.2),
   'statusBarItem.activeBackground': VSCODE_PURPLE,
 }
 
@@ -536,7 +561,7 @@ const statusBar = {
 const titleBar = {
   'titleBar.activeBackground': DARK_BACKGROUND,
   'titleBar.activeForeground': PRIMARY,
-  'titleBar.border': VSCODE_PURPLE,
+  'titleBar.border': MAUVE,
   // Title bar is slightly darkened on blur by default and looks good
   'titleBar.inactiveBackground': null,
   'titleBar.inactiveForeground': null,
@@ -679,7 +704,7 @@ const gitLens = {
   'gitlens.trailingLineForegroundColor': '#F425FC59', // 35%
   'gitlens.lineHighlightBackgroundColor': '#F425FC26', // 20%
   'gitlens.lineHighlightOverviewRulerColor': '#F425FC80', // 50%
-  'gitlens.gutterBackgroundColor': '#201b24',
+  'gitlens.gutterBackgroundColor': BACKGROUND,
   'gitlens.gutterForegroundColor': '#c6d2d1',
   'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
 }

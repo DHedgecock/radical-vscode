@@ -19,22 +19,47 @@
 
 ## Theme features
 
+- Search and find code anywhere with optimized highlighting backgrounds and
+  opacities.
+- Diff code changes smartly with readable diff background colors.
+- Peek view code like a pro with dark accents backgrounds and pink border
+  highlights.
 - Looks pretty rad ヘ( ^o^)ノ＼(^\_^ )
-- Optimized highlighting backgrounds and opacities for better editor context
-- Git diff background colors optimized for readability
 
 <br />
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/Example.png"
-    width="700"
-    alt="Example screenshot"
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/hero.png"
   />
 </div>
 
 <br />
 <br />
+
+<h3 align="center">
+  <strong>
+    Peek View
+  </strong>
+</h3>
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+</div>
+
+The peek view background provides a dark accent to the editor background,
+highlighted with pink borders. This makes peeking symbol references (⇧F12) or
+peeking symbol definitions (⌥F12) stand out against the editor contents.
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/peek-colors.png"
+    role="presentation"
+  />
+</div>
 
 <h3 align="center">
   <strong>
@@ -53,8 +78,7 @@ editor.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/diff.png"
-    width="700"
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/diff-colors.png"
     alt="Red and green backgrounds are readable"
   />
 </div>
@@ -78,28 +102,78 @@ colors were chosen that could be overlain using opacities.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/current-selection.png"
-    width="480"
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/selection-colors.png"
     alt="current selection highlight is a light visible"
   />
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/find-matches.png"
-    width="480"
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/highlight-colors.png"
     alt="current find match highlight is visible"
   />
 </div>
 
-## Peak View
+<h2 align="center">
+  <strong>
+    Extension Theming
+  </strong>
+</h2>
 
-...Coming soon!
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+</div>
+
+If you'd like to theme some popular extensions to match Radical, these are the
+colors used in the screenshots.
+
+### Bracket Pair Colorizer 2
+
+```json
+{
+  "bracket-pair-colorizer-2.colors": [
+    "#DFF959",
+    "#F834BB",
+    "#2BF5E9",
+    "#D831D7"
+  ]
+}
+```
+
+### Import Cost
+
+```json
+{
+  "importCost.smallPackageColor": "#d043cf4d",
+  "importCost.mediumPackageColor": "#d043cf80",
+  "importCost.largePackageColor": "#F834BB"
+}
+```
+
+### Git Graph
+
+```json
+{
+  "git-graph.graphColours": [
+    "#FF428E",
+    "#A8FFEF",
+    "#DFF959",
+    "#F7A409",
+    "#F834BB",
+    "#2BF5E9",
+    "#D831D7",
+    "#FF594C"
+  ]
+}
+```
 
 ## Coming soon...
 
-- Finishing the workbench theme colors
-- Creating a palette for highlight states
-- Additional screenshots of theme
+- TERMINAL THEMING 🎉🎉🎉
 
 ## 😍 Thanks
 
-The icon background is from Nate Wren's hecka rad
-[Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
+- The icon background is from Nate Wren's hecka rad
+  [Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
+- The desktop background in the first screenshot is by
+  [John Fowler on Unsplash](https://unsplash.com/photos/RsRTIofe0HE)

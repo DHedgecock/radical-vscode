@@ -21,7 +21,7 @@ color is also slightly blue-er and it's pretty rad.
 - Sidebar foreground colors updated for better readability - brighter foreground
   and more blue in the gray headers 👍
 
-## [0.23.0] - 2019-03-xx
+## [0.23.0] - 2019-03-09
 
 ### Added
 
