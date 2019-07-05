@@ -536,8 +536,8 @@ const sideBar = {
 // Bar at bottom of application with current statuses and info
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
-  'statusBar.foreground': MITO_PURPLE_BORDER,
-  'statusBar.border': VSCODE_PURPLE,
+  'statusBar.foreground': FOREGROUND_TEAL,
+  'statusBar.border': MITO_PURPLE_BORDER,
   // DEBUGGING MODE
   'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
