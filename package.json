@@ -38,8 +38,8 @@
     ]
   },
   "devDependencies": {
-    "chroma-js": "~2.0.3",
-    "eslint-config-eloquence": "~11.2.0",
+    "chroma-js": "~2.0.4",
+    "eslint-config-eloquence": "~12.0.1",
     "esm": "~3.2.25",
     "prettier": "~1.18.2"
   }
