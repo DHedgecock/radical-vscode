@@ -25,8 +25,13 @@ const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
+const ULTRA_BACKGROUND = '#181424'
 const BACKGROUND = '#1d1b24'
 const DARK_BACKGROUND = '#1b1722'
+
+const SIDEBAR_BACKGROUND = '#1b1922'
+const PANEL_BACKGROUND = '#1c1924'
+
 // Semi-transparent widget background
 const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
 // Drag and drop background for theme, used primarily in list views
@@ -211,7 +216,7 @@ const listsTrees = {
   // this really only applies to file explorer view, where having the last file
   // that was selected have a background is distracting, especially if you don't
   // have VSCode focus the file you're viewing when you change files)
-  'list.inactiveSelectionBackground': BACKGROUND,
+  'list.inactiveSelectionBackground': SIDEBAR_BACKGROUND,
   'list.inactiveSelectionForeground': SECONDARY,
   // Focused item when the list container is NOT in focus
   'list.inactiveFocusBackground': null, // unknown
@@ -370,7 +375,10 @@ const editor = {
   'editorCursor.foreground': PRIMARY,
 
   // --- Editor links colors
-  'editorLink.activeForeground': SECONDARY,
+  // Links are active when holding cmd on top of them, note that the hover
+  // background also shows at this time. Using a bright teal to contrast more
+  // with the translucent purple hover
+  'editorLink.activeForeground': '#43fdd5',
 
   // --- Whitespace color
   'editorWhitespace.foreground': null, // Default gray color is muted enough 👍
@@ -486,7 +494,7 @@ const peekView = {
 //
 
 const activityBar = {
-  'activityBar.background': BACKGROUND,
+  'activityBar.background': SIDEBAR_BACKGROUND,
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
   'activityBar.border': null,
   'activityBar.foreground': SECONDARY,
@@ -503,12 +511,12 @@ const activityBar = {
 // Panels are shown below the editor area and contain views like Output and
 // Integrated Terminal.
 const panel = {
-  'panel.background': BACKGROUND,
+  'panel.background': PANEL_BACKGROUND,
   'panel.border': BORDER,
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
-  'panelTitle.activeForeground': PRIMARY,
+  'panelTitle.activeForeground': SECONDARY,
   'panelTitle.inactiveForeground': FOREGROUND_TEAL,
 }
 
@@ -518,14 +526,14 @@ const panel = {
 
 // Contains the Explore/Debug/Extension/etc. views
 const sideBar = {
-  'sideBar.background': BACKGROUND,
+  'sideBar.background': SIDEBAR_BACKGROUND,
   'sideBar.foreground': FOREGROUND_CLOUD,
   'sideBar.border': BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
   // Side bar sections for features
-  'sideBarSectionHeader.background': BACKGROUND, // same bg for subtler headers
+  'sideBarSectionHeader.background': SIDEBAR_BACKGROUND, // same bg for subtler headers
   'sideBarSectionHeader.foreground': FOREGROUND_OCEAN_LIGHT,
 }
 
@@ -559,7 +567,7 @@ const statusBar = {
 
 // Bar at top of application with title of project
 const titleBar = {
-  'titleBar.activeBackground': DARK_BACKGROUND,
+  'titleBar.activeBackground': ULTRA_BACKGROUND,
   'titleBar.activeForeground': PRIMARY,
   'titleBar.border': MAUVE,
   // Title bar is slightly darkened on blur by default and looks good
@@ -593,10 +601,13 @@ const extension = {
 }
 
 //
-// Quick Picker
+// Quick Input
 //
 
-const quickPicker = {
+const quickInput = {
+  // Add a fun widget background style to the quick input which opens on go to
+  // file, go to symbol, etc.
+  'quickInput.background': BACKGROUND_WIDGET,
   'pickerGroup.border': alpha(PRIMARY, 0.25),
   'pickerGroup.foreground': SECONDARY,
 }
@@ -709,6 +720,7 @@ const gitLens = {
   'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
 }
 
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   ...activityBar,
   ...badge,
@@ -722,7 +734,7 @@ export default {
   ...editorOverviewRuler,
   ...editorWidget,
   ...extension,
-  ...quickPicker,
+  ...quickInput,
   ...gitDecoration,
   ...input,
   ...listsTrees,
@@ -743,4 +755,4 @@ export default {
   ...gitLens,
 }
 
-export { BACKGROUND, BORDER, PRIMARY }
+export { PANEL_BACKGROUND, BORDER, PRIMARY }

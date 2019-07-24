@@ -1,5 +1,6 @@
-import { BACKGROUND, BORDER, PRIMARY } from './colors-workbench'
+import { PANEL_BACKGROUND, BORDER } from './colors-workbench'
 
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   comment: '#a8c0c2',
   constant: '#fa61b8',
@@ -15,36 +16,39 @@ export default {
 }
 
 export const terminal = {
-  'terminal.background': BACKGROUND,
+  'terminal.background': PANEL_BACKGROUND,
+  'terminal.foreground': '#defff7',
+  // Border between multiple terminals
   'terminal.border': BORDER,
-  'terminal.foreground': '#a8c0c2',
-  'terminal.selectionBackground': '#874df84D',
-  'terminalCursor.background': BACKGROUND,
-  'terminalCursor.foreground': PRIMARY,
 
-  'terminal.ansiBlue': '#57d7ff',
-  'terminal.ansiBrightBlue': '#10f8fc',
+  'terminal.selectionBackground': '#874df84d',
 
-  'terminal.ansiGreen': '#78efc5',
-  'terminal.ansiBrightGreen': '#77ffe7',
+  'terminalCursor.background': '#ff428e',
+  'terminalCursor.foreground': '#defff7',
 
-  'terminal.ansiMagenta': '#a82693',
-  'terminal.ansiBrightMagenta': '#e0088f',
+  'terminal.ansiBlack': '#2e324d',
+  'terminal.ansiBrightBlack': '#62466b',
 
-  'terminal.ansiCyan': '#aeffff',
-  'terminal.ansiBrightCyan': '#87d3f8',
+  'terminal.ansiBlue': '#b0fdeb',
+  'terminal.ansiBrightBlue': '#6bf8ef',
 
-  'terminal.ansiRed': '#ff6ba6',
-  'terminal.ansiBrightRed': '#ff5096',
+  'terminal.ansiCyan': '#9d88fa',
+  'terminal.ansiBrightCyan': '#7d77ff',
 
-  'terminal.ansiYellow': '#f8c86d',
-  'terminal.ansiBrightYellow': '#fef554',
+  'terminal.ansiGreen': '#d6fd6b',
+  'terminal.ansiBrightGreen': '#c5fd44',
 
-  'terminal.ansiBlack': '#333333',
-  'terminal.ansiBrightBlack': '#4c4c4c',
+  'terminal.ansiMagenta': '#f899f8',
+  'terminal.ansiBrightMagenta': '#f73bee',
 
-  'terminal.ansiWhite': '#c7e3ee',
-  'terminal.ansiBrightWhite': '#e3eff3',
+  'terminal.ansiRed': '#f86c8a',
+  'terminal.ansiBrightRed': '#f33990',
+
+  'terminal.ansiWhite': '#c4f7eb',
+  'terminal.ansiBrightWhite': '#e4fdf7',
+
+  'terminal.ansiYellow': '#edf179',
+  'terminal.ansiBrightYellow': '#f4f957',
 }
 
 /**
