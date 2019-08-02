@@ -25,8 +25,8 @@ const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
-const ULTRA_BACKGROUND = '#181424'
-const BACKGROUND = '#1d1b24'
+const ULTRA_BACKGROUND = '#181521'
+const BACKGROUND = '#1c1a24'
 const DARK_BACKGROUND = '#1b1722'
 
 const SIDEBAR_BACKGROUND = '#1b1922'
@@ -38,12 +38,15 @@ const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
 const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 // Shadows are show by items that are scrolled and under widgets
 const SHADOW = alpha(PRIMARY, 0.5)
+
+// --- Borders
 const BORDER = '#26303b'
+const MAUVE_BORDER = '#492d54'
+const MITO_PURPLE_BORDER = '#2c3258'
 
 const MITO_PURPLE = '#262b4b'
-const MITO_PURPLE_BORDER = '#2c3258'
 const MITO_PURPLE_HOVER = '#222745'
-const MAUVE = '#5b3869'
+// const MAUVE = '#5b3869'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 const RADVENDER = '#864df8'
@@ -264,8 +267,8 @@ const editorGroup = {
   // If you're not using tabs, show regular background, can't think of a better
   // color for that display
   'editorGroupHeader.noTabsBackground': null,
-  'editorGroupHeader.tabsBackground': BACKGROUND,
-  'editorGroupHeader.tabsBorder': BORDER,
+  'editorGroupHeader.tabsBackground': SIDEBAR_BACKGROUND,
+  'editorGroupHeader.tabsBorder': '#52294b',
 }
 
 // Editor tabs
@@ -274,9 +277,9 @@ const tab = {
   'tab.border': BACKGROUND,
   'tab.activeBorder': PRIMARY,
   'tab.activeBorderTop': null,
-  'tab.activeBackground': BACKGROUND,
+  'tab.activeBackground': SIDEBAR_BACKGROUND,
   'tab.activeForeground': SECONDARY,
-  'tab.inactiveBackground': BACKGROUND,
+  'tab.inactiveBackground': SIDEBAR_BACKGROUND,
   'tab.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // --- Hover
   'tab.hoverBackground': null,
@@ -424,7 +427,7 @@ const editor = {
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
 // overview of all editor decorations
 const editorOverviewRuler = {
-  'editorOverviewRuler.border': null,
+  'editorOverviewRuler.border': MITO_PURPLE_BORDER,
   'editorOverviewRuler.findMatchForeground': null,
   'editorOverviewRuler.rangeHighlightForeground': null,
   'editorOverviewRuler.selectionHighlightForeground': null,
@@ -496,7 +499,7 @@ const peekView = {
 const activityBar = {
   'activityBar.background': SIDEBAR_BACKGROUND,
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
-  'activityBar.border': null,
+  'activityBar.border': BORDER,
   'activityBar.foreground': SECONDARY,
   'activityBar.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // Badges
@@ -512,7 +515,7 @@ const activityBar = {
 // Integrated Terminal.
 const panel = {
   'panel.background': PANEL_BACKGROUND,
-  'panel.border': BORDER,
+  'panel.border': MITO_PURPLE_BORDER,
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
@@ -528,7 +531,7 @@ const panel = {
 const sideBar = {
   'sideBar.background': SIDEBAR_BACKGROUND,
   'sideBar.foreground': FOREGROUND_CLOUD,
-  'sideBar.border': BORDER,
+  'sideBar.border': MAUVE_BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
@@ -543,7 +546,7 @@ const sideBar = {
 
 // Bar at bottom of application with current statuses and info
 const statusBar = {
-  'statusBar.background': DARK_BACKGROUND,
+  'statusBar.background': ULTRA_BACKGROUND,
   'statusBar.foreground': FOREGROUND_TEAL,
   'statusBar.border': MITO_PURPLE_BORDER,
   // DEBUGGING MODE
@@ -569,7 +572,7 @@ const statusBar = {
 const titleBar = {
   'titleBar.activeBackground': ULTRA_BACKGROUND,
   'titleBar.activeForeground': PRIMARY,
-  'titleBar.border': MAUVE,
+  'titleBar.border': MAUVE_BORDER,
   // Title bar is slightly darkened on blur by default and looks good
   'titleBar.inactiveBackground': null,
   'titleBar.inactiveForeground': null,
@@ -694,7 +697,7 @@ const welcomePage = {
 // By default breadcrumbs look good, they have the foreground gray with the
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
-  'breadcrumb.background': BACKGROUND,
+  'breadcrumb.background': SIDEBAR_BACKGROUND,
   'breadcrumb.foreground': FOREGROUND_OCEAN_DARK,
   // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
   // this will apply

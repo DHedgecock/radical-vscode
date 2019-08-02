@@ -1,20 +1,28 @@
 <br />
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/Radical.png"
-    width="800"
+    src="https://danhedgecock.com/static/media/Radical.png"
     alt="VSCode Radical Theme"
   />
 </div>
 
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/red-hr.png"
-  />
-</div>
+<h2 align="center">
+  <em>A dark theme for radical hacking inspired by retro futuristic design.</em>
+</h2>
 
 <p align="center">
-<em>A dark theme for radical hacking inspired by retro futuristic design.</em>
+  <!-- marketplace version -->
+  <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
+    <img alt="marketplace version" src="https://img.shields.io/vscode-marketplace/v/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=a8ffef">
+  </a>
+  <!-- downloads -->
+  <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
+    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/d/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=ff428e">
+  </a>
+  <!-- rating -->
+  <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
+    <img alt="rating" src="https://img.shields.io/visual-studio-marketplace/stars/dhedgecock.radical-vscode.svg?maxAge=86400&style=for-the-badge&labelColor=1C1E26&color=864df8">
+  </a>
 </p>
 
 ## Theme features
@@ -30,7 +38,7 @@
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/hero.png"
+    src="https://danhedgecock.com/static/media/main-screenshot.png"
   />
 </div>
 
