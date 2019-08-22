@@ -241,7 +241,9 @@ const input = {
   'input.border': FOREGROUND_TEAL,
   'input.foreground': FOREGROUND_TEAL,
   'input.placeholderForeground': FOREGROUND_TEAL,
+  // The controls inside of the input for setting search constraints
   'inputOption.activeBorder': alpha(PRIMARY, 0.6),
+  'inputOption.activeBackground': alpha(PRIMARY, 0.15),
   'inputValidation.errorBackground': ERROR,
   'inputValidation.errorBorder': ERROR,
   'inputValidation.infoBackground': INFO,
@@ -422,6 +424,13 @@ const editor = {
   'editorInfo.border': null,
   'editorHint.foreground': null, // unknown
   'editorHint.border': null,
+
+  // --- Snippets
+  // Decorations show anytime a snippet with tabstops is triggered
+  'editor.snippetTabstopHighlightBackground': alpha(PRIMARY, 0.1),
+  'editor.snippetTabstopHighlightBorder': VSCODE_PURPLE,
+  'editor.snippetFinalTabstopHighlightBackground': alpha(PRIMARY, 0.1),
+  'editor.snippetFinalTabstopHighlightBorder': RADVENDER,
 }
 
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
@@ -463,6 +472,11 @@ const editorWidget = {
   'editorMarkerNavigationError.background': ERROR,
   'editorMarkerNavigationWarning.background': WARNING,
   'editorMarkerNavigationInfo.background': INFO,
+}
+
+// Minimap
+const minimap = {
+  'minimap.findMatchHighlight': alpha(HIGHLIGHT_MATCH, 0.75),
 }
 
 //
@@ -538,6 +552,7 @@ const sideBar = {
   // Side bar sections for features
   'sideBarSectionHeader.background': SIDEBAR_BACKGROUND, // same bg for subtler headers
   'sideBarSectionHeader.foreground': FOREGROUND_OCEAN_LIGHT,
+  'sideBarSectionHeader.border': TRANSPARENT, // ?? Maybe add a color here ??
 }
 
 //
@@ -736,6 +751,7 @@ export default {
   ...editorGroup,
   ...editorOverviewRuler,
   ...editorWidget,
+  ...minimap,
   ...extension,
   ...quickInput,
   ...gitDecoration,
