@@ -175,10 +175,6 @@ colors used in the screenshots.
 }
 ```
 
-## Coming soon...
-
-- TERMINAL THEMING 🎉🎉🎉
-
 ## 😍 Thanks
 
 - The icon background is from Nate Wren's hecka rad

@@ -298,6 +298,12 @@
       "settings": {
         "foreground": "#c7e3ee"
       }
+    },
+    {
+      "scope": "markup.inline.raw.string.markdown",
+      "settings": {
+        "foreground": "#a8ffef"
+      }
     }
   ]
 }

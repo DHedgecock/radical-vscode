@@ -3,11 +3,12 @@ import fs from 'fs'
 // Load theme color variables
 import colors from './theme/colors-workbench'
 
-// Load syntax tokens
-import tokens from './theme/syntax-tokens'
-
 // Load terminal variables
 import { terminal } from './theme/colors-tokens'
+
+// Load syntax tokens
+import tokens from './theme/syntax-tokens'
+import { markdown } from './theme/languages/markdown'
 
 // Create the base theme definition
 // ---------------------------------------------------------------------------
@@ -23,7 +24,7 @@ let theme = {
     ...colors,
     ...terminal,
   },
-  tokenColors: [...tokens],
+  tokenColors: [...tokens, ...markdown],
 }
 
 // Convert color variables to string vlaues
