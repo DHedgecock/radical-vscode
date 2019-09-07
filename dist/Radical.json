@@ -300,9 +300,118 @@
       }
     },
     {
+      "scope": "meta.paragraph.markdown",
+      "settings": {
+        "foreground": "#bccfcf"
+      }
+    },
+    {
+      "scope": "comment.block.html",
+      "settings": {
+        "foreground": "#48676A"
+      }
+    },
+    {
+      "scope": "entity.name.section.markdown",
+      "settings": {
+        "foreground": "#ffdfee",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "punctuation.definition.heading.markdown",
+      "settings": {
+        "foreground": "#a8ffdb",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "scope": "markup.inline.raw.string.markdown",
       "settings": {
-        "foreground": "#a8ffef"
+        "foreground": "#ff96aa"
+      }
+    },
+    {
+      "scope": "punctuation.definition.raw.markdown",
+      "settings": {
+        "foreground": "#ffdfee"
+      }
+    },
+    {
+      "scope": "markup.fenced_code.block.markdown",
+      "settings": {
+        "foreground": "#74A39D"
+      }
+    },
+    {
+      "scope": "meta.separator.markdown",
+      "settings": {
+        "foreground": "#999EE1"
+      }
+    },
+    {
+      "scope": "meta.link.inline.markdown",
+      "settings": {
+        "foreground": "#9ceeeb"
+      }
+    },
+    {
+      "scope": "markup.underline.link",
+      "settings": {
+        "foreground": "#a8ffefad",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "meta.link.inline.markdown punctuation.definition.string",
+      "settings": {
+        "foreground": "#5af5f0"
+      }
+    },
+    {
+      "scope": "constant.other.reference.link",
+      "settings": {
+        "foreground": "#9ceeeb"
+      }
+    },
+    {
+      "scope": "meta.link.reference.def markup.underline.link",
+      "settings": {
+        "foreground": "#74A39D",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "meta.link.reference.def punctuation.definition.constant",
+      "settings": {
+        "foreground": "#75fffaad"
+      }
+    },
+    {
+      "scope": "punctuation.definition.list.begin",
+      "settings": {
+        "foreground": "#a8ffdbad"
+      }
+    },
+    {
+      "scope": "markup.bold.markdown",
+      "settings": {
+        "foreground": "#74A39D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "markup.italic.markdown",
+      "settings": {
+        "foreground": "#abdada",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "markup.italic.markdown punctuation.definition",
+      "settings": {
+        "foreground": "#abdada",
+        "fontStyle": "italic"
       }
     }
   ]
