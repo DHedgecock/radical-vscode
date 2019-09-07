@@ -1,9 +1,6 @@
 <br />
 <div align="center">
-  <img
-    src="https://danhedgecock.com/static/media/Radical.png"
-    alt="VSCode Radical Theme"
-  />
+  <img src="https://danhedgecock.com/Radical.png" alt="VSCode Radical Theme" />
 </div>
 
 <h2 align="center">
@@ -38,7 +35,7 @@
 
 <div align="center">
   <img
-    src="https://danhedgecock.com/static/media/main-screenshot.png"
+    src="https://danhedgecock.com/main-screenshot.png"
   />
 </div>
 
