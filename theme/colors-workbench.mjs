@@ -20,33 +20,32 @@ import { alpha } from './utils'
 // Theme colors
 //
 
+// --- Theme colors
+
 const PRIMARY = '#ff428e'
 const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
 const SECONDARY_HOVER = '#b3fff1'
 
-const ULTRA_BACKGROUND = '#181521'
-const BACKGROUND = '#1c1a24'
-const DARK_BACKGROUND = '#1b1722'
+// --- Backgrounds
 
-const SIDEBAR_BACKGROUND = '#1b1922'
-const PANEL_BACKGROUND = '#1c1924'
+const ULTRA_BACKGROUND = '#100f1a' // (16, 15, 26)
+const DARK_BACKGROUND = '#12121f' // (18, 17, 31)
+const PRIMARY_BACKGROUND = '#141322' // (20, 19, 34)
 
 // Semi-transparent widget background
 const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
-// Shadows are show by items that are scrolled and under widgets
-const SHADOW = alpha(PRIMARY, 0.5)
 
 // --- Borders
+
 const BORDER = '#26303b'
-const MAUVE_BORDER = '#492d54'
+const MAUVE_BORDER = '#681854'
 const MITO_PURPLE_BORDER = '#2c3258'
 
 const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_HOVER = '#222745'
-// const MAUVE = '#5b3869'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 const RADVENDER = '#864df8'
@@ -56,17 +55,18 @@ const CORAL = '#fe6083'
 const HUE_TEAL = '#78efc5'
 const HUE_PURPLE = '#d043cf'
 
+// --- FOREGOUNDS
+
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
-
-// --- FOREGOUNDS
 const FOREGROUND_CLOUD = '#c6d2d1'
 
 // Ocean foregrounds are muted shades of Secondary
 const FOREGROUND_OCEAN_LIGHT = '#74a39d'
 const FOREGROUND_OCEAN_DARK = '#48676a'
 
-// Highlighting
+// --- Highlighting
+
 const HIGHLIGHT_CURRENT_LINE = '#d043cf'
 const HIGHLIGHT_RANGE = '#fd43cd'
 const HIGHLIGHT_CURRENT_SELECTION = '#874df8'
@@ -76,7 +76,8 @@ const HIGHLIGHT_ADDL_MATCH = '#f179e1'
 const HIGHLIGHT_READ_ACCESS = '#ff5300'
 const HIGHLIGHT_WRITE_ACCESS = '#efe900'
 
-// Git colors
+// --- Git colors
+
 const DIFF_ADDED = '#43fdd5'
 const DIFF_REMOVED = '#fe6082'
 const MERGE_CURRENT = '#fc86fe'
@@ -91,7 +92,8 @@ const GIT_IGNORED = FOREGROUND_OCEAN_DARK // #48676a
 const GIT_CONFLICTING = '#ff428a'
 const GIT_SUBMODULE = '#cc6796'
 
-// Status colors
+// --- Status colors
+
 const INFO = '#93E0E3'
 const WARNING = '#ffd000'
 const ERROR = '#ff1767'
@@ -99,8 +101,20 @@ const ERROR = '#ff1767'
 // Transparent
 const TRANSPARENT = '#0000'
 
+// Shadows are show by items that are scrolled and under widgets
+const SHADOW = alpha(PRIMARY, 0.5)
+
 // VSCode Radical theme 🎉
 // ---------------------------------------------------------------------------
+
+/**
+ * ℹ️ Editor hieararchy
+ * - Elevations set editor heiararchy with 3 progressively lighter colors for
+ *   different sections:
+ *    1. ULTRA - Darkest background for the title bar and activity bar
+ *    2. DARK - Middle background for sidebar, tabs/breadcrumbs and status bar
+ *    3. PRIMARY - Lightest background for the editor and panel
+ */
 
 //
 // High contrast
@@ -219,7 +233,7 @@ const listsTrees = {
   // this really only applies to file explorer view, where having the last file
   // that was selected have a background is distracting, especially if you don't
   // have VSCode focus the file you're viewing when you change files)
-  'list.inactiveSelectionBackground': SIDEBAR_BACKGROUND,
+  'list.inactiveSelectionBackground': DARK_BACKGROUND,
   'list.inactiveSelectionForeground': SECONDARY,
   // Focused item when the list container is NOT in focus
   'list.inactiveFocusBackground': null, // unknown
@@ -269,19 +283,19 @@ const editorGroup = {
   // If you're not using tabs, show regular background, can't think of a better
   // color for that display
   'editorGroupHeader.noTabsBackground': null,
-  'editorGroupHeader.tabsBackground': SIDEBAR_BACKGROUND,
-  'editorGroupHeader.tabsBorder': '#52294b',
+  'editorGroupHeader.tabsBackground': DARK_BACKGROUND,
+  'editorGroupHeader.tabsBorder': MITO_PURPLE_BORDER,
 }
 
 // Editor tabs
 const tab = {
   // Border is *between* tabs, set to background so there isn't a border
-  'tab.border': BACKGROUND,
+  'tab.border': DARK_BACKGROUND,
   'tab.activeBorder': PRIMARY,
   'tab.activeBorderTop': null,
-  'tab.activeBackground': SIDEBAR_BACKGROUND,
+  'tab.activeBackground': DARK_BACKGROUND,
   'tab.activeForeground': SECONDARY,
-  'tab.inactiveBackground': SIDEBAR_BACKGROUND,
+  'tab.inactiveBackground': DARK_BACKGROUND,
   'tab.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // --- Hover
   'tab.hoverBackground': null,
@@ -297,7 +311,7 @@ const tab = {
 }
 
 const editor = {
-  'editor.background': BACKGROUND,
+  'editor.background': PRIMARY_BACKGROUND,
   // The editor default foreground shows up in widgets, is the color of the
   // separators in merge conflicts
   'editor.foreground': FOREGROUND_TEAL,
@@ -511,9 +525,9 @@ const peekView = {
 //
 
 const activityBar = {
-  'activityBar.background': SIDEBAR_BACKGROUND,
+  'activityBar.background': ULTRA_BACKGROUND,
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
-  'activityBar.border': BORDER,
+  'activityBar.border': MAUVE_BORDER,
   'activityBar.foreground': SECONDARY,
   'activityBar.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
   // Badges
@@ -528,7 +542,7 @@ const activityBar = {
 // Panels are shown below the editor area and contain views like Output and
 // Integrated Terminal.
 const panel = {
-  'panel.background': PANEL_BACKGROUND,
+  'panel.background': PRIMARY_BACKGROUND,
   'panel.border': MITO_PURPLE_BORDER,
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
@@ -543,14 +557,14 @@ const panel = {
 
 // Contains the Explore/Debug/Extension/etc. views
 const sideBar = {
-  'sideBar.background': SIDEBAR_BACKGROUND,
+  'sideBar.background': DARK_BACKGROUND,
   'sideBar.foreground': FOREGROUND_CLOUD,
-  'sideBar.border': MAUVE_BORDER,
+  'sideBar.border': MITO_PURPLE_BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
   // Side bar sections for features
-  'sideBarSectionHeader.background': SIDEBAR_BACKGROUND, // same bg for subtler headers
+  'sideBarSectionHeader.background': DARK_BACKGROUND, // same bg for subtler headers
   'sideBarSectionHeader.foreground': FOREGROUND_OCEAN_LIGHT,
   'sideBarSectionHeader.border': TRANSPARENT, // ?? Maybe add a color here ??
 }
@@ -561,7 +575,7 @@ const sideBar = {
 
 // Bar at bottom of application with current statuses and info
 const statusBar = {
-  'statusBar.background': ULTRA_BACKGROUND,
+  'statusBar.background': DARK_BACKGROUND,
   'statusBar.foreground': FOREGROUND_TEAL,
   'statusBar.border': MITO_PURPLE_BORDER,
   // DEBUGGING MODE
@@ -712,7 +726,7 @@ const welcomePage = {
 // By default breadcrumbs look good, they have the foreground gray with the
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
-  'breadcrumb.background': SIDEBAR_BACKGROUND,
+  'breadcrumb.background': DARK_BACKGROUND,
   'breadcrumb.foreground': FOREGROUND_OCEAN_DARK,
   // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
   // this will apply
@@ -733,7 +747,7 @@ const gitLens = {
   'gitlens.trailingLineForegroundColor': '#F425FC59', // 35%
   'gitlens.lineHighlightBackgroundColor': '#F425FC26', // 20%
   'gitlens.lineHighlightOverviewRulerColor': '#F425FC80', // 50%
-  'gitlens.gutterBackgroundColor': BACKGROUND,
+  'gitlens.gutterBackgroundColor': PRIMARY_BACKGROUND,
   'gitlens.gutterForegroundColor': '#c6d2d1',
   'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
 }
@@ -774,4 +788,4 @@ export default {
   ...gitLens,
 }
 
-export { PANEL_BACKGROUND, BORDER, PRIMARY }
+export { PRIMARY_BACKGROUND, BORDER, PRIMARY }

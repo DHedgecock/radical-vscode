@@ -1,4 +1,4 @@
-import { PANEL_BACKGROUND, BORDER } from './colors-workbench'
+import { PRIMARY_BACKGROUND, BORDER } from './colors-workbench'
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
@@ -16,7 +16,7 @@ export default {
 }
 
 export const terminal = {
-  'terminal.background': PANEL_BACKGROUND,
+  'terminal.background': PRIMARY_BACKGROUND,
   'terminal.foreground': '#defff7',
   // Border between multiple terminals
   'terminal.border': BORDER,

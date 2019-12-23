@@ -66,17 +66,11 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
   />
 </div>
 
-<h3 align="center">
+<!-- <h3 align="center">
   <strong>
     Diff backgrounds
   </strong>
 </h3>
-
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
-  />
-</div>
 
 Diff background color use a very low opacity for readability when using the diff
 editor.
@@ -114,6 +108,12 @@ colors were chosen that could be overlain using opacities.
     src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/highlight-colors.png"
     alt="current find match highlight is visible"
   />
+</div> -->
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
+  />
 </div>
 
 <h2 align="center">
@@ -121,13 +121,6 @@ colors were chosen that could be overlain using opacities.
     Extension Theming
   </strong>
 </h2>
-
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
-    role="presentation"
-  />
-</div>
 
 If you'd like to theme some popular extensions to match Radical, these are the
 colors used in the screenshots.
@@ -178,3 +171,10 @@ colors used in the screenshots.
   [Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
 - The desktop background in the first screenshot is by
   [John Fowler on Unsplash](https://unsplash.com/photos/RsRTIofe0HE)
+
+<br />
+<br />
+
+<div align="center">
+  <img src="./assets/neons.png" role="presentation" />
+</div>
