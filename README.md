@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <img src="https://danhedgecock.com/Radical.png" alt="VSCode Radical Theme" />
+  <img src="./assets/radical.jpg" alt="VSCode Radical Theme" />
 </div>
 
 <h2 align="center">
@@ -35,12 +35,19 @@
 
 <div align="center">
   <img
-    src="https://danhedgecock.com/main-screenshot.png"
+    src="./assets/main-screenshot.png"
   />
 </div>
 
 <br />
 <br />
+
+<div align="center">
+  <img
+    src="./assets/blue-hr.png"
+    role="presentation"
+  />
+</div>
 
 <h3 align="center">
   <strong>
@@ -48,20 +55,13 @@
   </strong>
 </h3>
 
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
-    role="presentation"
-  />
-</div>
-
 The peek view background provides a dark accent to the editor background,
 highlighted with pink borders. This makes peeking symbol references (⇧F12) or
 peeking symbol definitions (⌥F12) stand out against the editor contents.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/peek-colors.png"
+    src="./assets/peek-colors.png"
     role="presentation"
   />
 </div>
@@ -77,7 +77,7 @@ editor.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/diff-colors.png"
+    src="./assets/diff-colors.png"
     alt="Red and green backgrounds are readable"
   />
 </div>
@@ -90,7 +90,7 @@ editor.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="./assets/blue-hr.png"
     role="presentation"
   />
 </div>
@@ -101,18 +101,18 @@ colors were chosen that could be overlain using opacities.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/selection-colors.png"
+    src="./assets/selection-colors.png"
     alt="current selection highlight is a light visible"
   />
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/highlight-colors.png"
+    src="./assets/highlight-colors.png"
     alt="current find match highlight is visible"
   />
 </div> -->
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/dhedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="./assets/blue-hr.png"
   />
 </div>
 
