@@ -1,4 +1,4 @@
-import { PRIMARY_BACKGROUND, BORDER } from './colors-workbench'
+import { BORDER, PRIMARY_BACKGROUND } from './colors-workbench.mjs'
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {

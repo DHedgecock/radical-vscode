@@ -1,14 +1,14 @@
 import fs from 'fs'
 
 // Load theme color variables
-import colors from './theme/colors-workbench'
+import colors from './theme/colors-workbench.mjs'
 
 // Load terminal variables
-import { terminal } from './theme/colors-tokens'
+import { terminal } from './theme/colors-tokens.mjs'
 
 // Load syntax tokens
-import tokens from './theme/syntax-tokens'
-import { markdown } from './theme/languages/markdown'
+import tokens from './theme/syntax-tokens.mjs'
+import { markdown } from './theme/languages/markdown.mjs'
 
 // Create the base theme definition
 // ---------------------------------------------------------------------------

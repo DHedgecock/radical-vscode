@@ -2,11 +2,12 @@
   "name": "radical-vscode",
   "displayName": "Radical",
   "description": "A dark theme for radical hacking inspired by retro futuristic design",
+  "type": "module",
   "version": "1.4.0",
   "publisher": "dhedgecock",
   "license": "ISC",
   "engines": {
-    "vscode": "^1.25.0"
+    "vscode": "^1.40.0"
   },
   "bugs": {
     "url": "https://github.com/dhedgecock/radical-vscode/issues"
@@ -16,13 +17,13 @@
     "url": "https://github.com/dhedgecock/radical-vscode"
   },
   "scripts": {
-    "build": "node -r esm build.mjs",
+    "build": "node --experimental-modules build.mjs",
     "lint": "eslint build.mjs theme/**.mjs",
     "format": "prettier --write *.md build.mjs theme/**.mjs"
   },
   "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "#1d1b24",
+    "color": "#141322",
     "theme": "dark"
   },
   "categories": [
@@ -38,9 +39,8 @@
     ]
   },
   "devDependencies": {
-    "chroma-js": "~2.0.6",
-    "eslint-config-eloquence": "~12.4.0",
-    "esm": "~3.2.25",
-    "prettier": "~1.18.2"
+    "chroma-js": "2.1.0",
+    "eslint-config-eloquence": "12.16.0",
+    "prettier": "1.19.1"
   }
 }

@@ -1,5 +1,5 @@
-import { token } from './utils'
-import colors from './colors-tokens'
+import { token } from './utils.mjs'
+import colors from './colors-tokens.mjs'
 
 // The generic syntax tokens are themed here according to the Textmate naming
 // convention and the package color semantics.

@@ -14,7 +14,7 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
-import { alpha } from './utils'
+import { alpha } from './utils.mjs'
 
 //
 // Theme colors
