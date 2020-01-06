@@ -35,7 +35,7 @@
 
 <div align="center">
   <img
-    src="./assets/main-screenshot.png"
+    src="./assets/editor.jpg"
   />
 </div>
 
@@ -61,7 +61,7 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
 
 <div align="center">
   <img
-    src="./assets/peek-colors.png"
+    src="./assets/peek-view.jpg"
     role="presentation"
   />
 </div>
@@ -125,6 +125,30 @@ colors were chosen that could be overlain using opacities.
 If you'd like to theme some popular extensions to match Radical, these are the
 colors used in the screenshots.
 
+### Git Graph
+
+```json
+{
+  "git-graph.graphColours": [
+    "#FF428E",
+    "#A8FFEF",
+    "#DFF959",
+    "#F7A409",
+    "#F834BB",
+    "#2BF5E9",
+    "#D831D7",
+    "#FF594C"
+  ]
+}
+```
+
+<div align="center">
+  <img
+    src="./assets/git-graph.jpg"
+    role="presentation"
+  />
+</div>
+
 ### Bracket Pair Colorizer 2
 
 ```json
@@ -145,23 +169,6 @@ colors used in the screenshots.
   "importCost.smallPackageColor": "#d043cf4d",
   "importCost.mediumPackageColor": "#d043cf80",
   "importCost.largePackageColor": "#F834BB"
-}
-```
-
-### Git Graph
-
-```json
-{
-  "git-graph.graphColours": [
-    "#FF428E",
-    "#A8FFEF",
-    "#DFF959",
-    "#F7A409",
-    "#F834BB",
-    "#2BF5E9",
-    "#D831D7",
-    "#FF594C"
-  ]
 }
 ```
 

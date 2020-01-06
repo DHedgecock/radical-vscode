@@ -25,26 +25,30 @@ import { alpha } from './utils.mjs'
 const PRIMARY = '#ff428e'
 const SECONDARY = '#a8ffef'
 const PRIMARY_HOVER = '#ff6ba6'
-const SECONDARY_HOVER = '#b3fff1'
+const SECONDARY_HOVER = '#baffec'
+
+const ULTRA = '#f52277'
 
 // --- Backgrounds
 
 const ULTRA_BACKGROUND = '#100f1a' // (16, 15, 26)
-const DARK_BACKGROUND = '#12121f' // (18, 17, 31)
+const DARK_BACKGROUND = '#12111f' // (18, 17, 31)
 const PRIMARY_BACKGROUND = '#141322' // (20, 19, 34)
 
+const ACCENT_BACKGROUND = '#242560'
+const LOW_ACCENT_BACKGROUND = '#262b4b'
+
 // Semi-transparent widget background
-const BACKGROUND_WIDGET = alpha('#262b4b', 0.9)
+const BACKGROUND_WIDGET = alpha(LOW_ACCENT_BACKGROUND, 0.9)
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 
 // --- Borders
 
 const BORDER = '#26303b'
-const MAUVE_BORDER = '#681854'
-const MITO_PURPLE_BORDER = '#2c3258'
+const CONSPICUOUS_BORDER = '#ff428e'
+const INCONSPICUOUS_BORDER = '#2c3258'
 
-const MITO_PURPLE = '#262b4b'
 const MITO_PURPLE_HOVER = '#222745'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
@@ -56,6 +60,10 @@ const HUE_TEAL = '#78efc5'
 const HUE_PURPLE = '#d043cf'
 
 // --- FOREGOUNDS
+
+const FOREGROUND_100 = '#aedbe2'
+const FOREGROUND_200 = '#5c8085'
+const FOREGROUND_300 = '#314d52'
 
 const FOREGROUND_GRAY = '#919ca8'
 const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
@@ -148,7 +156,7 @@ const base = {
 //
 
 const text = {
-  'textBlockQuote.background': MITO_PURPLE,
+  'textBlockQuote.background': ACCENT_BACKGROUND,
   'textBlockQuote.border': FOREGROUND_TEAL,
   // Only showing inside of hover widget for code snippets (eg hover over chroma.hex())
   // It would be awesome if this showed inside READMEs code blocks...
@@ -201,8 +209,8 @@ const scrollBarControl = {
 
 // Same as buttons
 const badge = {
-  'badge.background': PRIMARY,
-  'badge.foreground': SECONDARY,
+  'badge.background': ACCENT_BACKGROUND,
+  'badge.foreground': SECONDARY_HOVER,
 }
 
 //
@@ -251,7 +259,7 @@ const listsTrees = {
 //
 
 const input = {
-  'input.background': MITO_PURPLE,
+  'input.background': LOW_ACCENT_BACKGROUND,
   'input.border': FOREGROUND_TEAL,
   'input.foreground': FOREGROUND_TEAL,
   'input.placeholderForeground': FOREGROUND_TEAL,
@@ -284,19 +292,19 @@ const editorGroup = {
   // color for that display
   'editorGroupHeader.noTabsBackground': null,
   'editorGroupHeader.tabsBackground': DARK_BACKGROUND,
-  'editorGroupHeader.tabsBorder': MITO_PURPLE_BORDER,
+  'editorGroupHeader.tabsBorder': INCONSPICUOUS_BORDER,
 }
 
 // Editor tabs
 const tab = {
   // Border is *between* tabs, set to background so there isn't a border
   'tab.border': DARK_BACKGROUND,
-  'tab.activeBorder': PRIMARY,
+  'tab.activeBorder': alpha(CONSPICUOUS_BORDER, 0.8),
   'tab.activeBorderTop': null,
   'tab.activeBackground': DARK_BACKGROUND,
-  'tab.activeForeground': SECONDARY,
+  'tab.activeForeground': FOREGROUND_100,
   'tab.inactiveBackground': DARK_BACKGROUND,
-  'tab.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
+  'tab.inactiveForeground': FOREGROUND_200,
   // --- Hover
   'tab.hoverBackground': null,
   'tab.hoverBorder': PRIMARY,
@@ -450,7 +458,7 @@ const editor = {
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
 // overview of all editor decorations
 const editorOverviewRuler = {
-  'editorOverviewRuler.border': MITO_PURPLE_BORDER,
+  'editorOverviewRuler.border': INCONSPICUOUS_BORDER,
   'editorOverviewRuler.findMatchForeground': null,
   'editorOverviewRuler.rangeHighlightForeground': null,
   'editorOverviewRuler.selectionHighlightForeground': null,
@@ -491,6 +499,9 @@ const editorWidget = {
 // Minimap
 const minimap = {
   'minimap.findMatchHighlight': alpha(HIGHLIGHT_MATCH, 0.75),
+  'minimapGutter.addedBackground': GIT_ADDED,
+  'minimapGutter.modifiedBackground': GIT_MODIFIED,
+  'minimapGutter.deletedBackground': GIT_DELETED,
 }
 
 //
@@ -527,9 +538,10 @@ const peekView = {
 const activityBar = {
   'activityBar.background': ULTRA_BACKGROUND,
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
-  'activityBar.border': MAUVE_BORDER,
-  'activityBar.foreground': SECONDARY,
-  'activityBar.inactiveForeground': FOREGROUND_OCEAN_LIGHT,
+  'activityBar.border': alpha(PRIMARY, 0.5),
+  'activityBar.foreground': ULTRA,
+  'activityBar.inactiveForeground': alpha(ULTRA, 0.6),
+  'activityBar.activeBorder': ULTRA,
   // Badges
   'activityBarBadge.background': badge['badge.background'],
   'activityBarBadge.foreground': badge['badge.foreground'],
@@ -543,7 +555,7 @@ const activityBar = {
 // Integrated Terminal.
 const panel = {
   'panel.background': PRIMARY_BACKGROUND,
-  'panel.border': MITO_PURPLE_BORDER,
+  'panel.border': INCONSPICUOUS_BORDER,
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
@@ -559,7 +571,7 @@ const panel = {
 const sideBar = {
   'sideBar.background': DARK_BACKGROUND,
   'sideBar.foreground': FOREGROUND_CLOUD,
-  'sideBar.border': MITO_PURPLE_BORDER,
+  'sideBar.border': INCONSPICUOUS_BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
@@ -576,14 +588,14 @@ const sideBar = {
 // Bar at bottom of application with current statuses and info
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
-  'statusBar.foreground': FOREGROUND_TEAL,
-  'statusBar.border': MITO_PURPLE_BORDER,
+  'statusBar.foreground': FOREGROUND_200,
+  'statusBar.border': INCONSPICUOUS_BORDER,
   // DEBUGGING MODE
   'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
   'statusBar.debuggingBorder': PRIMARY,
   // NO FOLDER MODE
-  'statusBar.noFolderBackground': MITO_PURPLE,
+  'statusBar.noFolderBackground': ACCENT_BACKGROUND,
   'statusBar.noFolderForeground': FOREGROUND_TEAL,
   'statusBar.noFolderBorder': VSCODE_PURPLE,
   // ℹ️ You can only style the background of status bar items
@@ -600,8 +612,8 @@ const statusBar = {
 // Bar at top of application with title of project
 const titleBar = {
   'titleBar.activeBackground': ULTRA_BACKGROUND,
-  'titleBar.activeForeground': PRIMARY,
-  'titleBar.border': MAUVE_BORDER,
+  'titleBar.activeForeground': ULTRA,
+  'titleBar.border': alpha(PRIMARY, 0.5),
   // Title bar is slightly darkened on blur by default and looks good
   'titleBar.inactiveBackground': null,
   'titleBar.inactiveForeground': null,
@@ -680,7 +692,7 @@ const mergeConflicts = {
   'merge.currentContentBackground': alpha(MERGE_CURRENT, 0.075),
   'merge.incomingHeaderBackground': alpha(MERGE_INCOMING, 0.2),
   'merge.incomingContentBackground': alpha(MERGE_INCOMING, 0.075),
-  'merge.border': MITO_PURPLE_BORDER,
+  'merge.border': INCONSPICUOUS_BORDER,
   'merge.commonContentBackground': alpha(MERGE_COMMON, 0.075),
   'merge.commonHeaderBackground': alpha(MERGE_COMMON, 0.2),
   'editorOverviewRuler.currentContentForeground': alpha(MERGE_CURRENT, 0.3),
@@ -694,7 +706,7 @@ const mergeConflicts = {
 
 const debug = {
   // --- Debug status toolbar
-  'debugToolBar.background': alpha(MITO_PURPLE_BORDER, 0.87),
+  'debugToolBar.background': alpha(ACCENT_BACKGROUND, 0.87),
   'debugToolBar.border': TRANSPARENT,
 
   // --- Breakpoint highlighting
@@ -714,7 +726,7 @@ const debug = {
 //
 
 const welcomePage = {
-  'welcomePage.buttonBackground': MITO_PURPLE,
+  'welcomePage.buttonBackground': ACCENT_BACKGROUND,
   'welcomePage.buttonHoverBackground': MITO_PURPLE_HOVER,
   'walkThrough.embeddedEditorBackground': '#1e2732',
 }
@@ -727,7 +739,7 @@ const welcomePage = {
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
   'breadcrumb.background': DARK_BACKGROUND,
-  'breadcrumb.foreground': FOREGROUND_OCEAN_DARK,
+  'breadcrumb.foreground': FOREGROUND_300,
   // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
   // this will apply
   'breadcrumb.focusForeground': SECONDARY,
