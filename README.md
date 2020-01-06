@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <img src="./assets/radical.jpg" alt="VSCode Radical Theme" />
+  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/radical.jpg" alt="VSCode Radical Theme" />
 </div>
 
 <h2 align="center">
@@ -35,7 +35,8 @@
 
 <div align="center">
   <img
-    src="./assets/editor.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/editor.jpg"
+    role="presentation"
   />
 </div>
 
@@ -44,7 +45,7 @@
 
 <div align="center">
   <img
-    src="./assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
     role="presentation"
   />
 </div>
@@ -61,7 +62,7 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
 
 <div align="center">
   <img
-    src="./assets/peek-view.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/peek-view.jpg"
     role="presentation"
   />
 </div>
@@ -112,7 +113,7 @@ colors were chosen that could be overlain using opacities.
 
 <div align="center">
   <img
-    src="./assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
   />
 </div>
 
@@ -144,7 +145,7 @@ colors used in the screenshots.
 
 <div align="center">
   <img
-    src="./assets/git-graph.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/git-graph.jpg"
     role="presentation"
   />
 </div>
@@ -183,5 +184,5 @@ colors used in the screenshots.
 <br />
 
 <div align="center">
-  <img src="./assets/neons.png" role="presentation" />
+  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/neons.png" role="presentation" />
 </div>
