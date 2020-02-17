@@ -10,7 +10,7 @@
 <p align="center">
   <!-- marketplace version -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="marketplace version" src="https://img.shields.io/vscode-marketplace/v/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=a8ffef">
+    <img alt="marketplace version" src="https://img.shields.io/vscode-marketplace/v/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=72d4c2">
   </a>
   <!-- downloads -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">

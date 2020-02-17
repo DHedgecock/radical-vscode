@@ -29,25 +29,37 @@ const SECONDARY_HOVER = '#baffec'
 
 const ULTRA = '#f52277'
 
+// --- Purples
+
+const PURPLE_100 = '#070a91'
+const PURPLE_200 = '#1D1E7D'
+const PURPLE_300 = '#242560'
+const PURPLE_400 = '#262b4b'
+
+// Blues
+
+const BLUE_100 = '#d0fff4'
+const BLUE_150 = '#bddbd4'
+const BLUE_200 = '#7c9c9e'
+const BLUE_300 = '#505570'
+
 // --- Backgrounds
 
 const ULTRA_BACKGROUND = '#100f1a' // (16, 15, 26)
 const DARK_BACKGROUND = '#12111f' // (18, 17, 31)
 const PRIMARY_BACKGROUND = '#141322' // (20, 19, 34)
-
-const ACCENT_BACKGROUND = '#242560'
-const LOW_ACCENT_BACKGROUND = '#262b4b'
+const LIGHT_BACKGROUND = '#1c1a30' // (28, 26, 48)
 
 // Semi-transparent widget background
-const BACKGROUND_WIDGET = alpha(LOW_ACCENT_BACKGROUND, 0.9)
+const BACKGROUND_WIDGET = alpha(PURPLE_400, 0.9)
 // Drag and drop background for theme, used primarily in list views
 const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 
 // --- Borders
 
 const BORDER = '#26303b'
-const CONSPICUOUS_BORDER = '#ff428e'
 const INCONSPICUOUS_BORDER = '#2c3258'
+const SUBTLE_CONTRAST_BORDER = PURPLE_200
 
 const MITO_PURPLE_HOVER = '#222745'
 const VSCODE_PURPLE = '#602976'
@@ -58,20 +70,6 @@ const CORAL = '#fe6083'
 
 const HUE_TEAL = '#78efc5'
 const HUE_PURPLE = '#d043cf'
-
-// --- FOREGOUNDS
-
-const FOREGROUND_100 = '#aedbe2'
-const FOREGROUND_200 = '#5c8085'
-const FOREGROUND_300 = '#314d52'
-
-const FOREGROUND_GRAY = '#919ca8'
-const FOREGROUND_TEAL = '#85a5a0' // ~ Provides accents
-const FOREGROUND_CLOUD = '#c6d2d1'
-
-// Ocean foregrounds are muted shades of Secondary
-const FOREGROUND_OCEAN_LIGHT = '#74a39d'
-const FOREGROUND_OCEAN_DARK = '#48676a'
 
 // --- Highlighting
 
@@ -96,7 +94,7 @@ const GIT_ADDED = '#a3ff57'
 const GIT_MODIFIED = '#ffb000'
 const GIT_DELETED = '#ff427b'
 const GIT_UNTRACKED = '#c8ff00'
-const GIT_IGNORED = FOREGROUND_OCEAN_DARK // #48676a
+const GIT_IGNORED = '#48676a'
 const GIT_CONFLICTING = '#ff428a'
 const GIT_SUBMODULE = '#cc6796'
 
@@ -140,7 +138,7 @@ const contrast = {
 
 const base = {
   focusBorder: TRANSPARENT, // Default to not showing focus borders
-  foreground: FOREGROUND_TEAL,
+  foreground: BLUE_200,
   'widget.shadow': SHADOW,
   // Background for text selection inside of inputs and textareas
   // (Type into the find input and then select some text)
@@ -156,8 +154,8 @@ const base = {
 //
 
 const text = {
-  'textBlockQuote.background': ACCENT_BACKGROUND,
-  'textBlockQuote.border': FOREGROUND_TEAL,
+  'textBlockQuote.background': PURPLE_300,
+  'textBlockQuote.border': BLUE_200,
   // Only showing inside of hover widget for code snippets (eg hover over chroma.hex())
   // It would be awesome if this showed inside READMEs code blocks...
   'textCodeBlock.background': VSCODE_PURPLE,
@@ -175,9 +173,9 @@ const text = {
 
 // Same as badges, but with hover
 const button = {
-  'button.background': PRIMARY,
-  'button.foreground': SECONDARY,
-  'button.hoverBackground': PRIMARY_HOVER,
+  'button.background': ULTRA,
+  'button.foreground': BLUE_100,
+  'button.hoverBackground': PURPLE_100,
 }
 
 //
@@ -209,8 +207,8 @@ const scrollBarControl = {
 
 // Same as buttons
 const badge = {
-  'badge.background': ACCENT_BACKGROUND,
-  'badge.foreground': SECONDARY_HOVER,
+  'badge.background': ULTRA,
+  'badge.foreground': BLUE_100,
 }
 
 //
@@ -228,7 +226,7 @@ const progressBar = {
 const listsTrees = {
   // Mouse hover
   'list.hoverBackground': alpha(PRIMARY, 0.05),
-  'list.hoverForeground': FOREGROUND_TEAL,
+  'list.hoverForeground': BLUE_200,
   // Keyboard focus - using slightly higher alpha to make selection more obvious,
   // this helps UX for things like project and command dropdown selection with
   // the keyboard
@@ -259,10 +257,10 @@ const listsTrees = {
 //
 
 const input = {
-  'input.background': LOW_ACCENT_BACKGROUND,
-  'input.border': FOREGROUND_TEAL,
-  'input.foreground': FOREGROUND_TEAL,
-  'input.placeholderForeground': FOREGROUND_TEAL,
+  'input.background': LIGHT_BACKGROUND,
+  'input.border': SUBTLE_CONTRAST_BORDER,
+  'input.foreground': BLUE_200,
+  'input.placeholderForeground': BLUE_200,
   // The controls inside of the input for setting search constraints
   'inputOption.activeBorder': alpha(PRIMARY, 0.6),
   'inputOption.activeBackground': alpha(PRIMARY, 0.15),
@@ -292,19 +290,19 @@ const editorGroup = {
   // color for that display
   'editorGroupHeader.noTabsBackground': null,
   'editorGroupHeader.tabsBackground': DARK_BACKGROUND,
-  'editorGroupHeader.tabsBorder': INCONSPICUOUS_BORDER,
+  'editorGroupHeader.tabsBorder': SUBTLE_CONTRAST_BORDER,
 }
 
 // Editor tabs
 const tab = {
   // Border is *between* tabs, set to background so there isn't a border
   'tab.border': DARK_BACKGROUND,
-  'tab.activeBorder': alpha(CONSPICUOUS_BORDER, 0.8),
-  'tab.activeBorderTop': null,
+  'tab.activeBorder': TRANSPARENT,
+  'tab.activeBorderTop': ULTRA,
   'tab.activeBackground': DARK_BACKGROUND,
-  'tab.activeForeground': FOREGROUND_100,
+  'tab.activeForeground': BLUE_200,
   'tab.inactiveBackground': DARK_BACKGROUND,
-  'tab.inactiveForeground': FOREGROUND_200,
+  'tab.inactiveForeground': BLUE_200,
   // --- Hover
   'tab.hoverBackground': null,
   'tab.hoverBorder': PRIMARY,
@@ -322,11 +320,11 @@ const editor = {
   'editor.background': PRIMARY_BACKGROUND,
   // The editor default foreground shows up in widgets, is the color of the
   // separators in merge conflicts
-  'editor.foreground': FOREGROUND_TEAL,
+  'editor.foreground': BLUE_200,
 
   // --- Line number colors
-  'editorLineNumber.foreground': FOREGROUND_GRAY,
-  'editorLineNumber.activeForeground': PRIMARY,
+  'editorLineNumber.foreground': BLUE_300,
+  'editorLineNumber.activeForeground': BLUE_100,
 
   // Editor highlighting (#highlighting)
   // ------------------------------------
@@ -458,7 +456,7 @@ const editor = {
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
 // overview of all editor decorations
 const editorOverviewRuler = {
-  'editorOverviewRuler.border': INCONSPICUOUS_BORDER,
+  'editorOverviewRuler.border': BORDER,
   'editorOverviewRuler.findMatchForeground': null,
   'editorOverviewRuler.rangeHighlightForeground': null,
   'editorOverviewRuler.selectionHighlightForeground': null,
@@ -478,7 +476,7 @@ const editorOverviewRuler = {
 // Editor widgets
 const editorWidget = {
   'editorWidget.background': BACKGROUND_WIDGET,
-  'editorWidget.border': FOREGROUND_TEAL,
+  'editorWidget.border': BLUE_200,
   'editorWidget.resizeBorder': PRIMARY_HOVER,
   // Suggest widget falls back to editor widget values which look good.
   'editorSuggestWidget.background': null,
@@ -515,8 +513,8 @@ const peekView = {
   'peekViewEditor.matchHighlightBackground': alpha(CORAL, 0.15),
   'peekViewEditor.matchHighlightBorder': '#0000',
   'peekViewResult.background': DARK_BACKGROUND,
-  'peekViewResult.fileForeground': FOREGROUND_TEAL,
-  'peekViewResult.lineForeground': FOREGROUND_OCEAN_LIGHT,
+  'peekViewResult.fileForeground': BLUE_200,
+  'peekViewResult.lineForeground': BLUE_200,
 
   // The background of all matches in the peek sidebar
   'peekViewResult.matchHighlightBackground': alpha(HIGHLIGHT_RANGE, 0.2),
@@ -528,7 +526,7 @@ const peekView = {
 
   'peekViewTitle.background': DARK_BACKGROUND,
   'peekViewTitleLabel.foreground': SECONDARY,
-  'peekViewTitleDescription.foreground': FOREGROUND_TEAL,
+  'peekViewTitleDescription.foreground': BLUE_200,
 }
 
 //
@@ -559,8 +557,8 @@ const panel = {
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
-  'panelTitle.activeForeground': SECONDARY,
-  'panelTitle.inactiveForeground': FOREGROUND_TEAL,
+  'panelTitle.activeForeground': BLUE_200,
+  'panelTitle.inactiveForeground': BLUE_200,
 }
 
 //
@@ -570,14 +568,14 @@ const panel = {
 // Contains the Explore/Debug/Extension/etc. views
 const sideBar = {
   'sideBar.background': DARK_BACKGROUND,
-  'sideBar.foreground': FOREGROUND_CLOUD,
-  'sideBar.border': INCONSPICUOUS_BORDER,
+  'sideBar.foreground': BLUE_150,
+  'sideBar.border': SUBTLE_CONTRAST_BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
-  'sideBarTitle.foreground': FOREGROUND_OCEAN_LIGHT,
+  'sideBarTitle.foreground': BLUE_200,
   // Side bar sections for features
   'sideBarSectionHeader.background': DARK_BACKGROUND, // same bg for subtler headers
-  'sideBarSectionHeader.foreground': FOREGROUND_OCEAN_LIGHT,
+  'sideBarSectionHeader.foreground': BLUE_200,
   'sideBarSectionHeader.border': TRANSPARENT, // ?? Maybe add a color here ??
 }
 
@@ -588,15 +586,15 @@ const sideBar = {
 // Bar at bottom of application with current statuses and info
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
-  'statusBar.foreground': FOREGROUND_200,
-  'statusBar.border': INCONSPICUOUS_BORDER,
+  'statusBar.foreground': BLUE_200,
+  'statusBar.border': SUBTLE_CONTRAST_BORDER,
   // DEBUGGING MODE
   'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
   'statusBar.debuggingBorder': PRIMARY,
   // NO FOLDER MODE
-  'statusBar.noFolderBackground': ACCENT_BACKGROUND,
-  'statusBar.noFolderForeground': FOREGROUND_TEAL,
+  'statusBar.noFolderBackground': PURPLE_300,
+  'statusBar.noFolderForeground': BLUE_200,
   'statusBar.noFolderBorder': VSCODE_PURPLE,
   // ℹ️ You can only style the background of status bar items
   'statusBarItem.prominentBackground': VSCODE_PURPLE,
@@ -706,7 +704,7 @@ const mergeConflicts = {
 
 const debug = {
   // --- Debug status toolbar
-  'debugToolBar.background': alpha(ACCENT_BACKGROUND, 0.87),
+  'debugToolBar.background': alpha(PURPLE_300, 0.87),
   'debugToolBar.border': TRANSPARENT,
 
   // --- Breakpoint highlighting
@@ -726,7 +724,7 @@ const debug = {
 //
 
 const welcomePage = {
-  'welcomePage.buttonBackground': ACCENT_BACKGROUND,
+  'welcomePage.buttonBackground': PURPLE_300,
   'welcomePage.buttonHoverBackground': MITO_PURPLE_HOVER,
   'walkThrough.embeddedEditorBackground': '#1e2732',
 }
@@ -739,7 +737,7 @@ const welcomePage = {
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
   'breadcrumb.background': DARK_BACKGROUND,
-  'breadcrumb.foreground': FOREGROUND_300,
+  'breadcrumb.foreground': BLUE_300,
   // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
   // this will apply
   'breadcrumb.focusForeground': SECONDARY,
