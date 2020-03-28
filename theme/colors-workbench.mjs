@@ -39,9 +39,10 @@ const PURPLE_400 = '#262b4b'
 // Blues
 
 const BLUE_100 = '#d0fff4'
-const BLUE_150 = '#bddbd4'
+const BLUE_125 = '#c9fdf1'
+const BLUE_175 = '#90b0b3'
 const BLUE_200 = '#7c9c9e'
-const BLUE_300 = '#505570'
+const BLUE_250 = '#415e6c'
 
 // --- Backgrounds
 
@@ -57,6 +58,7 @@ const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 
 // --- Borders
 
+const ULTRA_BORDER = '#fc0065'
 const BORDER = '#26303b'
 const INCONSPICUOUS_BORDER = '#2c3258'
 const SUBTLE_CONTRAST_BORDER = PURPLE_200
@@ -94,7 +96,7 @@ const GIT_ADDED = '#a3ff57'
 const GIT_MODIFIED = '#ffb000'
 const GIT_DELETED = '#ff427b'
 const GIT_UNTRACKED = '#c8ff00'
-const GIT_IGNORED = '#48676a'
+const GIT_IGNORED = '#415e6c'
 const GIT_CONFLICTING = '#ff428a'
 const GIT_SUBMODULE = '#cc6796'
 
@@ -298,14 +300,14 @@ const tab = {
   // Border is *between* tabs, set to background so there isn't a border
   'tab.border': DARK_BACKGROUND,
   'tab.activeBorder': TRANSPARENT,
-  'tab.activeBorderTop': ULTRA,
+  'tab.activeBorderTop': ULTRA_BORDER,
   'tab.activeBackground': DARK_BACKGROUND,
-  'tab.activeForeground': BLUE_200,
+  'tab.activeForeground': BLUE_125,
   'tab.inactiveBackground': DARK_BACKGROUND,
-  'tab.inactiveForeground': BLUE_200,
+  'tab.inactiveForeground': BLUE_175,
   // --- Hover
   'tab.hoverBackground': null,
-  'tab.hoverBorder': PRIMARY,
+  'tab.hoverBorder': BLUE_250,
   // --- Unfocused editor group tabs
   // default styles slightly darken tab colors and look good 👍
   'tab.unfocusedActiveBorder': null,
@@ -323,7 +325,7 @@ const editor = {
   'editor.foreground': BLUE_200,
 
   // --- Line number colors
-  'editorLineNumber.foreground': BLUE_300,
+  'editorLineNumber.foreground': BLUE_250,
   'editorLineNumber.activeForeground': BLUE_100,
 
   // Editor highlighting (#highlighting)
@@ -568,7 +570,7 @@ const panel = {
 // Contains the Explore/Debug/Extension/etc. views
 const sideBar = {
   'sideBar.background': DARK_BACKGROUND,
-  'sideBar.foreground': BLUE_150,
+  'sideBar.foreground': BLUE_175,
   'sideBar.border': SUBTLE_CONTRAST_BORDER,
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
@@ -587,7 +589,7 @@ const sideBar = {
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
   'statusBar.foreground': BLUE_200,
-  'statusBar.border': SUBTLE_CONTRAST_BORDER,
+  'statusBar.border': INCONSPICUOUS_BORDER,
   // DEBUGGING MODE
   'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
@@ -737,7 +739,7 @@ const welcomePage = {
 // alpha mito purple and primary accent colors
 const breadcrumbs = {
   'breadcrumb.background': DARK_BACKGROUND,
-  'breadcrumb.foreground': BLUE_300,
+  'breadcrumb.foreground': BLUE_250,
   // When a breadcrumb is hovered or focused with 'Focus breadcrumbs' command,
   // this will apply
   'breadcrumb.focusForeground': SECONDARY,
@@ -762,7 +764,6 @@ const gitLens = {
   'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
 }
 
-/* eslint-disable import/no-anonymous-default-export */
 export default {
   ...activityBar,
   ...badge,

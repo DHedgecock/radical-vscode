@@ -14,7 +14,7 @@
   </a>
   <!-- downloads -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/d/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=ff428e">
+    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/i/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=ff428e">
   </a>
   <!-- rating -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">

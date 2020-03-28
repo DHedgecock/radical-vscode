@@ -1,8 +1,7 @@
 import { BORDER, PRIMARY_BACKGROUND } from './colors-workbench.mjs'
 
-/* eslint-disable import/no-anonymous-default-export */
 export default {
-  comment: '#a8c0c2',
+  comment: '#508695',
   constant: '#fa61b8',
   entity: '#a6e2e0',
   keyword: '#d5358f',

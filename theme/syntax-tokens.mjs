@@ -9,7 +9,6 @@ import colors from './colors-tokens.mjs'
 // Generic syntax tokens
 //
 
-/* eslint-disable import/no-anonymous-default-export */
 export default [
   // ℹ️ No color for generic <meta>, see naming conventions for details
   token('comment', colors.comment, 'italic'),
