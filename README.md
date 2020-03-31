@@ -173,7 +173,25 @@ colors used in the screenshots.
 }
 ```
 
-## 😍 Thanks
+<h2 align="center">
+  <strong>
+    Fonts
+  </strong>
+</h2>
+
+Theme screenshots are using the font `'Hasklug Nerd Font'`, which is a [Nerd
+Font][] version of [Hasklig][]. Terminal screenshots are using the
+[Powerlevel9k][] terminal theme.
+
+[hasklig]: https://github.com/i-tu/Hasklig/
+[nerd font]: https://www.nerdfonts.com/
+[powerlevel9k]: https://github.com/Powerlevel9k/powerlevel9k
+
+<h2 align="center">
+  <strong>
+    😍 Thanks
+  </strong>
+</h2>
 
 - The icon background is from Nate Wren's hecka rad
   [Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
