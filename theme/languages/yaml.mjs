@@ -5,8 +5,8 @@ export const yaml = [
   token('entity.name.tag.yaml', '#7c9c9e'),
 
   // Key value colons
-  token('source.yaml punctuation.separator', '#baf7fc'),
+  token('source.yaml punctuation.separator', '#45566b'),
 
   // Property values (sting and unquoted)
-  token('source.yaml string', '#45566b'),
+  token('source.yaml string', '#baf7fc'),
 ]

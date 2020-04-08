@@ -452,13 +452,13 @@
     {
       "scope": "source.yaml punctuation.separator",
       "settings": {
-        "foreground": "#baf7fc"
+        "foreground": "#45566b"
       }
     },
     {
       "scope": "source.yaml string",
       "settings": {
-        "foreground": "#45566b"
+        "foreground": "#baf7fc"
       }
     }
   ]
