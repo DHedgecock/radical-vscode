@@ -3,10 +3,22 @@ import { func, shape, string } from 'prop-types'
 import styled from 'styled-components'
 import { Button, Flex } from 'componentry'
 
+// Example comment that is not a documentation comment
 const Screenshot = styled.img`
   margin: 0 auto;
   width: 800px;
 `
+
+/**
+ * Demo component with JSDoc comments
+ * @param {bool} status The status
+ */
+function radicalValidator(status) {
+  return status === 'radical'
+}
+
+// Regular comment here
+const test = 'test'
 
 /**
  * Radical theme demo component
@@ -22,13 +34,14 @@ class Radical extends Component {
     theme: null,
   }
 
-  handleSetTheme = theme => {
+  handleSetTheme = (theme) => {
     this.setState({ theme: theme || this.state.theme })
   }
 
   render() {
     const { isRadical, radicalLevel } = this.props
     const { theme } = this.state
+    radicalValidator(radicalLevel)
 
     const currentTheme = isRadical ? theme : {}
 
