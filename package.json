@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "chroma-js": "2.1.0",
-    "eslint-config-eloquence": "13.6.0",
-    "prettier": "2.0.2"
+    "eslint-config-eloquence": "13.8.0",
+    "prettier": "2.0.5"
   }
 }
