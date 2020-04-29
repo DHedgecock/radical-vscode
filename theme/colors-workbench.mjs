@@ -139,16 +139,16 @@ const contrast = {
 //
 
 const base = {
-  focusBorder: TRANSPARENT, // Default to not showing focus borders
-  foreground: BLUE_200,
+  'focusBorder': TRANSPARENT, // Default to not showing focus borders
+  'foreground': BLUE_200,
   'widget.shadow': SHADOW,
   // Background for text selection inside of inputs and textareas
   // (Type into the find input and then select some text)
   'selection.background': alpha(HUE_TEAL, 0.1),
   // Incoming/Current merge conflict labels use this
-  descriptionForeground: INFO,
+  'descriptionForeground': INFO,
   // Repro: Search for something with no matches using the find widget
-  errorForeground: ERROR,
+  'errorForeground': ERROR,
 }
 
 //
