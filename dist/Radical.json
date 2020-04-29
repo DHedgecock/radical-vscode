@@ -245,7 +245,7 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#508695",
+        "foreground": "#45898C",
         "fontStyle": "italic"
       }
     },
@@ -302,6 +302,30 @@
       "scope": "variable",
       "settings": {
         "foreground": "#c7e3ee"
+      }
+    },
+    {
+      "scope": "comment.block.documentation",
+      "settings": {
+        "foreground": "#75B7BB"
+      }
+    },
+    {
+      "scope": "comment.block.documentation storage",
+      "settings": {
+        "foreground": "#fda8bc"
+      }
+    },
+    {
+      "scope": "comment.block.documentation entity",
+      "settings": {
+        "foreground": "#45898C"
+      }
+    },
+    {
+      "scope": "variable.other.jsdoc",
+      "settings": {
+        "foreground": "#BAF7FC"
       }
     },
     {
@@ -428,19 +452,13 @@
     {
       "scope": "source.json string",
       "settings": {
-        "foreground": "#baf7fc"
+        "foreground": "#BAF7FC"
       }
     },
     {
-      "scope": "source.json punctuation.definition.dictionary, source.json punctuation.definition.array",
+      "scope": "source.json punctuation.separator, source.json punctuation.definition.dictionary, source.json punctuation.definition.array",
       "settings": {
-        "foreground": "#45566b"
-      }
-    },
-    {
-      "scope": "source.json punctuation.separator",
-      "settings": {
-        "foreground": "#3f405f"
+        "foreground": "#45898C"
       }
     },
     {
@@ -450,15 +468,15 @@
       }
     },
     {
-      "scope": "source.yaml punctuation.separator",
+      "scope": "source.yaml string",
       "settings": {
-        "foreground": "#45566b"
+        "foreground": "#BAF7FC"
       }
     },
     {
-      "scope": "source.yaml string",
+      "scope": "source.yaml punctuation.separator, source.yaml punctuation.definition.sequence",
       "settings": {
-        "foreground": "#baf7fc"
+        "foreground": "#45898C"
       }
     }
   ]

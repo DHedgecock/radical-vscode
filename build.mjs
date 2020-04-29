@@ -8,6 +8,7 @@ import { terminal } from './theme/colors-tokens.mjs'
 
 // Load syntax tokens
 import tokens from './theme/syntax-tokens.mjs'
+import { comment } from './theme/languages/comment.mjs'
 import { markdown } from './theme/languages/markdown.mjs'
 import { json } from './theme/languages/json.mjs'
 import { yaml } from './theme/languages/yaml.mjs'
@@ -26,7 +27,7 @@ let theme = {
     ...colors,
     ...terminal,
   },
-  tokenColors: [...tokens, ...markdown, ...json, ...yaml],
+  tokenColors: [...tokens, ...comment, ...markdown, ...json, ...yaml],
 }
 
 // Convert color variables to string vlaues

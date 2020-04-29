@@ -1,7 +1,17 @@
 import { BORDER, PRIMARY_BACKGROUND } from './colors-workbench.mjs'
 
+export const BLUE = {
+  100: '#BAF7FC',
+  400: '#75B7BB',
+  500: '#45898C',
+}
+
+export const PINK = {
+  300: '#fda8bc',
+}
+
 export default {
-  comment: '#508695',
+  comment: BLUE[500],
   constant: '#fa61b8',
   entity: '#a6e2e0',
   keyword: '#d5358f',
