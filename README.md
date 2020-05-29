@@ -3,35 +3,22 @@
   <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/radical.jpg" alt="VSCode Radical Theme" />
 </div>
 
-<h2 align="center">
-  <em>A dark theme for radical hacking inspired by retro futuristic design.</em>
-</h2>
+---
 
 <p align="center">
   <!-- marketplace version -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="marketplace version" src="https://img.shields.io/vscode-marketplace/v/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=72d4c2">
+    <img alt="marketplace version" src="https://img.shields.io/badge/PRETTY-RAD-blue?maxAge=3600&style=for-the-badge&labelColor=1A1B46&color=D5358F">
   </a>
   <!-- downloads -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/i/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1C1E26&color=ff428e">
+    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/i/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=242560&color=D5358F">
   </a>
   <!-- rating -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="rating" src="https://img.shields.io/visual-studio-marketplace/stars/dhedgecock.radical-vscode.svg?maxAge=86400&style=for-the-badge&labelColor=1C1E26&color=864df8">
+    <img alt="rating" src="https://img.shields.io/visual-studio-marketplace/stars/dhedgecock.radical-vscode.svg?maxAge=86400&style=for-the-badge&labelColor=1A2AB5&color=D5358F">
   </a>
 </p>
-
-## Theme features
-
-- Search and find code anywhere with optimized highlighting backgrounds and
-  opacities.
-- Diff code changes smartly with readable diff background colors.
-- Peek view code like a pro with dark accents backgrounds and pink border
-  highlights.
-- Looks pretty rad ヘ( ^o^)ノ＼(^\_^ )
-
-<br />
 
 <div align="center">
   <img
@@ -40,21 +27,30 @@
   />
 </div>
 
-<br />
-<br />
+<h2 align="center">
+  <em>A dark theme for radical hacking inspired by retro futuristic design.</em>
+</h2>
+
+- Search and find code anywhere with optimized highlighting backgrounds and
+  opacities.
+- Diff code changes smartly with readable diff background colors.
+- Peek view code like a pro with dark accents backgrounds and pink border
+  highlights.
+- Looks pretty rad ヘ( ^o^)ノ＼(^\_^ )
 
 <div align="center">
+  <br />
+  <br />
   <img
     src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
     role="presentation"
   />
+  <h3>
+    <strong>
+      Peek View
+    </strong>
+  </h3>
 </div>
-
-<h3 align="center">
-  <strong>
-    Peek View
-  </strong>
-</h3>
 
 The peek view background provides a dark accent to the editor background,
 highlighted with pink borders. This makes peeking symbol references (⇧F12) or
@@ -67,11 +63,19 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
   />
 </div>
 
-<h3 align="center">
-  <strong>
-    Terminal Colors
-  </strong>
-</h3>
+<div align="center">
+  <br />
+  <br />
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+  <h3>
+    <strong>
+      Terminal Colors
+    </strong>
+  </h3>
+</div>
 
 Screenshots are using Powerlevel10k theme with Oh My Zsh with Meslo for the
 font. _(Terminal colors are also available for iTerm in the
@@ -129,16 +133,18 @@ colors were chosen that could be overlain using opacities.
 </div> -->
 
 <div align="center">
+  <br />
+  <br />
   <img
     src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
   />
+  <h3>
+    <strong>
+      Extension Theming
+    </strong>
+  </h3>
 </div>
-
-<h2 align="center">
-  <strong>
-    Extension Theming
-  </strong>
-</h2>
 
 If you'd like to theme some popular extensions to match Radical, these are the
 colors used in the screenshots.
@@ -171,10 +177,13 @@ colors used in the screenshots.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/bracket-pair.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/bracket-pair-colorizer.png"
     role="presentation"
   />
 </div>
+
+If you'd like to add some flair into the editor the Bracket Pair Colorizer
+extension is a nice way to mix in some neon pops.
 
 ```json
 {
@@ -189,6 +198,16 @@ colors used in the screenshots.
 
 ### Import Cost
 
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/import-cost.png"
+    role="presentation"
+  />
+</div>
+
+Highlight large packages using neon and translucent colors with the Import Cost
+extension.
+
 ```json
 {
   "importCost.smallPackageColor": "#d043cf4d",
@@ -197,11 +216,40 @@ colors used in the screenshots.
 }
 ```
 
-<h2 align="center">
-  <strong>
-    Fonts
-  </strong>
-</h2>
+<div align="center">
+  <br />
+  <br />
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+  <h3>
+    <strong>
+      Feedback
+    </strong>
+  </h3>
+</div>
+
+Feedback on the theme is very much appreicated 🙌 There are three Github issues
+in the theme repo for providing comments and suggestions directly:
+
+- [Editor colors feedback](https://github.com/DHedgecock/radical-vscode/issues/15)
+- [Syntax token colors feedback](https://github.com/DHedgecock/radical-vscode/issues/17)
+- [Terminal colors feedback](https://github.com/DHedgecock/radical-vscode/issues/16)
+
+<div align="center">
+  <br />
+  <br />
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+  <h3>
+    <strong>
+      Recommended Fonts
+    </strong>
+  </h3>
+</div>
 
 Theme screenshots are using the font `'Hasklug Nerd Font'`, which is a [Nerd
 Font][] version of [Hasklig][]. Terminal screenshots are using the
@@ -211,11 +259,19 @@ Font][] version of [Hasklig][]. Terminal screenshots are using the
 [nerd font]: https://www.nerdfonts.com/
 [powerlevel10k]: https://github.com/romkatv/powerlevel10k
 
-<h2 align="center">
-  <strong>
-    😍 Thanks
-  </strong>
-</h2>
+<div align="center">
+  <br />
+  <br />
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    role="presentation"
+  />
+  <h3>
+    <strong>
+      🙌 Thanks 💖
+    </strong>
+  </h3>
+</div>
 
 - The icon background is from Nate Wren's hecka rad
   [Rad Pack 80s Themed Wallpapers](https://natewren.com/rad-pack-80s-themed-hd-wallpapers/)
