@@ -79,7 +79,7 @@ font. _(Terminal colors are also available for iTerm in the
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/terminal-colors.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/terminal-colors.jpg"
     role="presentation"
   />
 </div>
@@ -145,6 +145,13 @@ colors used in the screenshots.
 
 ### Git Graph
 
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/git-graph.jpg"
+    role="presentation"
+  />
+</div>
+
 ```json
 {
   "git-graph.graphColours": [
@@ -159,13 +166,6 @@ colors used in the screenshots.
   ]
 }
 ```
-
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/git-graph.jpg"
-    role="presentation"
-  />
-</div>
 
 ### Bracket Pair Colorizer 2
 
