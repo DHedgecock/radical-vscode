@@ -14,6 +14,8 @@
  * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
  */
 
+/* eslint-disable no-unused-vars */
+
 import { alpha } from './utils.mjs'
 
 //
@@ -40,6 +42,7 @@ const PURPLE_400 = '#262b4b'
 
 const BLUE_100 = '#d0fff4'
 const BLUE_125 = '#c9fdf1'
+const BLUE_XXX = '#A8D2D4'
 const BLUE_175 = '#90b0b3'
 const BLUE_200 = '#7c9c9e'
 const BLUE_250 = '#415e6c'
@@ -50,6 +53,7 @@ const ULTRA_BACKGROUND = '#100f1a' // (16, 15, 26)
 const DARK_BACKGROUND = '#12111f' // (18, 17, 31)
 const PRIMARY_BACKGROUND = '#141322' // (20, 19, 34)
 const LIGHT_BACKGROUND = '#1c1a30' // (28, 26, 48)
+const ANOTHER_BACKGROUND = '#1a1b46'
 
 // Semi-transparent widget background
 const BACKGROUND_WIDGET = alpha(PURPLE_400, 0.9)
@@ -58,10 +62,13 @@ const BACKGROUND_DRAG_DROP = alpha(PRIMARY, 0.6)
 
 // --- Borders
 
-const ULTRA_BORDER = '#fc0065'
-const BORDER = '#26303b'
-const INCONSPICUOUS_BORDER = '#2c3258'
-const SUBTLE_CONTRAST_BORDER = PURPLE_200
+const BORDERS = {
+  100: '#1A1B46',
+  200: '#242560',
+  300: '#1D1E7D',
+  400: '#8C2C56',
+  500: '#FC0065',
+}
 
 const MITO_PURPLE_HOVER = '#222745'
 const VSCODE_PURPLE = '#602976'
@@ -185,10 +192,10 @@ const button = {
 //
 
 const dropdown = {
-  'dropdown.background': null,
-  'dropdown.listBackground': null,
-  'dropdown.border': null,
-  'dropdown.foreground': null,
+  'dropdown.background': ANOTHER_BACKGROUND,
+  'dropdown.listBackground': BACKGROUND_WIDGET,
+  'dropdown.foreground': BLUE_175,
+  'dropdown.border': BORDERS[200],
 }
 
 //
@@ -252,6 +259,9 @@ const listsTrees = {
   'list.errorForeground': ERROR,
   'list.warningForeground': WARNING,
   'list.invalidItemForeground': null,
+
+  // Vertical lines in tree view shown for open directories
+  'tree.indentGuidesStroke': BORDERS[200],
 }
 
 //
@@ -260,11 +270,11 @@ const listsTrees = {
 
 const input = {
   'input.background': LIGHT_BACKGROUND,
-  'input.border': SUBTLE_CONTRAST_BORDER,
+  'input.border': BORDERS[200],
   'input.foreground': BLUE_200,
   'input.placeholderForeground': BLUE_200,
   // The controls inside of the input for setting search constraints
-  'inputOption.activeBorder': alpha(PRIMARY, 0.6),
+  'inputOption.activeBorder': BORDERS[400],
   'inputOption.activeBackground': alpha(PRIMARY, 0.15),
   'inputValidation.errorBackground': ERROR,
   'inputValidation.errorBorder': ERROR,
@@ -282,7 +292,7 @@ const input = {
 // represented by a tab
 const editorGroup = {
   // Border applies to multiple editor groups
-  'editorGroup.border': BORDER,
+  'editorGroup.border': BORDERS[200],
   'editorGroup.dropBackground': BACKGROUND_DRAG_DROP,
   // When all tabs are closed the editorGroup is empty, you would see this on
   // opening VSCode without a previous project, eg cmd+shift+n
@@ -292,7 +302,8 @@ const editorGroup = {
   // color for that display
   'editorGroupHeader.noTabsBackground': null,
   'editorGroupHeader.tabsBackground': DARK_BACKGROUND,
-  'editorGroupHeader.tabsBorder': SUBTLE_CONTRAST_BORDER,
+  'editorGroupHeader.tabsBorder': BORDERS[200],
+  'editorGroupHeader.border': BORDERS[100],
 }
 
 // Editor tabs
@@ -300,7 +311,7 @@ const tab = {
   // Border is *between* tabs, set to background so there isn't a border
   'tab.border': DARK_BACKGROUND,
   'tab.activeBorder': TRANSPARENT,
-  'tab.activeBorderTop': ULTRA_BORDER,
+  'tab.activeBorderTop': BORDERS[500],
   'tab.activeBackground': DARK_BACKGROUND,
   'tab.activeForeground': BLUE_125,
   'tab.inactiveBackground': DARK_BACKGROUND,
@@ -458,7 +469,7 @@ const editor = {
 // Overview ruler - located beneath scroll bar on right edge of editor and contains an
 // overview of all editor decorations
 const editorOverviewRuler = {
-  'editorOverviewRuler.border': BORDER,
+  'editorOverviewRuler.border': BORDERS[200],
   'editorOverviewRuler.findMatchForeground': null,
   'editorOverviewRuler.rangeHighlightForeground': null,
   'editorOverviewRuler.selectionHighlightForeground': null,
@@ -498,6 +509,7 @@ const editorWidget = {
 
 // Minimap
 const minimap = {
+  // 'minimap.background': DARK_BACKGROUND,
   'minimap.findMatchHighlight': alpha(HIGHLIGHT_MATCH, 0.75),
   'minimapGutter.addedBackground': GIT_ADDED,
   'minimapGutter.modifiedBackground': GIT_MODIFIED,
@@ -538,7 +550,7 @@ const peekView = {
 const activityBar = {
   'activityBar.background': ULTRA_BACKGROUND,
   'activityBar.dropBackground': BACKGROUND_DRAG_DROP,
-  'activityBar.border': alpha(PRIMARY, 0.5),
+  'activityBar.border': BORDERS[400],
   'activityBar.foreground': ULTRA,
   'activityBar.inactiveForeground': alpha(ULTRA, 0.6),
   'activityBar.activeBorder': ULTRA,
@@ -555,7 +567,7 @@ const activityBar = {
 // Integrated Terminal.
 const panel = {
   'panel.background': PRIMARY_BACKGROUND,
-  'panel.border': INCONSPICUOUS_BORDER,
+  'panel.border': BORDERS[200],
   'panel.dropBackground': BACKGROUND_DRAG_DROP,
   // Panel title
   'panelTitle.activeBorder': PRIMARY,
@@ -571,7 +583,7 @@ const panel = {
 const sideBar = {
   'sideBar.background': DARK_BACKGROUND,
   'sideBar.foreground': BLUE_175,
-  'sideBar.border': SUBTLE_CONTRAST_BORDER,
+  'sideBar.border': BORDERS[300],
   'sideBar.dropBackground': BACKGROUND_DRAG_DROP,
   // The title for the entire side bar, eg 'EXPLORER' or 'DEBUG'
   'sideBarTitle.foreground': BLUE_200,
@@ -589,7 +601,7 @@ const sideBar = {
 const statusBar = {
   'statusBar.background': DARK_BACKGROUND,
   'statusBar.foreground': BLUE_200,
-  'statusBar.border': INCONSPICUOUS_BORDER,
+  'statusBar.border': BORDERS[200],
   // DEBUGGING MODE
   'statusBar.debuggingBackground': DARK_BACKGROUND,
   'statusBar.debuggingForeground': SECONDARY,
@@ -613,7 +625,7 @@ const statusBar = {
 const titleBar = {
   'titleBar.activeBackground': ULTRA_BACKGROUND,
   'titleBar.activeForeground': ULTRA,
-  'titleBar.border': alpha(PRIMARY, 0.5),
+  'titleBar.border': BORDERS[400],
   // Title bar is slightly darkened on blur by default and looks good
   'titleBar.inactiveBackground': null,
   'titleBar.inactiveForeground': null,
@@ -652,7 +664,7 @@ const quickInput = {
   // Add a fun widget background style to the quick input which opens on go to
   // file, go to symbol, etc.
   'quickInput.background': BACKGROUND_WIDGET,
-  'pickerGroup.border': alpha(PRIMARY, 0.25),
+  'pickerGroup.border': BORDERS[400],
   'pickerGroup.foreground': SECONDARY,
 }
 
@@ -680,7 +692,7 @@ const diffEditor = {
   'diffEditor.insertedTextBorder': null, // ETOOMUCHBORDER
   'diffEditor.removedTextBackground': alpha(DIFF_REMOVED, 0.09),
   'diffEditor.removedTextBorder': null, // ETOOMUCHBORDER
-  'diffEditor.border': BORDER,
+  'diffEditor.border': BORDERS[200],
 }
 
 //
@@ -692,7 +704,7 @@ const mergeConflicts = {
   'merge.currentContentBackground': alpha(MERGE_CURRENT, 0.075),
   'merge.incomingHeaderBackground': alpha(MERGE_INCOMING, 0.2),
   'merge.incomingContentBackground': alpha(MERGE_INCOMING, 0.075),
-  'merge.border': INCONSPICUOUS_BORDER,
+  'merge.border': BORDERS[200],
   'merge.commonContentBackground': alpha(MERGE_COMMON, 0.075),
   'merge.commonHeaderBackground': alpha(MERGE_COMMON, 0.2),
   'editorOverviewRuler.currentContentForeground': alpha(MERGE_CURRENT, 0.3),
@@ -799,4 +811,4 @@ export default {
   ...gitLens,
 }
 
-export { PRIMARY_BACKGROUND, BORDER, PRIMARY }
+export { PRIMARY_BACKGROUND, BORDERS, PRIMARY }

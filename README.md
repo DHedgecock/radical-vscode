@@ -67,6 +67,23 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
   />
 </div>
 
+<h3 align="center">
+  <strong>
+    Terminal Colors
+  </strong>
+</h3>
+
+Screenshots are using Powerlevel10k theme with Oh My Zsh with Meslo for the
+font. _(Terminal colors are also available for iTerm in the
+[Github repo](https://github.com/DHedgecock/radical-vscode/blob/master/Radical.itermcolors))_
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/terminal-colors.png"
+    role="presentation"
+  />
+</div>
+
 <!-- <h3 align="center">
   <strong>
     Diff backgrounds
@@ -152,6 +169,13 @@ colors used in the screenshots.
 
 ### Bracket Pair Colorizer 2
 
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/bracket-pair.png"
+    role="presentation"
+  />
+</div>
+
 ```json
 {
   "bracket-pair-colorizer-2.colors": [
@@ -181,11 +205,11 @@ colors used in the screenshots.
 
 Theme screenshots are using the font `'Hasklug Nerd Font'`, which is a [Nerd
 Font][] version of [Hasklig][]. Terminal screenshots are using the
-[Powerlevel9k][] terminal theme.
+[Powerlevel10k][] terminal theme with `MesloLGS NF` font.
 
 [hasklig]: https://github.com/i-tu/Hasklig/
 [nerd font]: https://www.nerdfonts.com/
-[powerlevel9k]: https://github.com/Powerlevel9k/powerlevel9k
+[powerlevel10k]: https://github.com/romkatv/powerlevel10k
 
 <h2 align="center">
   <strong>

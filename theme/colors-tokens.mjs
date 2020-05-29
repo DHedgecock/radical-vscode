@@ -1,4 +1,4 @@
-import { BORDER, PRIMARY_BACKGROUND } from './colors-workbench.mjs'
+import { BORDERS, PRIMARY_BACKGROUND } from './colors-workbench.mjs'
 
 export const BLUE = {
   100: '#BAF7FC',
@@ -26,38 +26,38 @@ export default {
 
 export const terminal = {
   'terminal.background': PRIMARY_BACKGROUND,
-  'terminal.foreground': '#defff7',
+  'terminal.foreground': '#A8D2D4',
   // Border between multiple terminals
-  'terminal.border': BORDER,
+  'terminal.border': BORDERS[200],
 
   'terminal.selectionBackground': '#874df84d',
 
   'terminalCursor.background': '#ff428e',
   'terminalCursor.foreground': '#defff7',
 
-  'terminal.ansiBlack': '#2e324d',
-  'terminal.ansiBrightBlack': '#62466b',
+  'terminal.ansiBlack': '#30317D',
+  'terminal.ansiBrightBlack': '#391AB5',
 
-  'terminal.ansiBlue': '#b0fdeb',
-  'terminal.ansiBrightBlue': '#6bf8ef',
+  'terminal.ansiBlue': '#3d3de6',
+  'terminal.ansiBrightBlue': '#1A2AB5',
 
-  'terminal.ansiCyan': '#9d88fa',
-  'terminal.ansiBrightCyan': '#7d77ff',
+  'terminal.ansiMagenta': '#fa61b8',
+  'terminal.ansiBrightMagenta': '#d5358f',
 
-  'terminal.ansiGreen': '#d6fd6b',
-  'terminal.ansiBrightGreen': '#c5fd44',
+  'terminal.ansiRed': '#FF5395',
+  'terminal.ansiBrightRed': '#FF427B',
 
-  'terminal.ansiMagenta': '#f899f8',
-  'terminal.ansiBrightMagenta': '#f73bee',
+  'terminal.ansiGreen': '#D8FF4E',
+  'terminal.ansiBrightGreen': '#C8FF00',
 
-  'terminal.ansiRed': '#f86c8a',
-  'terminal.ansiBrightRed': '#f33990',
+  'terminal.ansiYellow': '#FFFC7E',
+  'terminal.ansiBrightYellow': '#F8D846',
 
-  'terminal.ansiWhite': '#c4f7eb',
-  'terminal.ansiBrightWhite': '#e4fdf7',
+  'terminal.ansiCyan': '#BAF7FC',
+  'terminal.ansiBrightCyan': '#a9fef7',
 
-  'terminal.ansiYellow': '#edf179',
-  'terminal.ansiBrightYellow': '#f4f957',
+  'terminal.ansiWhite': '#cff0e8',
+  'terminal.ansiBrightWhite': '#cbfff2',
 }
 
 /**
