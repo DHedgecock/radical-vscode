@@ -1,4 +1,4 @@
-import fs from 'fs'
+import { promises as fs } from 'fs'
 
 // Load theme color variables
 import colors from './theme/colors-workbench.mjs'
@@ -45,8 +45,7 @@ theme = JSON.stringify(theme, null, 2)
 
 // Base file has been extended with additional theme styles and color variables have
 // been replaced with Panda theme values. Write to /dist for consumption.
-fs.writeFile('dist/Radical.json', theme, (err) => {
-  if (err) console.warn(err)
-  console.log('Build finished')
-  /* eslint-enable no-console */
-})
+fs.writeFile('dist/Radical.json', theme)
+  /* eslint-disable no-console */
+  .then(() => console.log('Build finished'))
+  .catch((err) => console.warn(err))
