@@ -3,22 +3,26 @@
   <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/radical.jpg" alt="VSCode Radical Theme" />
 </div>
 
----
+<br />
 
-<p align="center">
+<div align="center">
   <!-- marketplace version -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="marketplace version" src="https://img.shields.io/badge/PRETTY-RAD-blue?maxAge=3600&style=for-the-badge&labelColor=1A1B46&color=D5358F">
+    <img alt="marketplace version" src="https://img.shields.io/visual-studio-marketplace/i/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=1A1B46&color=D5358F">
   </a>
+  &nbsp;&nbsp;
   <!-- downloads -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
-    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/i/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=242560&color=D5358F">
+    <img alt="downloads" src="https://img.shields.io/visual-studio-marketplace/d/dhedgecock.radical-vscode.svg?maxAge=3600&style=for-the-badge&labelColor=263089&color=D5358F">
   </a>
+  &nbsp;&nbsp;
   <!-- rating -->
   <a href="https://marketplace.visualstudio.com/items?itemName=dhedgecock.radical-vscode">
     <img alt="rating" src="https://img.shields.io/visual-studio-marketplace/stars/dhedgecock.radical-vscode.svg?maxAge=86400&style=for-the-badge&labelColor=1A2AB5&color=D5358F">
   </a>
-</p>
+</div>
+
+<br />
 
 <div align="center">
   <img
