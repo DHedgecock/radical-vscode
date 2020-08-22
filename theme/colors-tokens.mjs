@@ -59,12 +59,3 @@ export const terminal = {
   'terminal.ansiWhite': '#cff0e8',
   'terminal.ansiBrightWhite': '#cbfff2',
 }
-
-/**
- * NOTES:
- *
- * Base color set includes mostly muted blue-grays for a semi-monocrhomatic
- * scheme with pops of color for important things. The idea being instead of
- * having lots of bright colors, the theme is low intensity and has judicious
- * use of bright colors.
- */
