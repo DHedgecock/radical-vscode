@@ -40,6 +40,7 @@ const PURPLE_400 = '#262b4b'
 
 // Blues
 
+const BLUE_50 = '#EAFEFA'
 const BLUE_100 = '#d0fff4'
 const BLUE_125 = '#c9fdf1'
 const BLUE_XXX = '#A8D2D4'
@@ -182,9 +183,15 @@ const text = {
 
 // Same as badges, but with hover
 const button = {
-  'button.background': ULTRA,
-  'button.foreground': BLUE_100,
-  'button.hoverBackground': PURPLE_100,
+  'button.background': PRIMARY,
+  'button.foreground': BLUE_50,
+  'button.hoverBackground': ULTRA,
+  // 'button.secondaryForeground',
+  // 'button.secondaryBackground',
+  // 'button.secondaryHoverBackground',
+  // 'checkbox.background'
+  // 'checkbox.foreground'
+  // 'checkbox.border'
 }
 
 //
