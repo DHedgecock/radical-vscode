@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/radical.jpg" alt="VSCode Radical Theme" />
+  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/banner.png" alt="VSCode Radical Theme" />
 </div>
 
 <br />
