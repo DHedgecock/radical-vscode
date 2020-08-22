@@ -1,3 +1,10 @@
+## NOTES:
+
+Base color set includes mostly muted blue-grays for a semi-monocrhomatic scheme
+with pops of color for important things. The idea being instead of having lots
+of bright colors, the theme is low intensity and has judicious use of bright
+colors.
+
 From Figma theme:
 
 - #ccf714 #a8ffef #f4f957

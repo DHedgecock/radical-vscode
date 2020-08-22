@@ -38,8 +38,8 @@ export const terminal = {
   'terminal.ansiBlack': '#30317D',
   'terminal.ansiBrightBlack': '#391AB5',
 
-  'terminal.ansiBlue': '#3d3de6',
-  'terminal.ansiBrightBlue': '#1A2AB5',
+  'terminal.ansiBlue': '#7DD9E4',
+  'terminal.ansiBrightBlue': '#84F9FE',
 
   'terminal.ansiMagenta': '#fa61b8',
   'terminal.ansiBrightMagenta': '#d5358f',
@@ -53,8 +53,8 @@ export const terminal = {
   'terminal.ansiYellow': '#FFFC7E',
   'terminal.ansiBrightYellow': '#F8D846',
 
-  'terminal.ansiCyan': '#BAF7FC',
-  'terminal.ansiBrightCyan': '#a9fef7',
+  'terminal.ansiCyan': '#A8FFEF',
+  'terminal.ansiBrightCyan': '#83FEE8',
 
   'terminal.ansiWhite': '#cff0e8',
   'terminal.ansiBrightWhite': '#cbfff2',
@@ -67,7 +67,4 @@ export const terminal = {
  * scheme with pops of color for important things. The idea being instead of
  * having lots of bright colors, the theme is low intensity and has judicious
  * use of bright colors.
- * Some important colors used indirectly are:
- * - #6bc2c8(for support shade)
- * - #d0f86f(saved for storage)
  */
