@@ -40,9 +40,9 @@
     ]
   },
   "devDependencies": {
-    "@crystal-ball/prettier-base": "2.2.0",
+    "@crystal-ball/prettier-base": "2.6.0",
     "chroma-js": "2.1.0",
-    "eslint-config-eloquence": "14.10.0"
+    "eslint-config-eloquence": "17.2.0"
   },
   "prettier": "@crystal-ball/prettier-base"
 }
