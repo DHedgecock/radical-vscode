@@ -31,6 +31,10 @@ const SECONDARY_HOVER = '#baffec'
 
 const ULTRA = '#f52277'
 
+// --- Grays
+
+const GRAY_100 = '#94b4c4'
+
 // --- Purples
 
 const PURPLE_100 = '#070a91'
@@ -38,7 +42,7 @@ const PURPLE_200 = '#1D1E7D'
 const PURPLE_300 = '#242560'
 const PURPLE_400 = '#262b4b'
 
-// Blues
+// --- Blues
 
 const BLUE_50 = '#EAFEFA'
 const BLUE_100 = '#d0fff4'
@@ -340,7 +344,7 @@ const editor = {
   'editor.background': PRIMARY_BACKGROUND,
   // The editor default foreground shows up in widgets, is the color of the
   // separators in merge conflicts
-  'editor.foreground': BLUE_200,
+  'editor.foreground': GRAY_100,
 
   // --- Line number colors
   'editorLineNumber.foreground': BLUE_250,

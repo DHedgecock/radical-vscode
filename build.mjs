@@ -9,8 +9,11 @@ import { terminal } from './theme/colors-tokens.mjs'
 // Load syntax tokens
 import tokens from './theme/syntax-tokens.mjs'
 import { comment } from './theme/languages/comment.mjs'
+import { go } from './theme/languages/go.mjs'
 import { markdown } from './theme/languages/markdown.mjs'
+import { javascript } from './theme/languages/javascript.mjs'
 import { json } from './theme/languages/json.mjs'
+import { react } from './theme/languages/react.mjs'
 import { yaml } from './theme/languages/yaml.mjs'
 
 // Create the base theme definition
@@ -27,7 +30,16 @@ let theme = {
     ...colors,
     ...terminal,
   },
-  tokenColors: [...tokens, ...comment, ...markdown, ...json, ...yaml],
+  tokenColors: [
+    ...tokens,
+    ...comment,
+    ...go,
+    ...markdown,
+    ...javascript,
+    ...json,
+    ...react,
+    ...yaml,
+  ],
 }
 
 // Convert color variables to string vlaues
