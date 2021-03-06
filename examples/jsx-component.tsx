@@ -25,6 +25,9 @@ const RadLink = styled(Link)`
   color: pink;
 `
 
+/**
+ * Radical component
+ */
 export const Radical: React.FC<RadicalProps & LevelProps> = ({ level, isRad }) => {
   const [status, setStatus] = useState('')
 
