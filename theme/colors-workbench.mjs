@@ -672,11 +672,14 @@ const extension = {
 //
 
 const quickInput = {
+  'pickerGroup.border': BORDERS[400],
+  'pickerGroup.foreground': SECONDARY,
   // Add a fun widget background style to the quick input which opens on go to
   // file, go to symbol, etc.
   'quickInput.background': BACKGROUND_WIDGET,
-  'pickerGroup.border': BORDERS[400],
-  'pickerGroup.foreground': SECONDARY,
+  'quickInput.foreground': BLUE_175,
+  // 'quickInputTitle.background' ???
+  'quickInput.list.focusBackground': alpha(PRIMARY, 0.2),
 }
 
 //
