@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/banner.png" alt="VSCode Radical Theme" />
+  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/banner.png" alt="VSCode Radical Theme" />
 </div>
 
 <br />
@@ -26,7 +26,7 @@
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/editor.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/editor.jpg"
     role="presentation"
   />
 </div>
@@ -46,7 +46,7 @@
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -62,7 +62,7 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/peek-view.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/peek-view.jpg"
     role="presentation"
   />
 </div>
@@ -71,7 +71,7 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -83,11 +83,11 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
 
 Screenshots are using Powerlevel10k theme with Oh My Zsh with Meslo for the
 font. _(Terminal colors are also available for iTerm in the
-[Github repo](https://github.com/DHedgecock/radical-vscode/blob/master/Radical.itermcolors))_
+[Github repo](https://github.com/DHedgecock/radical-vscode/blob/main/Radical.itermcolors))_
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/terminal-colors.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/terminal-colors.jpg"
     role="presentation"
   />
 </div>
@@ -140,7 +140,7 @@ colors were chosen that could be overlain using opacities.
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -157,7 +157,7 @@ colors used in the screenshots.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/git-graph.jpg"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/git-graph.jpg"
     role="presentation"
   />
 </div>
@@ -181,7 +181,7 @@ colors used in the screenshots.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/bracket-pair-colorizer.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/bracket-pair-colorizer.png"
     role="presentation"
   />
 </div>
@@ -204,7 +204,7 @@ extension is a nice way to mix in some neon pops.
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/import-cost.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/import-cost.png"
     role="presentation"
   />
 </div>
@@ -224,7 +224,7 @@ extension.
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -245,7 +245,7 @@ in the theme repo for providing comments and suggestions directly:
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -267,7 +267,7 @@ Font][] version of [Hasklig][]. Terminal screenshots are using the
   <br />
   <br />
   <img
-    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/blue-hr.png"
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
     role="presentation"
   />
   <h3>
@@ -286,5 +286,5 @@ Font][] version of [Hasklig][]. Terminal screenshots are using the
 <br />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/master/assets/neons.png" role="presentation" />
+  <img src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/neons.png" role="presentation" />
 </div>

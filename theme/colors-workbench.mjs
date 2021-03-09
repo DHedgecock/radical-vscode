@@ -11,7 +11,7 @@
  * file and only this file would be updated when changing theme color values.
  *
  * Theme Reference: https://code.visualstudio.com/docs/getstarted/theme-color-reference
- * Typings: https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/colorRegistry.ts
+ * Typings: https://github.com/Microsoft/vscode/blob/main/src/vs/platform/theme/common/colorRegistry.ts
  */
 
 /* eslint-disable no-unused-vars */
