@@ -1,7 +1,5 @@
-const eloquence = require('eslint-config-eloquence')
+'use strict'
 
-const configs = eloquence({ target: 'node' })
-
-configs.rules['import/extensions'] = ['error', 'always']
-
-module.exports = configs
+module.exports = {
+  extends: ['eloquence/node'],
+}

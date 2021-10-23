@@ -40,10 +40,10 @@
     ]
   },
   "devDependencies": {
-    "@crystal-ball/prettier-base": "2.6.0",
-    "chroma-js": "2.1.0",
-    "eslint-config-eloquence": "17.2.0",
-    "typescript": "4.1.3"
+    "@crystal-ball/prettier-base": "2.9.0",
+    "chroma-js": "2.1.2",
+    "eslint-config-eloquence": "20.0.1",
+    "typescript": "4.4.4"
   },
   "prettier": "@crystal-ball/prettier-base"
 }

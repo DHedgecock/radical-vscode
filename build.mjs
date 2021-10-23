@@ -58,6 +58,5 @@ theme = JSON.stringify(theme, null, 2)
 // Base file has been extended with additional theme styles and color variables have
 // been replaced with Panda theme values. Write to /dist for consumption.
 fs.writeFile('dist/Radical.json', theme)
-  /* eslint-disable no-console */
   .then(() => console.log('Build finished'))
   .catch((err) => console.warn(err))
