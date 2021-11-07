@@ -10,6 +10,7 @@ import { terminal } from './theme/colors-tokens.mjs'
 import tokens from './theme/syntax-tokens.mjs'
 import { comment } from './theme/languages/comment.mjs'
 import { go } from './theme/languages/go.mjs'
+import { html } from './theme/languages/html.mjs'
 import { markdown } from './theme/languages/markdown.mjs'
 import { javascript } from './theme/languages/javascript.mjs'
 import { json } from './theme/languages/json.mjs'
@@ -34,6 +35,7 @@ let theme = {
     ...tokens,
     ...comment,
     ...go,
+    ...html,
     ...markdown,
     ...javascript,
     ...json,

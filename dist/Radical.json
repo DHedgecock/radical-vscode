@@ -376,6 +376,18 @@
       }
     },
     {
+      "scope": "punctuation.separator.key-value.html",
+      "settings": {
+        "foreground": "#FE8DA5"
+      }
+    },
+    {
+      "scope": "meta.tag.structure.any.html, meta.tag.inline.any.html",
+      "settings": {
+        "foreground": "#FE8DA5"
+      }
+    },
+    {
       "scope": "meta.paragraph.markdown",
       "settings": {
         "foreground": "#bccfcf"
