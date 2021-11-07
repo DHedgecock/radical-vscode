@@ -79,6 +79,7 @@ const MITO_PURPLE_HOVER = '#222745'
 const VSCODE_PURPLE = '#602976'
 const VSCODE_PURPLE_HOVER = '#913eb4'
 const RADVENDER = '#864df8'
+const INLAYS = '#ff42b788'
 
 const CORAL = '#fe6083'
 
@@ -428,6 +429,10 @@ const editor = {
   // background also shows at this time. Using a bright teal to contrast more
   // with the translucent purple hover
   'editorLink.activeForeground': '#43fdd5',
+
+  // --- Inlay hints
+  'editorInlayHint.background': TRANSPARENT,
+  'editorInlayHint.foreground': INLAYS,
 
   // --- Whitespace color
   'editorWhitespace.foreground': null, // Default gray color is muted enough 👍

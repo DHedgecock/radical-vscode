@@ -18,6 +18,7 @@ export const BLUES = {
 
 export const CHARTREUSES = {
   100: '#E5FCA6',
+  150: '#DFFD8E',
   200: '#DCFF7A',
   300: '#B3E27C',
 }
@@ -35,6 +36,10 @@ export const TEALS = {
   100: '#A9FEF7',
   200: '#A4FFE4',
   300: '#7AFFE2',
+}
+
+export const GREENS = {
+  100: '#B3E4C2',
 }
 
 export default {

@@ -4,6 +4,7 @@ import { BLUES, GRAYS, PINKS } from '../colors-tokens.mjs'
 export const comment = [
   // Documentation comment blocks
   token('comment.block.documentation', GRAYS[200]),
+  token('string.quoted.docstring', GRAYS[200], 'italic'), // same for Python
 
   // @tags for JSDoc
   token('comment.block.documentation storage', PINKS[100]),
