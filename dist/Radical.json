@@ -315,6 +315,26 @@
       }
     },
     {
+      "scope": "support.type",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#d9a3e0"
+      }
+    },
+    {
+      "scope": "keyword.control.as",
+      "settings": {
+        "fontStyle": "bold underline",
+        "foreground": "#FF1998"
+      }
+    },
+    {
+      "scope": "keyword.operator.type.asserts, keyword.operator.expression.is",
+      "settings": {
+        "foreground": "#FB4293"
+      }
+    },
+    {
       "scope": "comment.block.documentation",
       "settings": {
         "foreground": "#75B7BB"

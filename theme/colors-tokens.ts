@@ -1,4 +1,4 @@
-import colors from './colors'
+import colors, { LAVENDERS, PINKS } from './colors'
 import { token } from './utils'
 
 // The generic syntax tokens are themed here according to the Textmate naming
@@ -27,4 +27,29 @@ export const tokenColors = [
   // Support is meant to be things provided by external frameworks or libraries
   token('support', colors.support),
   token('variable', colors.variable),
+
+  // --- TYPES
+  {
+    // General type match
+    scope: 'support.type',
+    settings: {
+      fontStyle: 'italic',
+      foreground: LAVENDERS[200],
+    },
+  },
+  {
+    // Highlight type assertions - TS "as"
+    scope: 'keyword.control.as',
+    settings: {
+      fontStyle: 'bold underline',
+      foreground: PINKS[600],
+    },
+  },
+  {
+    // TS function assertions
+    scope: 'keyword.operator.type.asserts, keyword.operator.expression.is',
+    settings: {
+      foreground: PINKS[500],
+    },
+  },
 ]

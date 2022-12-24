@@ -30,6 +30,14 @@ export const PINKS = {
   600: '#FF1998',
 }
 
+export const LAVENDERS = {
+  100: '#cbbce7',
+  200: '#d9a3e0',
+  300: '#be8ce7',
+  400: '#cd8ce7',
+  500: '#dc8ce7',
+}
+
 export const TEALS = {
   100: '#A9FEF7',
   200: '#A4FFE4',
