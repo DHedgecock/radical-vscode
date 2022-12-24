@@ -12,16 +12,15 @@ import { markdown } from './languages/markdown'
 import { react } from './languages/react'
 import { yaml } from './languages/yaml'
 
-// Create the base theme definition
-// ---------------------------------------------------------------------------
-
+/**
+ * Radical theme definition
+ */
 const theme = {
   $schema: 'vscode://schemas/color-theme',
   author: 'Dan Hedgecock',
   name: 'Radical',
   colorSpaceName: 'sRGB',
   semanticClass: 'theme.dark.radical',
-  // Editor theme styles
   colors: workbenchColors,
   tokenColors: [
     ...tokenColors,
@@ -36,18 +35,15 @@ const theme = {
   ],
 } as const
 
-// Convert color variables to string values
-// ---------------------------------------------------------------------------
-
-// Delete any value that is null (as a convention this lets us track that all
-// theme variables are being set by assigning values to all of them)
+// Delete any editor color definition whose value is null - as a convention this
+// lets us track that all theme variables are being set by assigning values to
+// all of them
 Object.entries(theme.colors).forEach(([key, value]) => {
   // @ts-expect-error -- Haven't gone to the trouble of typing the string index access yet
   if (value === null) delete theme.colors[key]
 })
 
-// Base file has been extended with additional theme styles and color variables have
-// been replaced with Panda theme values. Write to /dist for consumption.
+// 🚀 Write to dist
 fs.writeFile(
   path.resolve(process.cwd(), 'dist/Radical.json'),
   JSON.stringify(theme, null, 2),
