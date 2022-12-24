@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { PINKS } from '../colors-tokens.mjs'
+import { token } from '../utils'
+import { PINKS } from '../colors'
 
 export const html = [
   // Match pink "=" from JSX for HTML attributes

@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { BLUES, CHARTREUSES, PINKS, TEALS } from '../colors-tokens.mjs'
+import { BLUES, CHARTREUSES, PINKS, TEALS } from '../colors'
+import { token } from '../utils'
 
 export const javascript = [
   // --------------------------------------------------------

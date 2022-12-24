@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { BLUES, CHARTREUSES, GRAYS, PINKS } from '../colors-tokens.mjs'
+import { BLUES, CHARTREUSES, GRAYS, PINKS } from '../colors'
+import { token } from '../utils'
 
 export const go = [
   // The amount of characters in Go that don't have any assigned tokens is alot,

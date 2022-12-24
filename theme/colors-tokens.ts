@@ -1,5 +1,5 @@
-import { token } from './utils.mjs'
-import colors from './colors-tokens.mjs'
+import colors from './colors'
+import { token } from './utils'
 
 // The generic syntax tokens are themed here according to the Textmate naming
 // convention and the package color semantics.
@@ -9,7 +9,7 @@ import colors from './colors-tokens.mjs'
 // Generic syntax tokens
 //
 
-export default [
+export const tokenColors = [
   // ℹ️ No color for generic <meta>, see naming conventions for details
   token('comment', colors.comment, 'italic'),
   // Booleans are constants (Uppercase "constants" are actually variables)

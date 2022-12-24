@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { BLUES, GRAYS, PINKS } from '../colors-tokens.mjs'
+import { BLUES, GRAYS, PINKS } from '../colors'
+import { token } from '../utils'
 
 export const comment = [
   // Documentation comment blocks
