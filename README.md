@@ -191,12 +191,7 @@ extension is a nice way to mix in some neon pops.
 
 ```json
 {
-  "bracket-pair-colorizer-2.colors": [
-    "#DFF959",
-    "#F834BB",
-    "#2BF5E9",
-    "#D831D7"
-  ]
+  "bracket-pair-colorizer-2.colors": ["#DFF959", "#F834BB", "#2BF5E9", "#D831D7"]
 }
 ```
 

@@ -2,3 +2,10 @@
 
 - Make the scrollbar colors match either the line highlight colors or a lavender shade.
   (They currently looks kind of brownish and not exciting)
+
+TYPES
+
+1. Make types a lavender
+2. Make type assertions ultraviolet
+
+Add section to README on overrides
