@@ -2,7 +2,7 @@
   "name": "radical-vscode",
   "displayName": "Radical",
   "description": "A dark theme for radical hacking inspired by retro futuristic design",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "publisher": "dhedgecock",
   "license": "ISC",
   "engines": {
