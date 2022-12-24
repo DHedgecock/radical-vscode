@@ -14,9 +14,7 @@
  * Typings: https://github.com/Microsoft/vscode/blob/main/src/vs/platform/theme/common/colorRegistry.ts
  */
 
-/* eslint-disable no-unused-vars */
-
-import { alpha } from './utils.mjs'
+import { alpha } from './utils'
 
 //
 // Theme colors
@@ -781,6 +779,45 @@ const breadcrumbs = {
   'breadcrumbPicker.background': BACKGROUND_WIDGET,
 }
 
+// --------------------------------------------------------
+// TERMINAL
+
+const terminal = {
+  'terminal.background': PRIMARY_BACKGROUND,
+  'terminal.foreground': '#A8D2D4',
+  // Border between multiple terminals
+  'terminal.border': BORDERS[200],
+
+  'terminal.selectionBackground': '#874df84d',
+
+  'terminalCursor.background': '#ff428e',
+  'terminalCursor.foreground': '#defff7',
+
+  'terminal.ansiBlack': '#30317D',
+  'terminal.ansiBrightBlack': '#391AB5',
+
+  'terminal.ansiBlue': '#7DD9E4',
+  'terminal.ansiBrightBlue': '#84F9FE',
+
+  'terminal.ansiMagenta': '#fa61b8',
+  'terminal.ansiBrightMagenta': '#d5358f',
+
+  'terminal.ansiRed': '#FF5395',
+  'terminal.ansiBrightRed': '#FF427B',
+
+  'terminal.ansiGreen': '#D8FF4E',
+  'terminal.ansiBrightGreen': '#C8FF00',
+
+  'terminal.ansiYellow': '#FFFC7E',
+  'terminal.ansiBrightYellow': '#F8D846',
+
+  'terminal.ansiCyan': '#A8FFEF',
+  'terminal.ansiBrightCyan': '#83FEE8',
+
+  'terminal.ansiWhite': '#cff0e8',
+  'terminal.ansiBrightWhite': '#cbfff2',
+}
+
 //
 // Gitlens
 //
@@ -795,7 +832,7 @@ const gitLens = {
   'gitlens.gutterUncommittedForegroundColor': '#85a5a0',
 }
 
-export default {
+export const workbenchColors = {
   ...activityBar,
   ...badge,
   ...base,
@@ -828,6 +865,7 @@ export default {
   ...welcomePage,
   ...breadcrumbs,
   ...gitLens,
+  ...terminal,
 }
 
 export { PRIMARY_BACKGROUND, BORDERS, PRIMARY }

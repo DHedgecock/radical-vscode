@@ -1,4 +1,4 @@
-import { token } from '../utils.mjs'
+import { token } from '../utils'
 
 /**
  * TODO

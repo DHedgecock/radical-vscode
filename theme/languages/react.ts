@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { BLUES, GRAYS, GREENS, TEALS } from '../colors-tokens.mjs'
+import { BLUES, GRAYS, GREENS, TEALS } from '../colors'
+import { token } from '../utils'
 
 export const react = [
   // JSX component names, eg <Radical

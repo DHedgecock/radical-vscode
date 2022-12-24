@@ -1,5 +1,5 @@
-import { token } from '../utils.mjs'
-import { BLUES, GRAYS } from '../colors-tokens.mjs'
+import { BLUES, GRAYS } from '../colors'
+import { token } from '../utils'
 
 export const json = [
   // Property keys
