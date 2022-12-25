@@ -52,4 +52,12 @@ export const tokenColors = [
       foreground: PINKS[500],
     },
   },
+  {
+    // Named types - covers type aliases, interfaces, and parameters
+    scope: 'entity.name.type',
+    settings: {
+      foreground: LAVENDERS[500],
+      fontStyle: 'italic',
+    },
+  },
 ]

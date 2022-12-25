@@ -35,7 +35,7 @@ export const LAVENDERS = {
   200: '#d9a3e0',
   300: '#be8ce7',
   400: '#cd8ce7',
-  500: '#dc8ce7',
+  500: '#ec99f7',
 }
 
 export const TEALS = {

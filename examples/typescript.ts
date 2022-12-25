@@ -1,3 +1,16 @@
+// --------------------------------------------------------
+// TYPE DECLARATIONS
+
+let num: number
+type Binary = 0 | 1
+
+interface Tree {
+  name: string
+}
+
+// --------------------------------------------------------
+// TYPE ASSERTIONS
+
 const any = 4 as any
 
 function isNumber(str: unknown): str is string {
