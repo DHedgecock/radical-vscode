@@ -76,6 +76,38 @@ peeking symbol definitions (⌥F12) stand out against the editor contents.
   />
   <h3>
     <strong>
+      Radical for <a href="https://www.microsoft.com/pt-br/p/windows-terminal/9n0dx20hk701">Windows Terminal</a>
+    </strong>
+  </h3>
+</div>
+
+<div align="center">
+
+You may also want to <a href="https://github.com/guilhermelim/radical-windows-terminal">install Radical for Windows Terminal</a>.
+
+<br />
+  <img
+    src="https://raw.githubusercontent.com/guilhermelim/radical-windows-terminal/main/assets/screenshot-windows-terminal.png"
+    role="presentation"
+  />
+</div>
+
+<div align="center">
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/peek-view.jpg"
+    role="presentation"
+  />
+</div>
+
+<div align="center">
+  <br />
+  <br />
+  <img
+    src="https://raw.githubusercontent.com/DHedgecock/radical-vscode/main/assets/blue-hr.png"
+    role="presentation"
+  />
+  <h3>
+    <strong>
       Terminal Colors
     </strong>
   </h3>
