@@ -177,7 +177,7 @@ colors used in the screenshots.
 }
 ```
 
-### Bracket Pair Colorizer 2
+### Bracket Pair Colorization
 
 <div align="center">
   <img
@@ -186,12 +186,27 @@ colors used in the screenshots.
   />
 </div>
 
-If you'd like to add some flair into the editor the Bracket Pair Colorizer
-extension is a nice way to mix in some neon pops.
+To add some visual flair to your code editor, you can achieve bracket pair colorization by configuring it natively in Visual Studio Code. Here's how you can customize the bracket colors:
 
 ```json
 {
-  "bracket-pair-colorizer-2.colors": ["#DFF959", "#F834BB", "#2BF5E9", "#D831D7"]
+    "workbench.colorCustomizations": {
+    // Bracket colors
+    "editorBracketHighlight.foreground1": "#DFF959",
+    "editorBracketHighlight.foreground2": "#F834BB",
+    "editorBracketHighlight.foreground3": "#2BF5E9",
+    "editorBracketHighlight.foreground4": "#D831D7",
+    // Inactive guide colors
+    "editorBracketPairGuide.background1": "#E5CC76",
+    "editorBracketPairGuide.background2": "#F939B5",
+    "editorBracketPairGuide.background3": "#5FC9E2",
+    "editorBracketPairGuide.background4": "#E337C9",
+    // Active guide colors
+    "editorBracketPairGuide.activeBackground1": "#E5CC76",
+    "editorBracketPairGuide.activeBackground2": "#F939B5",
+    "editorBracketPairGuide.activeBackground3": "#5FC9E2",
+    "editorBracketPairGuide.activeBackground4": "#E337C9"
+  }
 }
 ```
 
