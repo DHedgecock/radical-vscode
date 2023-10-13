@@ -204,14 +204,18 @@ extension is a nice way to mix in some neon pops.
   />
 </div>
 
-Highlight large packages using neon and translucent colors with the Import Cost
+Highlight large packages using neon and translucent colors with the [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 extension.
 
 ```json
 {
-  "importCost.smallPackageColor": "#d043cf4d",
-  "importCost.mediumPackageColor": "#d043cf80",
-  "importCost.largePackageColor": "#F834BB"
+  "importCost.smallPackageDarkColor": "#d043cf4d",
+  "importCost.mediumPackageDarkColor": "#d043cf80",
+  "importCost.largePackageDarkColor": "#F834BB",
+
+  "importCost.smallPackageLightColor": "#d043cf4d",
+  "importCost.mediumPackageLightColor": "#d043cf80",
+  "importCost.largePackageLightColor": "#F834BB"
 }
 ```
 
